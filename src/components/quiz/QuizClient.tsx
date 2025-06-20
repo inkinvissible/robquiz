@@ -9,13 +9,15 @@ import { ProgressTracker } from "./ProgressTracker"
 import { QuestionDisplay } from "./QuestionDisplay"
 import { QuizComplete } from "./QuizComplete"
 import { cn } from "@/lib/utils"
+import { RotateCw } from "lucide-react"
 
 interface QuizClientProps {
   allQuestions: Question[]
+  quizId: string
 }
 
-export function QuizClient({ allQuestions }: QuizClientProps) {
-  const { state, currentQuestion, totalQuestions, actions } = useQuiz(allQuestions)
+export function QuizClient({ allQuestions, quizId }: QuizClientProps) {
+  const { state, currentQuestion, totalQuestions, actions } = useQuiz(allQuestions, quizId)
 
   if (state.status === "loading" || !currentQuestion) {
     return <QuizSkeleton />
@@ -26,7 +28,7 @@ export function QuizClient({ allQuestions }: QuizClientProps) {
       <QuizComplete
         correctCount={state.correctCount}
         incorrectCount={state.incorrectCount}
-        totalQuestions={allQuestions.length} // Show total from original set
+        totalQuestions={allQuestions.length}
         onReset={actions.handleReset}
         onRetryIncorrect={actions.handleRetryIncorrect}
       />
@@ -51,7 +53,12 @@ export function QuizClient({ allQuestions }: QuizClientProps) {
         isSubmitted={state.isSubmitted}
       />
 
-      <div className="flex justify-end p-6">
+      <div className="flex items-center justify-between p-6 border-t mt-2">
+        <Button onClick={actions.handleReset} variant="outline" size="lg">
+            <RotateCw className="mr-2 h-4 w-4" />
+            Reiniciar
+        </Button>
+        
         {state.isSubmitted ? (
           <Button onClick={actions.handleNext} size="lg" className="bg-primary">
             {state.currentQuestionIndex === totalQuestions - 1 ? "Finalizar Cuestionario" : "Siguiente Pregunta"}

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { RotateCw, Target } from "lucide-react"
+import { RotateCw, Target, Home } from "lucide-react"
+import Link from "next/link"
 
 interface QuizCompleteProps {
   correctCount: number
@@ -40,15 +41,21 @@ export function QuizComplete({
           Respondiste {correctCount} de {totalQuestions} preguntas correctamente.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+          <Link href="/">
+            <Button size="lg" variant="outline">
+                <Home className="mr-2 h-4 w-4" />
+                Volver al Inicio
+            </Button>
+          </Link>
           {hasIncorrectAnswers && (
             <Button onClick={onRetryIncorrect} size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
               <Target className="mr-2 h-4 w-4" />
-              Reintentar Preguntas Incorrectas
+              Reintentar Incorrectas
             </Button>
           )}
-          <Button onClick={onReset} size="lg" variant="outline">
+          <Button onClick={onReset} size="lg">
             <RotateCw className="mr-2 h-4 w-4" />
-            Empezar de Nuevo
+            Jugar de Nuevo
           </Button>
         </div>
       </CardContent>

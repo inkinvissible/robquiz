@@ -5,3 +5,9 @@ export interface Question {
   type: 'single' | 'multiple';
   correctAnswers: string[];
 }
+
+export interface QuizData {
+  title: string;
+  description: string;
+  questions: Question[];
+}

@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Cuestionario',
-  description: 'Una aplicación de cuestionario interactivo.',
+  title: 'QuizMaster',
+  description: 'Una aplicación de cuestionarios interactivos para desafiar tus conocimientos.',
 };
 
 export default function RootLayout({

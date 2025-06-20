@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback, useMemo } from "react"
 import type { Question } from "@/types/quiz"
 import { useToast } from "@/hooks/use-toast"
 
-const LOCAL_STORAGE_KEY = "cuestionario-progress"
+const getLocalStorageKey = (quizId: string) => `quizmaster-progress-${quizId}`
 
 interface QuizState {
   status: "loading" | "active" | "completed"
@@ -18,11 +18,12 @@ interface QuizState {
   isShaking: boolean
 }
 
-export function useQuiz(allQuestions: Question[]) {
+export function useQuiz(allQuestions: Question[], quizId: string) {
   const { toast } = useToast()
+  
   const [state, setState] = useState<QuizState>({
     status: "loading",
-    activeQuestions: allQuestions,
+    activeQuestions: [],
     currentQuestionIndex: 0,
     selectedAnswers: [],
     isSubmitted: false,
@@ -31,42 +32,6 @@ export function useQuiz(allQuestions: Question[]) {
     incorrectlyAnsweredIds: [],
     isShaking: false,
   })
-
-  useEffect(() => {
-    try {
-      const savedStateJSON = localStorage.getItem(LOCAL_STORAGE_KEY)
-      if (savedStateJSON) {
-        const savedState = JSON.parse(savedStateJSON)
-        // Ensure activeQuestions are from the latest source, not localStorage
-        const activeQuestions = savedState.activeQuestions.map((savedQ: Question) => 
-            allQuestions.find(q => q.id === savedQ.id)
-        ).filter(Boolean) as Question[]
-
-        if(activeQuestions.length > 0) {
-            setState({ ...savedState, activeQuestions, status: savedState.status || 'active' })
-        } else {
-             // If saved questions don't match current, reset
-            startNewQuiz(allQuestions)
-        }
-      } else {
-        startNewQuiz(allQuestions)
-      }
-    } catch (error) {
-      console.error("Failed to load from localStorage", error)
-      startNewQuiz(allQuestions)
-    }
-  }, [allQuestions])
-
-  useEffect(() => {
-    if (state.status !== "loading") {
-      try {
-        const stateToSave = { ...state, isShaking: false }
-        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(stateToSave))
-      } catch (error) {
-        console.error("Failed to save to localStorage", error)
-      }
-    }
-  }, [state])
 
   const startNewQuiz = useCallback((questions: Question[]) => {
     setState({
@@ -81,6 +46,42 @@ export function useQuiz(allQuestions: Question[]) {
       isShaking: false,
     })
   }, [])
+
+  useEffect(() => {
+    const LOCAL_STORAGE_KEY = getLocalStorageKey(quizId);
+    try {
+      const savedStateJSON = localStorage.getItem(LOCAL_STORAGE_KEY)
+      if (savedStateJSON) {
+        const savedState = JSON.parse(savedStateJSON);
+        const activeQuestions = savedState.activeQuestions.map((savedQ: Question) => 
+            allQuestions.find(q => q.id === savedQ.id)
+        ).filter(Boolean) as Question[]
+
+        if(activeQuestions.length > 0) {
+            setState({ ...savedState, activeQuestions, status: savedState.status || 'active' })
+        } else {
+            startNewQuiz(allQuestions)
+        }
+      } else {
+        startNewQuiz(allQuestions)
+      }
+    } catch (error) {
+      console.error("Failed to load from localStorage", error)
+      startNewQuiz(allQuestions)
+    }
+  }, [quizId, allQuestions, startNewQuiz])
+
+  useEffect(() => {
+    if (state.status !== "loading" && state.activeQuestions.length > 0) {
+      const LOCAL_STORAGE_KEY = getLocalStorageKey(quizId);
+      try {
+        const stateToSave = { ...state, isShaking: false }
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(stateToSave))
+      } catch (error) {
+        console.error("Failed to save to localStorage", error)
+      }
+    }
+  }, [state, quizId])
   
   const handleAnswerSelect = useCallback((answer: string) => {
     if (state.isSubmitted) return
@@ -107,9 +108,9 @@ export function useQuiz(allQuestions: Question[]) {
     const currentQuestion = state.activeQuestions[state.currentQuestionIndex]
     if (!currentQuestion) return
 
-    const correctAnswers = currentQuestion.correctAnswers
-    const selected = state.selectedAnswers
-    const isCorrect = correctAnswers.length === selected.length && correctAnswers.every(a => selected.includes(a))
+    const correctAnswers = currentQuestion.correctAnswers.sort()
+    const selected = state.selectedAnswers.sort()
+    const isCorrect = correctAnswers.length === selected.length && correctAnswers.every((val, index) => val === selected[index]);
 
     if (isCorrect) {
       setState(prevState => ({ ...prevState, isSubmitted: true, correctCount: prevState.correctCount + 1 }))
@@ -119,7 +120,7 @@ export function useQuiz(allQuestions: Question[]) {
         ...prevState,
         isSubmitted: true,
         incorrectCount: prevState.incorrectCount + 1,
-        incorrectlyAnsweredIds: [...prevState.incorrectlyAnsweredIds, currentQuestion.id],
+        incorrectlyAnsweredIds: Array.from(new Set([...prevState.incorrectlyAnsweredIds, currentQuestion.id])),
         isShaking: true,
       }))
       setTimeout(() => setState(prevState => ({...prevState, isShaking: false})), 820)
@@ -143,24 +144,19 @@ export function useQuiz(allQuestions: Question[]) {
   }, [state.isSubmitted, state.currentQuestionIndex, state.activeQuestions.length])
   
   const handleReset = useCallback(() => {
+    const LOCAL_STORAGE_KEY = getLocalStorageKey(quizId);
     localStorage.removeItem(LOCAL_STORAGE_KEY)
     startNewQuiz(allQuestions)
-  }, [allQuestions, startNewQuiz])
+  }, [allQuestions, startNewQuiz, quizId])
   
   const handleRetryIncorrect = useCallback(() => {
     const incorrectQuestions = allQuestions.filter(q => state.incorrectlyAnsweredIds.includes(q.id))
-    setState({
-      status: "active",
-      activeQuestions: incorrectQuestions,
-      currentQuestionIndex: 0,
-      selectedAnswers: [],
-      isSubmitted: false,
-      correctCount: 0,
-      incorrectCount: 0,
-      incorrectlyAnsweredIds: [],
-      isShaking: false,
-    })
-  }, [allQuestions, state.incorrectlyAnsweredIds])
+    if(incorrectQuestions.length > 0) {
+        const LOCAL_STORAGE_KEY = getLocalStorageKey(quizId);
+        localStorage.removeItem(LOCAL_STORAGE_KEY);
+        startNewQuiz(incorrectQuestions);
+    }
+  }, [allQuestions, state.incorrectlyAnsweredIds, startNewQuiz, quizId])
 
   const currentQuestion = useMemo(() => state.activeQuestions[state.currentQuestionIndex], [state.activeQuestions, state.currentQuestionIndex]);
 

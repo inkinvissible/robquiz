@@ -1,0 +1,66 @@
+{
+  "title": "Automatización Industrial",
+  "description": "Pon a prueba tus conocimientos sobre PLCs, SCADA y protocolos industriales.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "En automatización industrial, ¿qué significa PLC?",
+      "options": [
+        "Controlador Lógico Programable",
+        "Computadora Local Pública",
+        "Circuito Lógico Primario",
+        "Control de Carga de Potencia"
+      ],
+      "type": "single",
+      "correctAnswers": ["Controlador Lógico Programable"]
+    },
+    {
+      "id": 2,
+      "question": "¿Cuáles de los siguientes son tipos comunes de sensores industriales?",
+      "options": [
+        "Sensor de Proximidad",
+        "Sensor de Temperatura",
+        "Sensor de Humedad",
+        "Sensor de Sabor"
+      ],
+      "type": "multiple",
+      "correctAnswers": ["Sensor de Proximidad", "Sensor de Temperatura"]
+    },
+    {
+      "id": 3,
+      "question": "¿Cuál es el propósito principal de un sistema SCADA?",
+      "options": [
+        "Controlar máquinas individuales",
+        "Control de supervisión y adquisición de datos para procesos industriales",
+        "Programar PLCs",
+        "Gestionar recursos empresariales"
+      ],
+      "type": "single",
+      "correctAnswers": ["Control de supervisión y adquisición de datos para procesos industriales"]
+    },
+    {
+      "id": 4,
+      "question": "¿Qué protocolos de comunicación se utilizan comúnmente en la automatización industrial?",
+      "options": [
+        "Modbus",
+        "Profinet",
+        "HTTP",
+        "EtherNet/IP"
+      ],
+      "type": "multiple",
+      "correctAnswers": ["Modbus", "Profinet", "EtherNet/IP"]
+    },
+    {
+      "id": 5,
+      "question": "¿Qué significa HMI en el contexto del control industrial?",
+      "options": [
+        "Interfaz Humano-Máquina",
+        "Integrador de Alta Magnitud",
+        "Inteligencia Hecha por Humanos",
+        "Interconexión de Módulos de Hardware"
+      ],
+      "type": "single",
+      "correctAnswers": ["Interfaz Humano-Máquina"]
+    }
+  ]
+}

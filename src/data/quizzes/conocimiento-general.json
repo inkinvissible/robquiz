@@ -1,0 +1,54 @@
+{
+  "title": "Conocimiento General",
+  "description": "Un cuestionario divertido sobre una variedad de temas para desafiar tu mente.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Cuál es la capital de Australia?",
+      "options": [
+        "Sídney",
+        "Melbourne",
+        "Canberra",
+        "Perth"
+      ],
+      "type": "single",
+      "correctAnswers": ["Canberra"]
+    },
+    {
+      "id": 2,
+      "question": "¿Cuáles de los siguientes elementos son gases nobles?",
+      "options": [
+        "Hidrógeno",
+        "Helio",
+        "Neón",
+        "Oxígeno"
+      ],
+      "type": "multiple",
+      "correctAnswers": ["Helio", "Neón"]
+    },
+    {
+      "id": 3,
+      "question": "¿En qué año llegó el hombre a la Luna por primera vez?",
+      "options": [
+        "1965",
+        "1969",
+        "1972",
+        "1959"
+      ],
+      "type": "single",
+      "correctAnswers": ["1969"]
+    },
+    {
+      "id": 4,
+      "question": "¿Quién pintó la 'Mona Lisa'?",
+      "options": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Leonardo da Vinci",
+        "Claude Monet"
+      ],
+      "type": "single",
+      "correctAnswers": ["Leonardo da Vinci"]
+    }
+  ]
+}
