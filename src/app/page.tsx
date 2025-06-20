@@ -4,7 +4,6 @@ import path from 'path';
 import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import type { QuizData } from '@/types/quiz';
 
 interface QuizInfo {
   id: string;
@@ -21,7 +20,7 @@ async function getQuizzes(): Promise<QuizInfo[]> {
         if (filename.endsWith('.json')) {
           const filePath = path.join(quizzesDir, filename);
           const fileContents = await fs.readFile(filePath, 'utf-8');
-          const quizData: QuizData = JSON.parse(fileContents);
+          const quizData: { title: string; description: string } = JSON.parse(fileContents);
           return {
             id: filename.replace('.json', ''),
             title: quizData.title,

@@ -1,5 +1,5 @@
 import { QuizClient } from '@/components/quiz/QuizClient';
-import type { QuizData } from '@/types/quiz';
+import type { QuizData, Question } from '@/types/quiz';
 import fs from 'fs/promises';
 import path from 'path';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -11,9 +11,36 @@ async function getQuizData(quizId: string): Promise<QuizData | null> {
   const filePath = path.join(process.cwd(), 'src/data/quizzes', `${quizId}.json`);
   try {
     const data = await fs.readFile(filePath, 'utf-8');
-    return JSON.parse(data);
+    const rawData: any = JSON.parse(data);
+
+    const questions: Question[] = rawData.questions.map((rawQ: any, index: number) => {
+      const correctAnswers = Array.isArray(rawQ.respuesta_correcta)
+        ? rawQ.respuesta_correcta
+        : [rawQ.respuesta_correcta];
+      
+      const type = rawQ.es_multiple_seleccion || Array.isArray(rawQ.respuesta_correcta) 
+        ? 'multiple' 
+        : 'single';
+
+      const cleanOptions = rawQ.opciones.map((opt: string) => opt.trim().replace(/\.$/, ''));
+      const cleanCorrectAnswers = correctAnswers.map((ans: string) => ans.trim().replace(/\.$/, ''));
+
+      return {
+        id: index + 1,
+        question: rawQ.pregunta,
+        options: cleanOptions,
+        correctAnswers: cleanCorrectAnswers,
+        type: type,
+      };
+    });
+
+    return {
+      title: rawData.title,
+      description: rawData.description,
+      questions: questions,
+    };
   } catch (error) {
-    console.error(`Failed to read ${quizId}.json:`, error);
+    console.error(`Failed to read or parse ${quizId}.json:`, error);
     return null;
   }
 }

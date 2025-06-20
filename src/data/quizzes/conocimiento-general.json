@@ -3,52 +3,45 @@
   "description": "Un cuestionario divertido sobre una variedad de temas para desafiar tu mente.",
   "questions": [
     {
-      "id": 1,
-      "question": "¿Cuál es la capital de Australia?",
-      "options": [
+      "pregunta": "¿Cuál es la capital de Australia?",
+      "opciones": [
         "Sídney",
         "Melbourne",
         "Canberra",
         "Perth"
       ],
-      "type": "single",
-      "correctAnswers": ["Canberra"]
+      "respuesta_correcta": "Canberra"
     },
     {
-      "id": 2,
-      "question": "¿Cuáles de los siguientes elementos son gases nobles?",
-      "options": [
+      "pregunta": "¿Cuáles de los siguientes elementos son gases nobles?",
+      "opciones": [
         "Hidrógeno",
         "Helio",
         "Neón",
         "Oxígeno"
       ],
-      "type": "multiple",
-      "correctAnswers": ["Helio", "Neón"]
+      "es_multiple_seleccion": true,
+      "respuesta_correcta": ["Helio", "Neón"]
     },
     {
-      "id": 3,
-      "question": "¿En qué año llegó el hombre a la Luna por primera vez?",
-      "options": [
+      "pregunta": "¿En qué año llegó el hombre a la Luna por primera vez?",
+      "opciones": [
         "1965",
         "1969",
         "1972",
         "1959"
       ],
-      "type": "single",
-      "correctAnswers": ["1969"]
+      "respuesta_correcta": "1969"
     },
     {
-      "id": 4,
-      "question": "¿Quién pintó la 'Mona Lisa'?",
-      "options": [
+      "pregunta": "¿Quién pintó la 'Mona Lisa'?",
+      "opciones": [
         "Vincent van Gogh",
         "Pablo Picasso",
         "Leonardo da Vinci",
         "Claude Monet"
       ],
-      "type": "single",
-      "correctAnswers": ["Leonardo da Vinci"]
+      "respuesta_correcta": "Leonardo da Vinci"
     }
   ]
 }

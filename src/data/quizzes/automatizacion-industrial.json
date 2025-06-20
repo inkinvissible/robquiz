@@ -3,64 +3,718 @@
   "description": "Pon a prueba tus conocimientos sobre PLCs, SCADA y protocolos industriales.",
   "questions": [
     {
-      "id": 1,
-      "question": "En automatización industrial, ¿qué significa PLC?",
-      "options": [
-        "Controlador Lógico Programable",
-        "Computadora Local Pública",
-        "Circuito Lógico Primario",
-        "Control de Carga de Potencia"
-      ],
-      "type": "single",
-      "correctAnswers": ["Controlador Lógico Programable"]
+      "pregunta": "¿Qué permite un lenguaje de programación para un PLC?",
+      "respuesta_correcta": "Permite ejecutar una secuencia de control.",
+      "opciones": [
+        "Permite ejecutar una secuencia de control.",
+        "Permite diseñar el hardware del PLC.",
+        "Permite realizar cálculos matemáticos complejos únicamente.",
+        "Permite la comunicación con el operario mediante voz.",
+        "Permite definir las especificaciones eléctricas del sistema."
+      ]
     },
     {
-      "id": 2,
-      "question": "¿Cuáles de los siguientes son tipos comunes de sensores industriales?",
-      "options": [
-        "Sensor de Proximidad",
-        "Sensor de Temperatura",
-        "Sensor de Humedad",
-        "Sensor de Sabor"
-      ],
-      "type": "multiple",
-      "correctAnswers": ["Sensor de Proximidad", "Sensor de Temperatura"]
+      "pregunta": "¿Qué tipo de sistema HMI puede realizar funciones SCADA?",
+      "respuesta_correcta": "Un computador industrial con pantalla.",
+      "opciones": [
+        "Un computador industrial con pantalla.",
+        "Un panel de control con botones físicos.",
+        "Un microcontrolador embebido sin interfaz.",
+        "Un simple display alfanumérico.",
+        "Un relé electromecánico."
+      ]
     },
     {
-      "id": 3,
-      "question": "¿Cuál es el propósito principal de un sistema SCADA?",
-      "options": [
-        "Controlar máquinas individuales",
-        "Control de supervisión y adquisición de datos para procesos industriales",
-        "Programar PLCs",
-        "Gestionar recursos empresariales"
+      "pregunta": "Cual es el objetivo principal de usar autómatas programables en la industria? (Indicar las 4 (cuatro) respuestas correctas)",
+      "respuesta_correcta": [
+        "Incrementar la calidad de los procesos industriales",
+        "Aumentar la velocidad de los procesos industriales",
+        "Reducir el riesgo a los operarios",
+        "Liberar a los operarios de trabajos engorrosos"
       ],
-      "type": "single",
-      "correctAnswers": ["Control de supervisión y adquisición de datos para procesos industriales"]
+      "es_multiple_seleccion": true,
+      "opciones": [
+        "Incrementar la calidad de los procesos industriales.",
+        "Aumentar la velocidad de los procesos industriales.",
+        "Reducir el riesgo a los operarios.",
+        "Liberar a los operarios de trabajos engorrosos.",
+        "Aumentar el consumo energético de la planta."
+      ]
     },
     {
-      "id": 4,
-      "question": "¿Qué protocolos de comunicación se utilizan comúnmente en la automatización industrial?",
-      "options": [
-        "Modbus",
-        "Profinet",
-        "HTTP",
-        "EtherNet/IP"
-      ],
-      "type": "multiple",
-      "correctAnswers": ["Modbus", "Profinet", "EtherNet/IP"]
+      "pregunta": "Cual es el propósito de un PLC?",
+      "respuesta_correcta": "Recibir información de los captadores y procesarla para enviar el resultado.",
+      "opciones": [
+        "Recibir información de los captadores y procesarla para enviar el resultado.",
+        "Diseñar interfaces gráficas de usuario para maquinaria pesada.",
+        "Generar energía eléctrica para sistemas de alta potencia.",
+        "Almacenar grandes volúmenes de datos históricos de producción.",
+        "Realizar únicamente operaciones aritméticas básicas."
+      ]
     },
     {
-      "id": 5,
-      "question": "¿Qué significa HMI en el contexto del control industrial?",
-      "options": [
-        "Interfaz Humano-Máquina",
-        "Integrador de Alta Magnitud",
-        "Inteligencia Hecha por Humanos",
-        "Interconexión de Módulos de Hardware"
+      "pregunta": "Los mayores autómatas programables de la serie S7-400 de la firma Siemens son capaces de manejar hasta 131072 E/S digitales.",
+      "respuesta_correcta": "Verdadero.",
+      "opciones": [
+        "Verdadero.",
+        "Falso.",
+        "Parcialmente verdadero, solo 65536 E/S.",
+        "Depende de la versión del firmware.",
+        "Solo si se usan módulos de expansión analógicos."
+      ]
+    },
+    {
+      "pregunta": "Maria está diseñando un sistema de control con retroalimentación. ¿Cómo sería la secuencia de operaciones en este caso?",
+      "respuesta_correcta": "Una secuencia de operaciones de lazo cerrado.",
+      "opciones": [
+        "Una secuencia de operaciones de lazo cerrado.",
+        "Una secuencia de operaciones de lazo abierto.",
+        "Una secuencia de operaciones seriales.",
+        "Una secuencia de operaciones manuales.",
+        "Una secuencia de operaciones asíncronas."
+      ]
+    },
+    {
+      "pregunta": "A continuación encontrarás 4 (cuatro) elementos que conforman un actuador, ¿Puedes identificar cuales son?",
+      "respuesta_correcta": [
+        "Sistema de transmisión",
+        "Sistema reductor",
+        "Sistema de accionamiento",
+        "Sistema de control"
       ],
-      "type": "single",
-      "correctAnswers": ["Interfaz Humano-Máquina"]
+      "es_multiple_seleccion": true,
+      "opciones": [
+        "Sistema de transmisión.",
+        "Sistema reductor.",
+        "Sistema de accionamiento.",
+        "Sistema de control.",
+        "Sensor de retroalimentación."
+      ]
+    },
+    {
+      "pregunta": "Una empleada nueva en la empresa le realiza a maria la siguiente pregunta: ¿Qué es el ciclo de funcionamiento básico de un PLC?",
+      "respuesta_correcta": "Es la secuencia de lectura de valores de entradas, ejecución del programa y actualización de valores de salida.",
+      "opciones": [
+        "Es la secuencia de lectura de valores de entradas, ejecución del programa y actualización de valores de salida.",
+        "Es el proceso de encendido y apagado del PLC.",
+        "Es la configuración inicial de los módulos de E/S.",
+        "Es la depuración y corrección de errores en el código.",
+        "Es el envío de datos a una base de datos externa."
+      ]
+    },
+    {
+      "pregunta": "Martin se encuentra en una entrevista laboral y le consultan si sabe cómo utilizar un RSLogix 500, a que hace referencia esta expresión?",
+      "respuesta_correcta": "RSLogix 500 es un software para la programación de PLC.",
+      "opciones": [
+        "RSLogix 500 es un software para la programación de PLC.",
+        "RSLogix 500 es un tipo de hardware para comunicación serial.",
+        "RSLogix 500 es una base de datos para almacenar datos industriales.",
+        "RSLogix 500 es una norma de seguridad industrial.",
+        "RSLogix 500 es un simulador de procesos químicos."
+      ]
+    },
+    {
+      "pregunta": "Indique las 4 (cuatro) respuestas correctas. ¿Por qué los automatizadores programables son una solución para los procesos industriales?",
+      "respuesta_correcta": [
+        "Los procesos se vuelven más productivos al realizarse a mayor velocidad",
+        "Reducen los tiempos de producción",
+        "Descargan a los operarios de trabajos peligrosos",
+        "Mejoran la precisión y repetibilidad de las operaciones"
+      ],
+      "es_multiple_seleccion": true,
+      "opciones": [
+        "Los procesos se vuelven más productivos al realizarse a mayor velocidad.",
+        "Reducen los tiempos de producción.",
+        "Descargan a los operarios de trabajos peligrosos.",
+        "Mejoran la precisión y repetibilidad de las operaciones.",
+        "Requieren de una constante supervisión manual para operar."
+      ]
+    },
+    {
+      "pregunta": "¿Qué se entiende por ‘’sensores inteligentes integrados’’?",
+      "respuesta_correcta": "Sensores que incluyen un microcontrolador, la conversión A/D, autocalibracion y auto test.",
+      "opciones": [
+        "Sensores que incluyen un microcontrolador, la conversión A/D, autocalibracion y auto test.",
+        "Sensores que solo miden temperatura y presión.",
+        "Sensores que se conectan directamente a la red eléctrica sin protección.",
+        "Sensores que solo envían señales analógicas sin procesamiento.",
+        "Sensores que requieren calibración manual diaria."
+      ]
+    },
+    {
+      "pregunta": "¿Qué permitio el desarrollo de la microelectrónica en los autómatas programables?",
+      "respuesta_correcta": "La integración de unidades centrales de proceso (CPU) de computadores.",
+      "opciones": [
+        "La integración de unidades centrales de proceso (CPU) de computadores.",
+        "El uso exclusivo de relés electromecánicos.",
+        "La eliminación total de la necesidad de programación.",
+        "El aumento significativo de su tamaño físico.",
+        "La dependencia de software externo para todas sus funciones."
+      ]
+    },
+    {
+      "pregunta": "¿Cuál es la función de los PLC?",
+      "respuesta_correcta": "Realizar automatismos con el objetivo de controlar procesos industriales.",
+      "opciones": [
+        "Realizar automatismos con el objetivo de controlar procesos industriales.",
+        "Generar informes financieros para la gestión de la empresa.",
+        "Diseñar edificios y estructuras arquitectónicas.",
+        "Realizar diagnósticos médicos en tiempo real.",
+        "Ofrecer servicios de streaming de video."
+      ]
+    },
+    {
+      "pregunta": "Isabel está recibiendo un curso de automatismo on-line y su compañero de clase le pregunta : ¿Qué hace falta para las señales analógicas en un automata programable?",
+      "respuesta_correcta": "Hace falta Conversores A/D en las entradas y D/A en las salidas.",
+      "opciones": [
+        "Hace falta Conversores A/D en las entradas y D/A en las salidas.",
+        "Solo se necesitan módulos de expansión digitales.",
+        "No se necesita nada especial, se conectan directamente.",
+        "Se requieren solo conversores A/D en las salidas.",
+        "Se deben usar relés para digitalizar la señal."
+      ]
+    },
+    {
+      "pregunta": "¿Que es un autómata programable según la NEMA (National Electrical Manufacturers Association)?",
+      "respuesta_correcta": "Es un aparato electrónico digital que usa una memoria programable para el almacenamiento de instrucciones que implementan funciones lógicas.",
+      "opciones": [
+        "Es un aparato electrónico digital que usa una memoria programable para el almacenamiento de instrucciones que implementan funciones lógicas.",
+        "Es un dispositivo mecánico que realiza operaciones repetitivas.",
+        "Es una computadora personal utilizada para control industrial.",
+        "Es un sistema de cableado complejo basado en relés.",
+        "Es un software de simulación para procesos productivos."
+      ]
+    },
+    {
+      "pregunta": "¿Qué hacen los acondicionadores y procesadores de señal en un sistema de adquisición y control de sensores?",
+      "respuesta_correcta": "Preparan la señal antes de ser procesada.",
+      "opciones": [
+        "Preparan la señal antes de ser procesada.",
+        "Generan nuevas señales sin relación con los sensores.",
+        "Almacenan los datos procesados a largo plazo.",
+        "Convierten señales digitales a analógicas.",
+        "Muestran la señal directamente en una pantalla HMI."
+      ]
+    },
+    {
+      "pregunta": "Te piden que formes a un nuevo ingresante al área de automatismos de una empresa. ¿Cómo le explicarías el funcionamiento de un sistema de control de lazo abierto?",
+      "respuesta_correcta": "Un sistema de control de lazo abierto funciona sin retroalimentación y genera la salida directamente.",
+      "opciones": [
+        "Un sistema de control de lazo abierto funciona sin retroalimentación y genera la salida directamente.",
+        "Un sistema de control de lazo abierto ajusta su salida basándose en la medición de la misma.",
+        "Un sistema de control de lazo abierto siempre garantiza la precisión de la salida.",
+        "Un sistema de control de lazo abierto requiere de una intervención humana constante.",
+        "Un sistema de control de lazo abierto utiliza sensores para corregir desviaciones."
+      ]
+    },
+    {
+      "pregunta": "Seleccione 1 (uno) de los siguientes ejemplos: ¿Cuál es un sistema de control de lazo abierto?",
+      "respuesta_correcta": "Un horno de microondas sin sensor de temperatura.",
+      "opciones": [
+        "Un horno de microondas sin sensor de temperatura.",
+        "Un termostato ambiental que regula la calefacción.",
+        "Un sistema de piloto automático en un avión.",
+        "El control de crucero de un automóvil.",
+        "Un sistema de control de nivel de agua con flotador."
+      ]
+    },
+    {
+      "pregunta": "¿Por qué es importante controlar el tiempo de ciclo en un PLC?",
+      "respuesta_correcta": "Para garantizar la seguridad del funcionamiento.",
+      "opciones": [
+        "Para garantizar la seguridad del funcionamiento.",
+        "Para reducir el consumo de energía del PLC.",
+        "Para aumentar la complejidad del programa.",
+        "Para prolongar la vida útil del hardware del PLC.",
+        "Para disminuir la frecuencia de mantenimiento."
+      ]
+    },
+    {
+      "pregunta": "El objetivo de un sistema de control es el de gobernar la respuesta de una planta, sin que el operador intervenga directamente sobre sus elementos de salida.",
+      "respuesta_correcta": "Verdadero.",
+      "opciones": [
+        "Verdadero.",
+        "Falso.",
+        "Depende del tipo de planta.",
+        "Solo si el sistema es de lazo abierto.",
+        "Únicamente para sistemas SCADA."
+      ]
+    },
+    {
+      "pregunta": "Nicolas se encuentra reparando una máquina y el asistente que lo ayude le realiza la siguiente pregunta, ¿Qué es el … ciclo en un PLC?",
+      "respuesta_correcta": "El tiempo necesario para garantizar la seguridad del funcionamiento.",
+      "opciones": [
+        "El tiempo necesario para garantizar la seguridad del funcionamiento.",
+        "El tiempo que tarda el operador en arrancar la máquina.",
+        "La duración total de la vida útil del PLC.",
+        "El intervalo entre dos mantenimientos preventivos.",
+        "El tiempo que el PLC permanece inactivo."
+      ]
+    },
+    {
+      "pregunta": "¿Qué es un temporizador Perro guardián en un PLC?",
+      "respuesta_correcta": "Un temporizador que controla el tiempo de ciclo.",
+      "opciones": [
+        "Un temporizador que controla el tiempo de ciclo.",
+        "Un temporizador que activa una alarma sonora.",
+        "Un temporizador que guarda automáticamente el programa.",
+        "Un temporizador para registrar la actividad del operador.",
+        "Un temporizador para iniciar el PLC en cada encendido."
+      ]
+    },
+    {
+      "pregunta": "Seleccionar 2 respuestas correctas. ¿Qué acciones se realizan durante el ciclo de funcionamiento de un autómata programable (PLC)?",
+      "respuesta_correcta": [
+        "Chequeo de posibles errores de hardware",
+        "Comprobación de la integridad de la memoria del programa"
+      ],
+      "es_multiple_seleccion": true,
+      "opciones": [
+        "Chequeo de posibles errores de hardware.",
+        "Comprobación de la integridad de la memoria del programa.",
+        "Diseño de nuevos módulos de entrada/salida.",
+        "Venta de componentes electrónicos a clientes.",
+        "Reemplazo físico de cables en la planta."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo se ejecutan los procesos repetitivos y peligrosos en la industria?",
+      "respuesta_correcta": "Por autómatas programables.",
+      "opciones": [
+        "Por autómatas programables.",
+        "Exclusivamente por operarios humanos.",
+        "Mediante el uso de herramientas manuales.",
+        "A través de documentos impresos y manuales.",
+        "Por sistemas de vigilancia con cámaras."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo realiza la lectura de exploración el procesador en el lenguaje…?",
+      "respuesta_correcta": "Explora los peldaños de la escalera de arriba abajo y de izquierda a derecha.",
+      "opciones": [
+        "Explora los peldaños de la escalera de arriba abajo y de izquierda a derecha.",
+        "Explora los peldaños de forma aleatoria.",
+        "Explora solo los peldaños inferiores.",
+        "Explora los peldaños de derecha a izquierda y de abajo hacia arriba.",
+        "Explora los peldaños según la prioridad definida por el operario."
+      ]
+    },
+    {
+      "pregunta": "Identifique 4 elementos que pueden incluir los sensores i….",
+      "respuesta_correcta": [
+        "Algoritmo de control",
+        "Capacidad de comunicación",
+        "Sensor primario",
+        "Memoria"
+      ],
+      "es_multiple_seleccion": true,
+      "opciones": [
+        "Algoritmo de control.",
+        "Capacidad de comunicación.",
+        "Sensor primario.",
+        "Memoria.",
+        "Unidad de suministro de combustible."
+      ]
+    },
+    {
+      "pregunta": "Identifique dos elementos que pueden funcionar como pre- actuadores... automáticos e hidráulicos, o eléctricos?",
+      "respuesta_correcta": [
+        "Relés o contactores",
+        "Variadores de frecuencia",
+        "Electroválvulas"
+      ],
+      "es_multiple_seleccion": true,
+      "opciones": [
+        "Relés o contactores.",
+        "Variadores de frecuencia.",
+        "Electroválvulas.",
+        "Sensores de temperatura.",
+        "Monitores HMI."
+      ]
+    },
+    {
+      "pregunta": "¿Qué elementos incluyen los sensores inteligentes además del sensor primario?",
+      "respuesta_correcta": [
+        "Algoritmo de control",
+        "Memoria",
+        "Capacidad de comunicación"
+      ],
+      "es_multiple_seleccion": true,
+      "opciones": [
+        "Algoritmo de control.",
+        "Memoria.",
+        "Capacidad de comunicación.",
+        "Batería externa de gran capacidad.",
+        "Sistema de enfriamiento por líquido."
+      ]
+    },
+    {
+      "pregunta": "Pablo se encuentra en la planta con un proceso productivo que posee… este contexto. Cual es el objetivo de dicho sistema de control?",
+      "respuesta_correcta": "El objetivo de dicho sistema de control es gobernar la respuesta de una planta sin intervención del operador.",
+      "opciones": [
+        "El objetivo de dicho sistema de control es gobernar la respuesta de una planta sin intervención del operador.",
+        "El objetivo es proporcionar información solo para informes gerenciales.",
+        "El objetivo es realizar el mantenimiento preventivo de la planta.",
+        "El objetivo es permitir que el operador controle manualmente cada paso.",
+        "El objetivo es reducir la vida útil de los equipos."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo se llama el sensor que necesita contacto con el objeto?",
+      "respuesta_correcta": "Final de carrera.",
+      "opciones": [
+        "Final de carrera.",
+        "Sensor de proximidad inductivo.",
+        "Sensor fotoeléctrico.",
+        "Sensor ultrasónico.",
+        "Termopar."
+      ]
+    },
+    {
+      "pregunta": "Cual es la finalidad del estándar IEC 1131 para controladores programables…?",
+      "respuesta_correcta": "Desarrollar un PLC estándar global.",
+      "opciones": [
+        "Desarrollar un PLC estándar global.",
+        "Imponer el uso de un solo lenguaje de programación.",
+        "Limitar la innovación en el diseño de PLCs.",
+        "Definir los precios de mercado de los PLCs.",
+        "Crear una competencia desleal entre fabricantes."
+      ]
+    },
+    {
+      "pregunta": "¿Qué tecnología se utilizaba en los sistemas de control lógico antes de …?",
+      "respuesta_correcta": "Cables.",
+      "opciones": [
+        "Cables.",
+        "Microprocesadores avanzados.",
+        "Inteligencia artificial.",
+        "Redes inalámbricas Wi-Fi.",
+        "Paneles solares."
+      ]
+    },
+    {
+      "pregunta": "Marina debe explicar cómo se genera la señal de error en un sistema de …. ¿Qué expresiones debería utilizar?",
+      "respuesta_correcta": "La señal de entrada y la señal de salida real.",
+      "opciones": [
+        "La señal de entrada y la señal de salida real.",
+        "La temperatura ambiente y la humedad.",
+        "El costo de producción y la ganancia.",
+        "La velocidad de procesamiento y la memoria disponible.",
+        "La fase de la corriente y la tensión."
+      ]
+    },
+    {
+      "pregunta": "En un sistema de control industrial, se produce una de la línea de producción … Que es una retroalimentación negativa de lazo cerrado en un sistema de",
+      "respuesta_correcta": "Es una medida de la señal de salida que compara con la salida deseada.",
+      "opciones": [
+        "Es una medida de la señal de salida que compara con la salida deseada.",
+        "Es un proceso que ignora la señal de salida.",
+        "Es el ajuste manual de la entrada por el operador.",
+        "Es la desconexión total del sistema de control.",
+        "Es un sistema que amplifica el error de salida."
+      ]
+    },
+    {
+      "pregunta": "Mateo debe explicar qué actividad se lleva a cabo en el sector… otro sector de la empresa , y surge un tema a resolver: Cuál es la principal … industria?",
+      "respuesta_correcta": "Se utilizan principalmente en posicionamiento de objetos.",
+      "opciones": [
+        "Se utilizan principalmente en posicionamiento de objetos.",
+        "Se utilizan principalmente para generar informes de contabilidad.",
+        "Se utilizan principalmente para el diseño gráfico y multimedia.",
+        "Se utilizan principalmente para la gestión de recursos humanos.",
+        "Se utilizan principalmente para la investigación de mercados."
+      ]
+    },
+    {
+      "pregunta": "¿Cual es la principal característica de las instrucciones de entrada?",
+      "respuesta_correcta": "Son introducidas a la izquierda.",
+      "opciones": [
+        "Son introducidas a la izquierda.",
+        "Son introducidas a la derecha.",
+        "No tienen una posición fija.",
+        "Solo se pueden usar una vez por programa.",
+        "Siempre deben estar entre paréntesis."
+      ]
+    },
+    {
+      "pregunta": "Andrea se encuentra dentro del área de I+D de la empresa y necesitan poner algunos sensores para optimizar el proceso productivo y surge la pregunta: Que tipo de salida proporcionan los sensores de tipo detectores?",
+      "respuesta_correcta": "Proporcionan salida binaria.",
+      "opciones": [
+        "Proporcionan salida binaria.",
+        "Proporcionan salida analógica continua.",
+        "Proporcionan salida de voz.",
+        "Proporcionan salida de video de alta definición.",
+        "Proporcionan salida de fuerza."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo se realiza la conexión de los periféricos con el PLC?",
+      "respuesta_correcta": "A través de hardware específico de comunicaciones ajeno a la CPU.",
+      "opciones": [
+        "A través de hardware específico de comunicaciones ajeno a la CPU.",
+        "Directamente a la memoria interna del PLC.",
+        "Por medio de cables de audio estándar.",
+        "Utilizando un teléfono móvil con Bluetooth.",
+        "No se pueden conectar periféricos externos."
+      ]
+    },
+    {
+      "pregunta": "¿Qué ha permitido la alta integración de los circuitos en acondicionadores de señal?",
+      "respuesta_correcta": "El uso de amplificadores operacionales integrando varios de ellos en uno solo.",
+      "opciones": [
+        "El uso de amplificadores operacionales integrando varios de ellos en uno solo.",
+        "La disminución de la velocidad de procesamiento.",
+        "El aumento en el tamaño de los componentes.",
+        "La necesidad de más componentes discretos.",
+        "La imposibilidad de realizar ajustes finos."
+      ]
+    },
+    {
+      "pregunta": "Juan está recibiendo un curso de automatismo on-line y su compañero de clase pregunta: Cual es el objetivo de los actuadores?",
+      "respuesta_correcta": "Los actuadores son dispositivos capaces de generar una fuerza.",
+      "opciones": [
+        "Los actuadores son dispositivos capaces de generar una fuerza.",
+        "Los actuadores son dispositivos para medir variables físicas.",
+        "Los actuadores son dispositivos para visualizar datos.",
+        "Los actuadores son dispositivos para almacenar programas.",
+        "Los actuadores son dispositivos para depurar software."
+      ]
+    },
+    {
+      "pregunta": "¿Cuántas variables de entrada y salida digitales pueden manejar los autómatas programables pequeños?",
+      "respuesta_correcta": "Entre 32 y 128.",
+      "opciones": [
+        "Entre 32 y 128.",
+        "Menos de 10.",
+        "Más de 1000.",
+        "Solo 1 o 2.",
+        "Un número ilimitado."
+      ]
+    },
+    {
+      "pregunta": "Un empleado novato en la empresa le realiza la siguiente pregunta a justina: Que son las imágenes del proceso en un autómata programable?",
+      "respuesta_correcta": "Son una zona de memoria RAM que contiene los valores de las variables de entrada y salida.",
+      "opciones": [
+        "Son una zona de memoria RAM que contiene los valores de las variables de entrada y salida.",
+        "Son representaciones gráficas del proceso en una pantalla HMI.",
+        "Son archivos de configuración para el hardware.",
+        "Son copias de seguridad de los programas antiguos.",
+        "Son los esquemas eléctricos de la instalación."
+      ]
+    },
+    {
+      "pregunta": "Para que se implementaron los primeros autómatas programables?",
+      "respuesta_correcta": "Para reemplazar a los sistemas de control lógico basados en relés.",
+      "opciones": [
+        "Para reemplazar a los sistemas de control lógico basados en relés.",
+        "Para inventar una nueva forma de generar energía eléctrica.",
+        "Para diseñar videojuegos avanzados.",
+        "Para automatizar procesos financieros.",
+        "Para simular entornos virtuales de realidad aumentada."
+      ]
+    },
+    {
+      "pregunta": "¿Qué se entiende por acondicionamiento de señal en el contexto de sistemas de instrumentos?",
+      "respuesta_correcta": "Mejora de la señal en términos de amplificación, eliminación de interferencias, linealización, etc..",
+      "opciones": [
+        "Mejora de la señal en términos de amplificación, eliminación de interferencias, linealización, etc..",
+        "La conversión de señales analógicas a digitales.",
+        "La transmisión de la señal a través de redes inalámbricas.",
+        "El almacenamiento a largo plazo de datos de señal.",
+        "La visualización gráfica de las ondas de señal."
+      ]
+    },
+    {
+      "pregunta": "¿Qué característica posee un contacto normalmente abierto en el lenguaje de programación ladder o diagrama de escalera?",
+      "respuesta_correcta": "Es un elemento que cierra con una variable asociada que vale <<1>>.",
+      "opciones": [
+        "Es un elemento que cierra con una variable asociada que vale <<1>>.",
+        "Es un elemento que abre con una variable asociada que vale <<1>>.",
+        "Siempre está cerrado, independientemente de la variable.",
+        "Es un elemento que se usa solo para salidas digitales.",
+        "Representa una bobina o una salida."
+      ]
+    },
+    {
+      "pregunta": "Fernando está dentro del área de I+D de la empresa y necesitan poner sensores para optimizar el proceso productivo. Su compañero le pregunta: ¿En qué tipo de sistemas se utilizan los sensores de tipo captadores?",
+      "respuesta_correcta": "Se utilizan en los sistemas de control continuo.",
+      "opciones": [
+        "Se utilizan en los sistemas de control continuo.",
+        "Se utilizan en sistemas de control binario on/off.",
+        "Se utilizan en sistemas de iluminación residencial.",
+        "Se utilizan en sistemas de gestión de inventarios.",
+        "Se utilizan exclusivamente en robótica de entretenimiento."
+      ]
+    },
+    {
+      "pregunta": "En una ficha de examen de ingreso de una empresa Multinacional, dentro de las preguntas se indica lo siguiente : A que denomina como ‘’sistemas de lenguajes propietarios’’?",
+      "respuesta_correcta": "A los sistemas de lenguajes creados por los fabricantes de autómatas programables.",
+      "opciones": [
+        "A los sistemas de lenguajes creados por los fabricantes de autómatas programables.",
+        "A los lenguajes de programación de código abierto.",
+        "A los lenguajes de programación para bases de datos.",
+        "A los dialectos de idiomas humanos usados en la industria.",
+        "A los lenguajes de programación estandarizados por ISO."
+      ]
+    },
+    {
+      "pregunta": "Que norma fija las directivas de los sensores inteligentes y la comunicación con el bus digital?",
+      "respuesta_correcta": "La norma IEEE-PI451 (transducer to microprocessor interface).",
+      "opciones": [
+        "La norma IEEE-PI451 (transducer to microprocessor interface).",
+        "La norma ISO 9001.",
+        "La norma IEC 61131-3.",
+        "La norma UL 508.",
+        "La norma NEMA MG 1."
+      ]
+    },
+    {
+      "pregunta": "Estás dando una clase en un instituto técnico electromecánico y un alumno te formula la siguiente pregunta: ¿Qué es un PLC en el contexto del diagrama escalera o ladder?. En este caso, ¿Cuál es tu respuesta?",
+      "respuesta_correcta": "Un controlador lógico programable.",
+      "opciones": [
+        "Un controlador lógico programable.",
+        "Un computador personal de alta gama.",
+        "Un dispositivo de almacenamiento masivo.",
+        "Un sensor de presión avanzado.",
+        "Un sistema de aire acondicionado industrial."
+      ]
+    },
+    {
+      "pregunta": "3 (tres) de las siguientes expresiones corresponden a la clasificación de los sistemas de control en función de la naturaleza de la señal que interviene. ¿Cuáles son?",
+      "respuesta_correcta": [
+        "Sistemas analógicos",
+        "Sistemas híbridos analógicos y digitales",
+        "Sistemas digitales"
+      ],
+      "es_multiple_seleccion": true,
+      "opciones": [
+        "Sistemas analógicos.",
+        "Sistemas híbridos analógicos y digitales.",
+        "Sistemas digitales.",
+        "Sistemas neumáticos.",
+        "Sistemas manuales."
+      ]
+    },
+    {
+      "pregunta": "En la empresa que Matías asesora, el dueño de la empresa le realiza la siguiente pregunta, En qué casos se puede utilizar invirtiendo en una solución de sistema SCADA?",
+      "respuesta_correcta": "Se puede utilizar cuando hay una distancia muy grande entre los puntos de control del automatismo.",
+      "opciones": [
+        "Se puede utilizar cuando hay una distancia muy grande entre los puntos de control del automatismo.",
+        "Se puede utilizar solo en sistemas de control de lazo abierto.",
+        "Se puede utilizar para automatizar una única máquina local.",
+        "Se puede utilizar para reemplazar completamente a los operarios.",
+        "Se puede utilizar cuando la información no necesita ser centralizada."
+      ]
+    },
+    {
+      "pregunta": "Cual es la finalidad de la nueva norma IEEE-P1451 para sensores y redes?",
+      "respuesta_correcta": "Proponer un módulo común de comunicación para diferentes sensores y diferentes redes.",
+      "opciones": [
+        "Proponer un módulo común de comunicación para diferentes sensores y diferentes redes.",
+        "Establecer un monopolio para un solo tipo de sensor.",
+        "Limitar la cantidad de datos que los sensores pueden transmitir.",
+        "Diseñar nuevos tipos de redes inalámbricas de alta velocidad.",
+        "Estandarizar los colores de los cables de los sensores."
+      ]
+    },
+    {
+      "pregunta": "Qué dispositivos forman parte de la periferia distribuida en un autómata programable?",
+      "respuesta_correcta": [
+        "Unidades externas de programación",
+        "Unidades de entradas/salidas remotas",
+        "Computadores industriales"
+      ],
+      "es_multiple_seleccion": true,
+      "opciones": [
+        "Unidades externas de programación.",
+        "Unidades de entradas/salidas remotas.",
+        "Computadores industriales.",
+        "Fuente de alimentación principal del PLC.",
+        "CPU del PLC."
+      ]
+    },
+    {
+      "pregunta": "La norma IEEE-PI451 define una interfaz digital para conectar transductores a microprocesadores. Describiendo una hoja de datos electrónica del transductor (TEDS) y sus formatos de datos. ¿Qué permite el TEDS según la norma?",
+      "respuesta_correcta": [
+        "Acceder al TEDS",
+        "Leer la descripción del sensor",
+        "Escribir parámetros a los actuadores",
+        "Controlar la acción del sensor y el actuador"
+      ],
+      "es_multiple_seleccion": true,
+      "opciones": [
+        "Acceder al TEDS.",
+        "Leer la descripción del sensor.",
+        "Escribir parámetros a los actuadores.",
+        "Controlar la acción del sensor y el actuador.",
+        "Realizar el diseño mecánico de nuevos transductores."
+      ]
+    },
+    {
+      "pregunta": "¿Cuántas partes tiene el estándar IEC 1131 para controladores programables?",
+      "respuesta_correcta": "Cinco partes.",
+      "opciones": [
+        "Cinco partes.",
+        "Dos partes.",
+        "Diez partes.",
+        "Ninguna, es un documento único.",
+        "Varía según el fabricante."
+      ]
+    },
+    {
+      "pregunta": "¿Qué es necesario para asegurar un funcionamiento similar al de los circuitos basados en relés en un autómata programable?",
+      "respuesta_correcta": "Procesamiento síncrono.",
+      "opciones": [
+        "Procesamiento síncrono.",
+        "Procesamiento asíncrono.",
+        "Múltiples CPUs en paralelo.",
+        "Conexión a internet de alta velocidad.",
+        "Utilizar exclusivamente un lenguaje de programación textual."
+      ]
+    },
+    {
+      "pregunta": "Ante una discusión en su trabajo, le preguntan a Juan que es el experto en automatismo, lo siguiente: Cuál es la razón por la que se creó el estándar IEC 61131?",
+      "respuesta_correcta": "Se creó para unificar los sistemas de lenguajes de los autómatas programables de diferentes fabricantes.",
+      "opciones": [
+        "Se creó para unificar los sistemas de lenguajes de los autómatas programables de diferentes fabricantes.",
+        "Se creó para obligar a los fabricantes a usar un solo tipo de hardware.",
+        "Se creó para establecer los precios mínimos de venta de los PLCs.",
+        "Se creó para promover el uso de relés electromecánicos.",
+        "Se creó para definir las especificaciones eléctricas de las redes de comunicación."
+      ]
+    },
+    {
+      "pregunta": "Sabrina se encuentra dentro del área de I+D de la empresa y necesitan poner algunos sensores para optimizar el proceso productivo y surge la pregunta: Que tipo de memorias son las memorias EEPROM?",
+      "respuesta_correcta": "Memorias que pueden grabarse y borrarse eléctricamente.",
+      "opciones": [
+        "Memorias que pueden grabarse y borrarse eléctricamente.",
+        "Memorias de solo lectura que no se pueden modificar.",
+        "Memorias que requieren luz ultravioleta para borrarse.",
+        "Memorias volátiles que pierden los datos al apagar.",
+        "Memorias ópticas para almacenamiento de video."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo funcionan los detectores magnéticos?",
+      "respuesta_correcta": "Se basan en el aumento de la resistencia de un conductor cuando se somete a un campo magnético.",
+      "opciones": [
+        "Se basan en el aumento de la resistencia de un conductor cuando se somete a un campo magnético.",
+        "Funcionan emitiendo ondas de sonido.",
+        "Funcionan detectando cambios de luz.",
+        "Se basan en la medición de la temperatura.",
+        "Generan su propio campo eléctrico para detectar objetos."
+      ]
+    },
+    {
+      "pregunta": "En qué dominios se han fabricado los sensores inteligentes?",
+      "respuesta_correcta": "Se han fabricado en el dominio digital y analógico.",
+      "opciones": [
+        "Se han fabricado en el dominio digital y analógico.",
+        "Se han fabricado solo en el dominio mecánico.",
+        "Se han fabricado solo en el dominio óptico.",
+        "Se han fabricado en el dominio biológico y químico.",
+        "Se han fabricado en el dominio atmosférico y espacial."
+      ]
     }
   ]
 }
