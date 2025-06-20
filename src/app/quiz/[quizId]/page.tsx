@@ -7,6 +7,13 @@ import { Terminal, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
+// It's good practice to define a clear type for your page props
+type QuizPageProps = {
+  params: {
+    quizId: string;
+  };
+};
+
 export async function generateStaticParams() {
   const quizzesDir = path.join(process.cwd(), 'src/data/quizzes');
   try {
@@ -60,7 +67,8 @@ async function getQuizData(quizId: string): Promise<QuizData | null> {
   }
 }
 
-export default async function QuizPage({ params }: { params: { quizId: string; }; }) {
+// Use the new QuizPageProps type here
+export default async function QuizPage({ params }: QuizPageProps) {
   const quizData = await getQuizData(params.quizId);
 
   if (!quizData || !quizData.questions || quizData.questions.length === 0) {
