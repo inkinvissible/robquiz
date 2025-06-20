@@ -113,7 +113,7 @@ export function useQuiz(allQuestions: Question[]) {
 
     if (isCorrect) {
       setState(prevState => ({ ...prevState, isSubmitted: true, correctCount: prevState.correctCount + 1 }))
-      toast({ title: "Correct!", description: "Great job.", duration: 2000 })
+      toast({ title: "¡Correcto!", description: "¡Buen trabajo!", duration: 2000 })
     } else {
       setState(prevState => ({
         ...prevState,

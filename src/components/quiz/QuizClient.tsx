@@ -54,7 +54,7 @@ export function QuizClient({ allQuestions }: QuizClientProps) {
       <div className="flex justify-end p-6">
         {state.isSubmitted ? (
           <Button onClick={actions.handleNext} size="lg" className="bg-primary">
-            {state.currentQuestionIndex === totalQuestions - 1 ? "Finish Quiz" : "Next Question"}
+            {state.currentQuestionIndex === totalQuestions - 1 ? "Finalizar Cuestionario" : "Siguiente Pregunta"}
           </Button>
         ) : (
           <Button
@@ -63,7 +63,7 @@ export function QuizClient({ allQuestions }: QuizClientProps) {
             size="lg"
             className="bg-accent hover:bg-accent/90 text-accent-foreground"
           >
-            Submit Answer
+            Enviar Respuesta
           </Button>
         )}
       </div>

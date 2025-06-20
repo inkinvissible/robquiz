@@ -41,7 +41,7 @@ export function QuestionDisplay({ question, selectedAnswers, onAnswerSelect, isS
       <CardHeader>
         <CardTitle className="text-2xl font-bold leading-tight">{question.question}</CardTitle>
         <CardDescription>
-          {question.type === 'single' ? 'Select one answer.' : 'Select all correct answers.'}
+          {question.type === 'single' ? 'Selecciona una respuesta.' : 'Selecciona todas las respuestas correctas.'}
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">

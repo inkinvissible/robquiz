@@ -26,9 +26,9 @@ export default async function Home() {
       <main className="flex min-h-screen flex-col items-center justify-center p-4">
         <Alert variant="destructive" className="max-w-md">
           <Terminal className="h-4 w-4" />
-          <AlertTitle>Error Loading Quiz</AlertTitle>
+          <AlertTitle>Error al Cargar el Cuestionario</AlertTitle>
           <AlertDescription>
-            Could not load the quiz questions. Please check the server logs for more information.
+            No se pudieron cargar las preguntas del cuestionario. Por favor, revise los registros del servidor para más información.
           </AlertDescription>
         </Alert>
       </main>
