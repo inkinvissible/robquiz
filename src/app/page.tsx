@@ -1,78 +1,102 @@
-import Link from 'next/link';
+import { QuizClient } from '@/components/quiz/QuizClient';
+import type { QuizData, Question } from '@/types/quiz';
 import fs from 'fs/promises';
 import path from 'path';
-import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Terminal, ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 
-interface QuizInfo {
-  id: string;
-  title: string;
-  description: string;
-}
+// It's good practice to define a clear type for your page props
+type QuizPageProps = {
+  params: {
+    quizId: string;
+  };
+};
 
-async function getQuizzes(): Promise<QuizInfo[]> {
+export async function generateStaticParams() {
   const quizzesDir = path.join(process.cwd(), 'src/data/quizzes');
   try {
     const filenames = await fs.readdir(quizzesDir);
-    const quizzes = await Promise.all(
-      filenames.map(async (filename) => {
-        if (filename.endsWith('.json')) {
-          const filePath = path.join(quizzesDir, filename);
-          const fileContents = await fs.readFile(filePath, 'utf-8');
-          const quizData: { title: string; description: string } = JSON.parse(fileContents);
-          return {
-            id: filename.replace('.json', ''),
-            title: quizData.title,
-            description: quizData.description,
-          };
-        }
-        return null;
-      })
-    );
-    return quizzes.filter((quiz): quiz is QuizInfo => quiz !== null);
+    return filenames
+      .filter((filename) => filename.endsWith('.json'))
+      .map((filename) => ({
+        quizId: filename.replace('.json', ''),
+      }));
   } catch (error) {
-    console.error('Failed to read quizzes directory:', error);
+    console.error('Failed to read quizzes directory for generateStaticParams:', error);
     return [];
   }
 }
 
-export default async function Home() {
-  const quizzes = await getQuizzes();
+async function getQuizData(quizId: string): Promise<QuizData | null> {
+  const filePath = path.join(process.cwd(), 'src/data/quizzes', `${quizId}.json`);
+  try {
+    const data = await fs.readFile(filePath, 'utf-8');
+    const rawData: any = JSON.parse(data);
+
+    const questions: Question[] = rawData.questions.map((rawQ: any, index: number) => {
+      const correctAnswers = Array.isArray(rawQ.respuesta_correcta)
+        ? rawQ.respuesta_correcta
+        : [rawQ.respuesta_correcta];
+      
+      const type = rawQ.es_multiple_seleccion || Array.isArray(rawQ.respuesta_correcta) 
+        ? 'multiple' 
+        : 'single';
+
+      const cleanOptions = rawQ.opciones.map((opt: string) => opt.trim().replace(/\.$/, ''));
+      const cleanCorrectAnswers = correctAnswers.map((ans: string) => ans.trim().replace(/\.$/, ''));
+
+      return {
+        id: index + 1,
+        question: rawQ.pregunta,
+        options: cleanOptions,
+        correctAnswers: cleanCorrectAnswers,
+        type: type,
+      };
+    });
+
+    return {
+      title: rawData.title,
+      description: rawData.description,
+      questions: questions,
+    };
+  } catch (error) {
+    console.error(`Failed to read or parse ${quizId}.json:`, error);
+    return null;
+  }
+}
+
+// Use the new QuizPageProps type here
+export default async function QuizPage({ params }: QuizPageProps) {
+  const quizData = await getQuizData(params.quizId);
+
+  if (!quizData || !quizData.questions || quizData.questions.length === 0) {
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-center p-4">
+        <Alert variant="destructive" className="max-w-md">
+          <Terminal className="h-4 w-4" />
+          <AlertTitle>Error al Cargar el Cuestionario</AlertTitle>
+          <AlertDescription>
+            No se pudo cargar el cuestionario "{params.quizId}". Es posible que no exista o esté vacío.
+          </AlertDescription>
+        </Alert>
+        <Link href="/" className="mt-6">
+          <Button variant="outline">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Volver a la selección
+          </Button>
+        </Link>
+      </main>
+    );
+  }
 
   return (
-    <main className="flex min-h-screen flex-col items-center bg-background p-4 sm:p-8 md:p-12">
-      <div className="w-full max-w-4xl">
-        <header className="mb-12 text-center">
-          <h1 className="text-5xl font-bold tracking-tight text-primary">Bienvenido a RobQuiz</h1>
-          <p className="mt-4 text-lg text-muted-foreground">Elige un cuestionario para comenzar a practicar para los parciales.</p>
-        </header>
-        
-        {quizzes.length > 0 ? (
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {quizzes.map((quiz) => (
-              <Card key={quiz.id} className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                <CardHeader className="flex-grow">
-                  <CardTitle className="text-2xl">{quiz.title}</CardTitle>
-                  <CardDescription className="pt-2">{quiz.description}</CardDescription>
-                </CardHeader>
-                <CardFooter className="mt-auto bg-secondary/50 p-4">
-                  <Link href={`/quiz/${quiz.id}`} className="w-full">
-                    <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                      Iniciar Cuestionario
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        ) : (
-          <div className="text-center">
-            <p className="text-muted-foreground">No se encontraron cuestionarios. Vuelve a intentarlo más tarde.</p>
-          </div>
-        )}
-      </div>
+    <main className="flex min-h-screen flex-col items-center justify-center bg-background p-4 sm:p-6 md:p-8">
+      <header className="w-full max-w-2xl mb-8 text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-primary">{quizData.title}</h1>
+      </header>
+      <QuizClient allQuestions={quizData.questions} quizId={params.quizId} />
     </main>
   );
 }
