@@ -45,7 +45,13 @@ async function getQuizData(quizId: string): Promise<QuizData | null> {
   }
 }
 
-export default async function QuizPage({ params }: { params: { quizId: string } }) {
+interface QuizPageProps {
+  params: {
+    quizId: string;
+  };
+}
+
+export default async function QuizPage({ params }: QuizPageProps) {
   const quizData = await getQuizData(params.quizId);
 
   if (!quizData || !quizData.questions || quizData.questions.length === 0) {
