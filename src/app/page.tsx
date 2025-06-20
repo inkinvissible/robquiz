@@ -44,8 +44,8 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center bg-background p-4 sm:p-8 md:p-12">
       <div className="w-full max-w-4xl">
         <header className="mb-12 text-center">
-          <h1 className="text-5xl font-bold tracking-tight text-primary">Bienvenido a QuizMaster</h1>
-          <p className="mt-4 text-lg text-muted-foreground">Elige un cuestionario para comenzar y poner a prueba tus conocimientos.</p>
+          <h1 className="text-5xl font-bold tracking-tight text-primary">Bienvenido a RobQuiz</h1>
+          <p className="mt-4 text-lg text-muted-foreground">Elige un cuestionario para comenzar a practicar para los parciales.</p>
         </header>
         
         {quizzes.length > 0 ? (
