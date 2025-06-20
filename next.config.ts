@@ -3,6 +3,7 @@ import type {NextConfig} from 'next';
 const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
+  basePath: isProd ? '/<nombre_de_tu_repositorio>' : '',
   typescript: {
     ignoreBuildErrors: true,
   },
