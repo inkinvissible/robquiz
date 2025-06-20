@@ -7,7 +7,7 @@ import { Terminal, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-// It's good practice to define a clear type for your page props
+// This type is correct.
 type QuizPageProps = {
   params: {
     quizId: string;
@@ -67,8 +67,12 @@ async function getQuizData(quizId: string): Promise<QuizData | null> {
   }
 }
 
-// Use the new QuizPageProps type here
-export default async function QuizPage({ params }: QuizPageProps) {
+// ** THE FIX IS HERE **
+// 1. Define the explicit function type for our async component.
+type AsyncQuizPage = (props: QuizPageProps) => Promise<JSX.Element>;
+
+// 2. Assign your component logic to a constant with that type.
+const QuizPage: AsyncQuizPage = async ({ params }) => {
   const quizData = await getQuizData(params.quizId);
 
   if (!quizData || !quizData.questions || quizData.questions.length === 0) {
@@ -99,4 +103,7 @@ export default async function QuizPage({ params }: QuizPageProps) {
       <QuizClient allQuestions={quizData.questions} quizId={params.quizId} />
     </main>
   );
-}
+};
+
+// 3. Export the constant as the default.
+export default QuizPage;
