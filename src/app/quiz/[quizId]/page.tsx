@@ -7,6 +7,21 @@ import { Terminal, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
+export async function generateStaticParams() {
+  const quizzesDir = path.join(process.cwd(), 'src/data/quizzes');
+  try {
+    const filenames = await fs.readdir(quizzesDir);
+    return filenames
+      .filter((filename) => filename.endsWith('.json'))
+      .map((filename) => ({
+        quizId: filename.replace('.json', ''),
+      }));
+  } catch (error) {
+    console.error('Failed to read quizzes directory for generateStaticParams:', error);
+    return [];
+  }
+}
+
 async function getQuizData(quizId: string): Promise<QuizData | null> {
   const filePath = path.join(process.cwd(), 'src/data/quizzes', `${quizId}.json`);
   try {
