@@ -1,0 +1,63 @@
+
+[
+  {
+    "id": 1,
+    "question": "In industrial automation, what does PLC stand for?",
+    "options": [
+      "Programmable Logic Controller",
+      "Public Local Computer",
+      "Primary Logic Circuit",
+      "Power Load Control"
+    ],
+    "type": "single",
+    "correctAnswers": ["Programmable Logic Controller"]
+  },
+  {
+    "id": 2,
+    "question": "Which of the following are common types of industrial sensors?",
+    "options": [
+      "Proximity Sensor",
+      "Temperature Sensor",
+      "Humidity Sensor",
+      "Taste Sensor"
+    ],
+    "type": "multiple",
+    "correctAnswers": ["Proximity Sensor", "Temperature Sensor"]
+  },
+  {
+    "id": 3,
+    "question": "What is the primary purpose of a SCADA system?",
+    "options": [
+      "To control individual machines",
+      "Supervisory control and data acquisition for industrial processes",
+      "To program PLCs",
+      "To manage enterprise resources"
+    ],
+    "type": "single",
+    "correctAnswers": ["Supervisory control and data acquisition for industrial processes"]
+  },
+  {
+    "id": 4,
+    "question": "Which communication protocols are commonly used in industrial automation?",
+    "options": [
+      "Modbus",
+      "Profinet",
+      "HTTP",
+      "EtherNet/IP"
+    ],
+    "type": "multiple",
+    "correctAnswers": ["Modbus", "Profinet", "EtherNet/IP"]
+  },
+  {
+    "id": 5,
+    "question": "What does HMI stand for in the context of industrial control?",
+    "options": [
+      "Human-Machine Interface",
+      "High-Magnitude Integrator",
+      "Human-Made Intelligence",
+      "Hardware-Module Interconnect"
+    ],
+    "type": "single",
+    "correctAnswers": ["Human-Machine Interface"]
+  }
+]
