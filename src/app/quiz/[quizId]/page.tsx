@@ -80,7 +80,7 @@ async function getQuizData(quizId: string): Promise<QuizData | null> {
   }
 }
 
-const QuizPage = async ({ params }: { params: { quizId: string } }) => {
+const QuizPage = async ({ params }: any) => {
   const quizData = await getQuizData(params.quizId);
 
   if (!quizData || !quizData.questions || quizData.questions.length === 0) {
