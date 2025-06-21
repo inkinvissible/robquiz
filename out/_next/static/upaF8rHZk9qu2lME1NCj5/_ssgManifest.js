@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fquiz\u002F[quizId]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
