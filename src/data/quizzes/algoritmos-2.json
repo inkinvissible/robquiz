@@ -1,0 +1,1549 @@
+{
+    "title": "Algoritmos y Estructura de Datos II - Parcial 1",
+    "description": "Un cuestionario sobre conceptos clave de grafos, árboles y algoritmos, extraído de un documento de Studocu.",
+    "questions": [
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Estas son aplicaciones de grafos no dirigidos:",
+        "respuesta_correcta": [
+          "La distribución de sillas en un restaurant.",
+          "Carreteras de un país.",
+          "La red social Facebook.",
+          "Las conexiones entre los ambientes de una casa."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "La distribución de sillas en un restaurant.",
+          "Carreteras de un país.",
+          "La red social Facebook.",
+          "Las conexiones entre los ambientes de una casa.",
+          "Organigrama de una empresa."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Considerando las definiciones de grafos y caminos, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Un grafo es una representación gráfica.",
+          "En los grafos, los arcos pueden ser bidireccionales o de único sentido de circulación.",
+          "Un grafo corresponde a una terna de conjuntos finitos A y V no vacíos, y una aplicación que hace corresponder a un elemento de A un par de elementos de V.",
+          "Si todos los vértices de un grafo tienen el mismo grado se dice que es regular."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Un grafo es una representación gráfica.",
+          "En los grafos, los arcos pueden ser bidireccionales o de único sentido de circulación.",
+          "Un grafo corresponde a una terna de conjuntos finitos A y V no vacíos, y una aplicación que hace corresponder a un elemento de A un par de elementos de V.",
+          "Si todos los vértices de un grafo tienen el mismo grado se dice que es regular.",
+          "Un grafo es solo una dupla de aristas y vértices. Sin relación entre ellos."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 3 (tres) opciones correctas. Respecto a grafos y caminos, podemos indicar las siguientes definiciones:",
+        "respuesta_correcta": [
+          "El complemento de un grafo G, es decir, G', tiene el mismo conjunto de vértices de G, y dos vértices distintos son adyacentes en G si y solo si no son adyacentes en G'.",
+          "Dos aristas se dicen adyacentes cuando tienen un vértice común.",
+          "Dos aristas se dicen paralelas si comparten el mismo par de vértices."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "El complemento de un grafo G, es decir, G', tiene el mismo conjunto de vértices de G, y dos vértices distintos son adyacentes en G si y solo si no son adyacentes en G'.",
+          "Dos aristas se dicen adyacentes cuando tienen un vértice común.",
+          "Dos aristas se dicen paralelas si comparten el mismo par de vértices.",
+          "Los puntos donde el grado de emisión es menor a uno se denominan ramificación."
+        ]
+      },
+      {
+        "pregunta": "Un número importante asociado a cada vértice es el 'grado', que se define como el número de arcos que inciden o salen de este.",
+        "respuesta_correcta": "Verdadero",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ]
+      },
+      {
+        "pregunta": "La teoría de grafos es una de las ramas más importantes de las matemáticas modernas, y comenzó en el siglo XVIII por una de las mentes más grandes que ha existido, Euler, quien estudiando las relaciones y funciones entre las personas, logró desarrollar y verificar la posibilidad de representar problemas con estas estructuras algebraicas llamadas grafos.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "La idea de Euler para solucionar el problema de los puentes de Königsberg consistió en representar la situación mediante un modelo matemático. Tomó la información relevante y se deshizo de hechos como la longitud de los puentes o el área de cada región, y se concentró en la relación entre las ciudades y los puentes.",
+        "respuesta_correcta": "Verdadero",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ]
+      },
+      {
+        "pregunta": "En el caso de los puentes de Königsberg, el grafo mantiene toda la información del problema y convierte la pregunta de sus ciudadanos en la siguiente: ¿Es posible recorrer todas las ciudades y puentes calculando las distancias recorridas?",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "Considerando A, B, C, D, E y F los vértices de un grafo G, ¿cuál de estos caminos conforma un camino elemental?",
+        "respuesta_correcta": "F, B, A",
+        "opciones": [
+          "F, B, A",
+          "A, B, C, D, E, A, F",
+          "A, B, D, E, C, D, F"
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. ¿Cuáles corresponden a la estrategia de Euler para resolver el problema de los puentes de Konigsberg?",
+        "respuesta_correcta": [
+          "Tomó la información relevante y se deshizo de algunos hechos.",
+          "Se concentró en la relación entre las ciudades y los puentes.",
+          "Nombró a cada ciudad como un punto (vértice) y a cada puente como una línea que une dos ciudades (aristas).",
+          "Representó el problema mediante un gráfico simple."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Tomó la información relevante y se deshizo de algunos hechos.",
+          "Se concentró en la relación entre las ciudades y los puentes.",
+          "Nombró a cada ciudad como un punto (vértice) y a cada puente como una línea que une dos ciudades (aristas).",
+          "Representó el problema mediante un gráfico simple.",
+          "Buscó en la matemática moderna algoritmos de gran complejidad para representar el problema."
+        ]
+      },
+      {
+        "pregunta": "¿Qué se mide por la cantidad de aristas que lo compone?",
+        "respuesta_correcta": "La longitud de un camino.",
+        "opciones": [
+          "La longitud de un camino.",
+          "El grado de un grafo.",
+          "El grado de un nodo."
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. Sobre los grafos dirigidos, es correcto afirmar que:",
+        "respuesta_correcta": "Es aquel donde el sentido de circulación por un arco es unidireccional, indicando el sentido de circulación. En caso de que existiera la necesidad de señalar un camino de ida y vuelta, se deberá agregar un nuevo arco entre los nodos en cuestión, pero de sentido contrario.",
+        "opciones": [
+          "Es aquel donde el sentido de circulación por un arco es unidireccional, indicando el sentido de circulación. En caso de que existiera la necesidad de señalar un camino de ida y vuelta, se deberá agregar un nuevo arco entre los nodos en cuestión, pero de sentido contrario.",
+          "Es aquel donde el sentido de circulación por un arco es unidireccional, indicando el sentido de circulación, no pudiendo representarse un camino de ida y vuelta. Mediante estos se puede representar la red de agua de una ciudad.",
+          "Es aquel donde no se indica el sentido de circulación, solamente se dibuja un arco. Con estos grafos se puede representar la red de agua de una ciudad."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Dado el siguiente camino A, B, C, D, B, F, F, es correcto señalar que",
+        "respuesta_correcta": "Contiene ciclos, es un camino compuesto.",
+        "opciones": [
+          "Contiene ciclos, es un camino compuesto.",
+          "Es un camino elemental.",
+          "Es un circuito hamiltoniano y compuesto."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. En la teoría de grafos, es correcto afirmar que",
+        "respuesta_correcta": "Un grafo conexo o conectado es aquel en el que todos sus vértices están conectados por un camino, si el grafo es no dirigido, o por un semicamino, si se trata de un grafo dirigido.",
+        "opciones": [
+          "Un grafo conexo o conectado es aquel en el que todos sus vértices están conectados por un camino, si el grafo es no dirigido, o por un semicamino, si se trata de un grafo dirigido.",
+          "Los subgrafos conexos máximos de un grafo no dirigido se llaman componentes biconexos.",
+          "En los grafos dirigidos, si se considera el sentido de las aristas, se habla de componente débilmente conexo, mientras que, si no se considera el sentido, se habla de componente fuertemente conexo."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. En la teoría de grafos, es correcto definir",
+        "respuesta_correcta": "Un circuito hamiltoniano es un camino que vuelve a su punto de partida pasando por todos los vértices del grafo.",
+        "opciones": [
+          "Un circuito hamiltoniano es un camino que vuelve a su punto de partida pasando por todos los vértices del grafo.",
+          "Un camino hamiltoniano es el camino elemental que pasa al menos por dos de los vértices del grafo.",
+          "Un camino elemental es aquel camino que utiliza más de una vez un mismo punto."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Estos son los tipos de grafo:",
+        "respuesta_correcta": [
+          "Plano.",
+          "Hamiltoniano.",
+          "Dirigido.",
+          "Conexo."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Plano.",
+          "Hamiltoniano.",
+          "Dirigido.",
+          "Conexo.",
+          "Circular."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Dada la clasificación de grafos en simples, completos y multigrafos, es correcto afirmar que",
+        "respuesta_correcta": "Un grafo es simple cuando no incluye ciclos ni aristas paralelas, es un multigrafo si hay dos o más aristas que pueden conectar a un mismo vértice y es un grafo completo si hay aristas entre cada par de vértices.",
+        "opciones": [
+          "Un grafo es simple cuando no incluye ciclos ni aristas paralelas, es un multigrafo si hay dos o más aristas que pueden conectar a un mismo vértice y es un grafo completo si hay aristas entre cada par de vértices.",
+          "Un grafo es simple cuando no incluye nodos aislados, ciclos ni aristas paralelas, es un multigrafo si hay dos o más aristas que pueden conectar a un mismo vértice y es un grafo completo si hay aristas entre cada par de vértices.",
+          "Un grafo es simple cuando no incluye ciclos ni aristas paralelas; es un multigrafo si hay aislados o dos o más aristas que pueden conectar a un mismo vértice; y, es un grafo completo si hay aristas entre cada par de vértices."
+        ]
+      },
+      {
+        "pregunta": "¿Cuál de estos grafos de 5 vértices con sus grados es un grafo simple?",
+        "respuesta_correcta": "3, 3, 3, 3, 2",
+        "opciones": [
+          "3, 3, 3, 3, 2",
+          "1, 2, 3, 4, 4",
+          "1, 2, 3, 4, 5"
+        ]
+      },
+      {
+        "pregunta": "¿Cuántas aristas tiene un grafo si los grados de sus vértices son 5, 2, 2, 2, 2, 1?",
+        "respuesta_correcta": "7.",
+        "opciones": [
+          "7.",
+          "8.",
+          "14.",
+          "5.",
+          "9."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Considerando un grafo completo de 8 vértices, es correcto afirmar que",
+        "respuesta_correcta": "Todos los vértices tienen grado 7 y el número de aristas es 28.",
+        "opciones": [
+          "Todos los vértices tienen grado 7 y el número de aristas es 28.",
+          "Todos los vértices tienen grado 7 y el número de aristas es 21.",
+          "Todos los vértices tienen grado 8 y el número de aristas es 28."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Si consideramos la siguiente secuencia de vértices en un camino A, C, D, E, G, E, B, F, F, A, es correcto afirmar que",
+        "respuesta_correcta": "Es un camino compuesto.",
+        "opciones": [
+          "Es un camino compuesto.",
+          "Conforma un camino elemental.",
+          "La secuencia de vértices conforma un camino hamiltoniano con 2 bucles."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Un grafo es plano si",
+        "respuesta_correcta": "Las curvas que representan las aristas se cortan solo en los vértices.",
+        "opciones": [
+          "Las curvas que representan las aristas se cortan solo en los vértices.",
+          "Las aristas se cortan solo en un punto con otra arista..",
+          "Una arista pasa por más de un vértice",
+          "Los puntos que representan los vértices contienen ciclos",
+          "Es una estructura algebraica que no se puede representar en el plano."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. ¿Cuáles afirmaciones son correctas acerca de un grafo dirigido?",
+        "respuesta_correcta": [
+          "El grado de emisión es el número de arcos que salen de un punto cualquiera del grafo dirigido.",
+          "Cada arco tiene un nodo fuente y un nodo destino.",
+          "El grado de recepción es el número de arcos que llegan de un punto determinado del grafo dirigido.",
+          "Cada entrada es una dupla de 2 nodos."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "El grado de emisión es el número de arcos que salen de un punto cualquiera del grafo dirigido.",
+          "Cada arco tiene un nodo fuente y un nodo destino.",
+          "El grado de recepción es el número de arcos que llegan de un punto determinado del grafo dirigido.",
+          "Cada entrada es una dupla de 2 nodos.",
+          "Cada arco puede tener varios nodos destino."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Las matrices de adyacencia reflejan en acceso de cada",
+        "respuesta_correcta": "Nodo o vértice a otro de forma directa y pueden representar este acceso tanto en grafos no dirigidos como en los dirigidos.",
+        "opciones": [
+          "Nodo o vértice a otro de forma directa y pueden representar este acceso tanto en grafos no dirigidos como en los dirigidos.",
+          "Arista de forma indirecta y pueden representar este acceso tanto en grafos no dirigidos como en los dirigidos.",
+          "Nodo o vértice a otro de forma directa y pueden representar dicho acceso solo en grafos dirigidos.",
+          "Nodo o vértice a otro de forma directa y pueden representar dicho acceso solo en grafos no dirigidos.",
+          "Vértice a otro de forma indirecta."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Si en la matriz de adyacencia de un grafo de 4 vértices A, B, C y D, encontramos en la primera fila los valores 1, 0, 1, 0; en la segunda 0, 0, 0, 1; en la tercera 1, 0, 0, 1 y en la cuarta 0, 1, 1, 1; entonces, podemos afirmar que",
+        "respuesta_correcta": "Hay 2 bucles.",
+        "opciones": [
+          "Hay 2 bucles.",
+          "No hay acceso desde B a C.",
+          "Existen 2 nodos aislados."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Si consideramos los vértices de un grafo V={A, B, C, D, E, F, G} y sus conexiones que forman el siguiente conjunto C={(A,E) (A, F), (C, E), (C, G), (D, G), podemos decir que",
+        "respuesta_correcta": "Es un grafo bipartito con dos subconjuntos de vértices V1={A,B,C,D}y V2={E,F,G}",
+        "opciones": [
+          "Es un grafo bipartito con dos subconjuntos de vértices V1={A,B,C,D}y V2={E,F,G}",
+          "Es un grafo bipartito completo.",
+          "No es un grafo bipartito porque hay un vértice aislado."
+        ]
+      },
+      {
+        "pregunta": "¿Qué es un grafo dirigido?",
+        "respuesta_correcta": "Es aquel en el que un arco tiene sentido de circulación, es decir, es unidireccional; y, si se requiere representar un camino de ida y vuelta, en el gráfico se debe agregar otra flecha en ese sentido.",
+        "opciones": [
+          "Es aquel en el que un arco tiene sentido de circulación, es decir, es unidireccional; y, si se requiere representar un camino de ida y vuelta, en el gráfico se debe agregar otra flecha en ese sentido.",
+          "Es aquel en el que un arco no tiene sentido de circulación, es decir, es unidireccional.",
+          "Es aquel en el que un vértice tiene sentido de circulación, y, si se requiere representar un camino de ida y vuelta, en el gráfico se debe agregar otra flecha en el mismo sentido"
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. En la matriz de adyacencia",
+        "respuesta_correcta": "La sumatoria de los valores en cada fila de un vértice nos indica el grado del vértice.",
+        "opciones": [
+          "La sumatoria de los valores en cada fila de un vértice nos indica el grado del vértice.",
+          "La presencia de un uno en la diagonal indica un vértice aislado.",
+          "La presencia de un 2 significa que se necesita un camino de longitud dos para llegar de un vértice al otro."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Los grafos son representaciones. Respecto a sus definiciones, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Si el grado de un vértice es nulo se lo llama aislado.",
+          "Si dos o más aristas comparten el mismo par de vértices, se dicen paralelas.",
+          "Trabajar con grafos permite representar interacciones complejas entre los datos en una forma mucho más natural.",
+          "El grado de un vértice es el número de aristas que inciden en este."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Si el grado de un vértice es nulo se lo llama aislado.",
+          "Si dos o más aristas comparten el mismo par de vértices, se dicen paralelas.",
+          "Trabajar con grafos permite representar interacciones complejas entre los datos en una forma mucho más natural.",
+          "El grado de un vértice es el número de aristas que inciden en este.",
+          "Cuando los vértices de un grafo están asociados a un número o una letra se llaman nominados."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Respecto a los tipos de grafos según la relación entre aristas y vértices, podemos mencionar:",
+        "respuesta_correcta": [
+          "Un grafo sencillo es aquel en el que dos vértices se conectan por una sola arista o arco.",
+          "Cuando dos vértices se conectan por más de una arista, estamos en presencia de un multigrafo.",
+          "Un grafo propiamente dicho es aquel en el que dos vértices se conectan por un solo arco.",
+          "Un pseudografo es aquel en el que un vértice puede unirse con él mismo formando un bucle."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Un grafo sencillo es aquel en el que dos vértices se conectan por una sola arista o arco.",
+          "Cuando dos vértices se conectan por más de una arista, estamos en presencia de un multigrafo.",
+          "Un grafo propiamente dicho es aquel en el que dos vértices se conectan por un solo arco.",
+          "Un pseudografo es aquel en el que un vértice puede unirse con él mismo formando un bucle.",
+          "Un grafo propiamente dicho es aquel en el que dos vértices se conectan por dos aristas."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Acerca de los caminos y grafos eulerianos, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Un camino euleriano es aquel en el que un camino simple contiene a todos los arcos del grafo.",
+          "Un grafo que tiene un camino euleriano cerrado se dice que es euleriano.",
+          "Según el teorema de Euler, un grafo es euleriano y sin vértices aislados si y solo si es conexo y todos sus vértices tienen grado par.",
+          "La longitud de un camino es la cantidad de aristas entre dos vértices."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Un camino euleriano es aquel en el que un camino simple contiene a todos los arcos del grafo.",
+          "Un grafo que tiene un camino euleriano cerrado se dice que es euleriano.",
+          "Según el teorema de Euler, un grafo es euleriano y sin vértices aislados si y solo si es conexo y todos sus vértices tienen grado par.",
+          "La longitud de un camino es la cantidad de aristas entre dos vértices.",
+          "Según el teorema, un grafo es euleriano y sin vértices aislados si y solo si es cíclico y todos sus vértices tienen grado impar."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 3 (tres) opciones correctas. Acerca de representación de grafos, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Un vértice de G se llama vértice par o impar dependiendo de si su grado es par o impar.",
+          "Dos o más aristas se dicen múltiples o paralelas si tienen por extremos los mismos vértices.",
+          "Un vértice se dice aislado si su grado es nulo y pendiente si su grado es 1."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Un vértice de G se llama vértice par o impar dependiendo de si su grado es par o impar.",
+          "Dos o más aristas se dicen múltiples o paralelas si tienen por extremos los mismos vértices.",
+          "Un vértice se dice aislado si su grado es nulo y pendiente si su grado es 1.",
+          "Un vértice de G se llama vértice par o impar dependiendo de si la altura del mismo es par o impar.",
+          "Un vértice se dice aislado si su grado es 1 y pendiente si su grado es nulo."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 2 (dos) opciones correctas. Considerando la representación de grafos y caminos, es correcto afirmar que:",
+        "respuesta_correcta": [
+          "Un grafo completo de n vértices, todos los vértices tienen n-1 grado y el número de aristas es A = n*(n-1)/2",
+          "El grado de recepción es el número de arcos que recibe un punto cualquiera del grafo dirigido y el grado de emisión es el número de arcos que salen de un punto determinado del grafo dirigido."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Un grafo completo de n vértices, todos los vértices tienen n-1 grado y el número de aristas es A = n*(n-1)/2",
+          "El grado de recepción es el número de arcos que recibe un punto cualquiera del grafo dirigido y el grado de emisión es el número de arcos que salen de un punto determinado del grafo dirigido.",
+          "El grado de emisión es el número de arcos que recibe un punto cualquiera del grafo dirigido y el grado de recepción es el número de arcos que salen de un punto determinado del grafo dirigido.",
+          "El grado de expansión es el número de arcos que recibe un punto cualquiera del grafo dirigido y el grado de emisión es el número de arcos que salen de un punto determinado del grafo conexo"
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 2 (dos) opciones correctas. Acerca de grafos y subgrafos, podemos indicar lo siguiente:",
+        "respuesta_correcta": [
+          "El caso en que una arista conecta a un vértice con este mismo se denomina lazo.",
+          "Un camino que comienza y finaliza en el mismo vértice sin pasar más de una vez por cualquier arco se denomina circuito o camino cerrado."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "El caso en que una arista conecta a un vértice con este mismo se denomina lazo.",
+          "Un camino que comienza y finaliza en el mismo vértice sin pasar más de una vez por cualquier arco se denomina circuito o camino cerrado.",
+          "Un subgrafo es una subestructura de un grafo que por sí mismo no puede ser un grafo.",
+          "Un subgrafo no forma parte de las estructuras algebraicas."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Acerca del camino hamiltoniano, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Es una sucesión finita en la que se suceden alternadamente aristas y vértices.",
+          "Nunca pasa más de una vez por un mismo punto.",
+          "Pasa por todos los vértices del grafo.",
+          "Su longitud se mide por la cantidad de aristas que lo componen."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Es una sucesión finita en la que se suceden alternadamente aristas y vértices.",
+          "Nunca pasa más de una vez por un mismo punto.",
+          "Pasa por todos los vértices del grafo.",
+          "Su longitud se mide por la cantidad de aristas que lo componen.",
+          "Pasa más de una vez por el mismo punto o vértice."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Acerca del algoritmo de Dijkstra, es correcto mencionar que:",
+        "respuesta_correcta": [
+          "Se utiliza para cualquier tipo de grafo donde los vértices tienen pesos positivos.",
+          "Explora todos los caminos entre dos vértices o nodos en particular buscando el camino más corto, cuando lo halla el algoritmo se detiene.",
+          "Si el grafo no está formado por una única componente conexa, el algoritmo puede quedar en un bucle indefinido.",
+          "La complejidad computacional del algoritmo de este algoritmo se puede calcular contando las operaciones realizadas."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Se utiliza para cualquier tipo de grafo donde los vértices tienen pesos positivos.",
+          "Explora todos los caminos entre dos vértices o nodos en particular buscando el camino más corto, cuando lo halla el algoritmo se detiene.",
+          "Si el grafo no está formado por una única componente conexa, el algoritmo puede quedar en un bucle indefinido.",
+          "La complejidad computacional del algoritmo de este algoritmo se puede calcular contando las operaciones realizadas.",
+          "Creado en 1956, este algoritmo se utiliza para cualquier tipo de grafo dirigido donde los vértices tienen pesos positivos o negativos."
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. Acerca del algoritmo de Dijkstra, es correcto mencionar que:",
+        "respuesta_correcta": "Realiza O(n^2) operaciones (sumas y comparaciones) para determinar la longitud del camino más corto entre dos vértices de un grafo ponderado simple, conexo y no dirigido con n vértices.",
+        "opciones": [
+          "Realiza O(n^2) operaciones (sumas y comparaciones) para determinar la longitud del camino más corto entre dos vértices de un grafo ponderado simple, conexo y no dirigido con n vértices.",
+          "Realiza O(2n) operaciones (sumas y comparaciones) para determinar la longitud del camino más corto entre dos vértices de un grafo ponderado simple, conexo y no dirigido con n vértices.",
+          "Realiza O(n^2) operaciones (sumas y restas) para determinar la longitud del camino más corto entre dos vértices de un grafo ponderado simple, conexo y no dirigido con n vértices."
+        ]
+      },
+      {
+        "pregunta": "Respecto al algoritmo de Dijkstra, es correcto afirmar que, si el grafo está formado por una única componente conexa, el algoritmo que busca determinar el camino más largo, puede quedar en un bucle indefinido.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Acerca de la matriz de adyacencia, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Tanto en las filas como en las columnas se ubican los vértices.",
+          "En la intersección de filas y columnas se almacenan valores booleanos.",
+          "La diagonal puede no ser cero si el grafo contiene bucles.",
+          "Representan a los grafos de manera secuencial."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Tanto en las filas como en las columnas se ubican los vértices.",
+          "En la intersección de filas y columnas se almacenan valores booleanos.",
+          "La diagonal puede no ser cero si el grafo contiene bucles.",
+          "Representan a los grafos de manera secuencial.",
+          "En las filas se colocan los vértices y en las columnas las aristas."
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. Acerca del problema de grafos ponderados con pesos negativos, es correcto mencionar que:",
+        "respuesta_correcta": "Está resuelto por el algoritmo de Bellman-Ford.",
+        "opciones": [
+          "Está resuelto por el algoritmo de Bellman-Ford.",
+          "Las repeticiones permiten a las distancias máximas recorrer el árbol, ya que en la ausencia de ciclos negativos, el camino más largo solo visita cada vértice una vez.",
+          "Depende de la suposición de que los pesos sean positivos, por ello esta solución se aproxima más al caso general."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Si se nos presenta un grafo cíclico dirigido cuyas aristas constituyen: la salida del vértice A es la entrada al vértice o nodo B, la salida del B es la entrada del C, la salida del C es la entrada del D, la salida de D es la entrada de A, es correcto afirmar que:",
+        "respuesta_correcta": [
+          "Las aristas indican la dirección.",
+          "Todas las aristas están orientadas hacia una misma dirección.",
+          "Si las aristas no estuvieran orientadas en la misma dirección, se habla de semiciclo.",
+          "Tanto el grado de salida como el de entrada es 1."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Las aristas indican la dirección.",
+          "Todas las aristas están orientadas hacia una misma dirección.",
+          "Si las aristas no estuvieran orientadas en la misma dirección, se habla de semiciclo.",
+          "Tanto el grado de salida como el de entrada es 1.",
+          "No contiene ciclos."
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. Acerca de las bases de datos de grafos, es correcto mencionar que:",
+        "respuesta_correcta": "Las bases de datos de grafos a menudo carecen de esquemas, esto no significa que no haya un modelo de datos asociado a la base de datos, sino que la forma de definirlo es más flexible, brindando a menudo una iteración más rápida de los proyectos y admitiendo relaciones de forma similar a la de una base de datos relacional tradicional.",
+        "opciones": [
+          "Las bases de datos de grafos a menudo carecen de esquemas, esto no significa que no haya un modelo de datos asociado a la base de datos, sino que la forma de definirlo es más flexible, brindando a menudo una iteración más rápida de los proyectos y admitiendo relaciones de forma similar a la de una base de datos relacional tradicional.",
+          "Las bases de datos de grafos a menudo carecen de esquemas, esto significa que no hay un modelo de datos asociado a la base de datos y que, al no definirlo, es más flexible brindando una iteración más rápida y admitiendo relaciones de forma similar a la de una Base de datos relacional tradicional.",
+          "Las bases de datos de grafos siempre poseen esquemas, lo que permite la flexibilidad de una base de datos de documento o Valor / Clave, además admiten relaciones de forma similar a la de una Base de datos relacional tradicional."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Acerca de la utilización de los grafos acíclicos o DAG (directacyclicgraphs) en modelado, es correcto mencionar:",
+        "respuesta_correcta": [
+          "Relaciones de casualidad.",
+          "Cadenas de trabajos.",
+          "Parentescos.",
+          "Preguntas y respuestas."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Relaciones de casualidad.",
+          "Cadenas de trabajos.",
+          "Parentescos.",
+          "Preguntas y respuestas.",
+          "Bases de datos."
+        ]
+      },
+      {
+        "pregunta": "Una base de datos orientada a grafos es una plataforma especializada y de un solo propósito para crear y manipular grafos que contienen nodos, bordes y propiedades que se utilizan para representar y almacenar datos de la misma forma que lo permiten las bases de datos relacionales.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. ¿De qué trata la analítica de los grafos?",
+        "respuesta_correcta": "Se refiere específicamente al proceso de analizar datos en un formato de grafo utilizando los puntos de datos como nodos y las relaciones como bordes.",
+        "opciones": [
+          "Se refiere específicamente al proceso de analizar datos en un formato de grafo utilizando los puntos de datos como nodos y las relaciones como bordes.",
+          "Es un término de uso común y hace referencia al proceso de analizar datos en un formato de grafo utilizando los puntos de datos como nodos, excluyendo las relaciones.",
+          "Se refiere específicamente al proceso de analizar grafos en un formato de datos utilizando los puntos de datos como bordes y las relaciones como nodos."
+        ]
+      },
+      {
+        "pregunta": "El algoritmo R+ resuelve el problema del camino más corto en DAG (directacyclicgraphs) desde un origen en tiempo lineal.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Acerca de los grafos RDF (Resource Description Framework), es correcto mencionar que",
+        "respuesta_correcta": "Cumplen con los estándares W3C, representan correctamente metadatos complejos y datos principales.",
+        "opciones": [
+          "Cumplen con los estándares W3C, representan correctamente metadatos complejos y datos principales.",
+          "Una declaración es representada solo por el sujeto y el predicado.",
+          "Si bien se utilizan de manera generalizada las empresas estatales de estadística, las farmacéuticas y las organizaciones sanitarias no las pueden utilizar."
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. Si tenemos un grafo dirigido con aristas que van de 'A' a 'B'; de 'A' a 'E'; de 'B' a 'C'; de 'B' a 'D'; de 'C' a 'D'; y, de 'E' a 'C'. ¿Cuántos caminos hay de 'A' a 'D'?",
+        "respuesta_correcta": "3.",
+        "opciones": [
+          "3.",
+          "2.",
+          "1.",
+          "5.",
+          "4."
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. ¿Cuáles son las posibles aplicaciones de DAG (directacyclicgraphs)?",
+        "respuesta_correcta": "Cadenas de trabajos, parentescos, preguntas y respuestas.",
+        "opciones": [
+          "Cadenas de trabajos, parentescos, preguntas y respuestas.",
+          "Oraciones, operaciones y Facebook.",
+          "Listas de compras."
+        ]
+      },
+      {
+        "pregunta": "DAG (directacyclicgraphs) es un grafo dirigido que no tiene ciclos. Si aparece un ciclo en un DAG haria entrar al sistema en un ciclo infinito. Se utiliza en modelado de parentescos.",
+        "respuesta_correcta": "Verdadero",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Los grafos con propiedades",
+        "respuesta_correcta": "Pueden contener en sus vértices información detallada de un tema y bordes para resaltar la información entre los vértices.",
+        "opciones": [
+          "Pueden contener en sus vértices información detallada de un tema y bordes para resaltar la información entre los vértices.",
+          "Cumplen con los estándares de la W3C diseñados para representar declaraciones.",
+          "No pueden contener atributos.",
+          "Los vértices y los bordes no pueden tener propiedades asociadas.",
+          "Permiten hacer análisis y consultas de los datos evitando que los vértices y bordes puedan tener atributos."
+        ]
+      },
+      {
+        "pregunta": "Las bases de datos de grafos almacenan información de forma implícita, las consultas que utilizan la conectividad entre vértices se pueden ejecutar en fracciones de segundo.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Acerca de los multigrafos, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Dos vértices están conectados por más de una arista.",
+          "Se diferencian de los sencillos porque en estos últimos los vértices se conectan por una única arista.",
+          "Su orden es n si tiene n vértices.",
+          "Un camino es la sucesión finita en la que se suceden alternativamente vértices y aristas."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Dos vértices están conectados por más de una arista.",
+          "Se diferencian de los sencillos porque en estos últimos los vértices se conectan por una única arista.",
+          "Su orden es n si tiene n vértices.",
+          "Un camino es la sucesión finita en la que se suceden alternativamente vértices y aristas.",
+          "Las curvas que representan a los arcos se cortan solo en los vértices."
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. La ordenación topológica es una lista en orden lineal en que deben realizarse las tareas. Sobre esto es correcto afirmar que:",
+        "respuesta_correcta": "Cada grafo acíclico dirigido tiene una ordenación topológica, un ordenamiento de los vértices, tal que, el extremo de salida de cada borde se produce antes en el orden que el extremo final del borde. En general, este orden no es único.",
+        "opciones": [
+          "Cada grafo acíclico dirigido tiene una ordenación topológica, un ordenamiento de los vértices, tal que, el extremo de salida de cada borde se produce antes en el orden que el extremo final del borde. En general, este orden no es único.",
+          "Cada grafo acíclico no dirigido tiene una ordenación topológica, un ordenamiento de los arcos tal que el extremo de salida de cada borde se produce antes en el orden que el extremo final del borde. En general, este orden no es único.",
+          "La condición que el grafo contenga ciclos es importante, ya que no se puede obtener ordenación topológica de grafos de este tipo."
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. Caso: En la ordenación topológica, las tareas 'A' y 'B' están representadas por vértices y hay un arco desde 'A' a 'B' solo si la tarea 'A' debe completarse antes de comenzar la tarea 'B'. ¿Qué resulta de evaluar el caso descripto?",
+        "respuesta_correcta": "Un ejemplo podría ser que se debe sacar el ticket de un vuelo antes de emprender el vuelo.",
+        "opciones": [
+          "Un ejemplo podría ser que se debe sacar el ticket de un vuelo antes de emprender el vuelo.",
+          "La afirmación es falsa porque en esta ordenación no se necesita que la tarea 'A' se encuentre completa para iniciar 'B' aunque exista un arco entre ellas.",
+          "Un ejemplo podría ser el ingreso de los jugadores de básquet a un estadio."
+        ]
+      },
+      {
+        "pregunta": "En un digrafoacíclico, si 'A' apunta a 'B' y 'C'; 'B' apunta a 'D' y 'E'; 'C' apunta a 'D' y 'F'. Según el objetivo del ordenamiento topológico, ¿qué nodo se procesará primero?",
+        "respuesta_correcta": "A.",
+        "opciones": [
+          "A.",
+          "B.",
+          "C."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. El problema de camino mínimo entre dos nodos a y b",
+        "respuesta_correcta": "De un grafo con pesos en las aristas, consiste en encontrar un camino entre esos nodos cuyo peso sea menor o igual que el peso de cualquier otro camino entre ellos.",
+        "opciones": [
+          "De un grafo con pesos en las aristas, consiste en encontrar un camino entre esos nodos cuyo peso sea menor o igual que el peso de cualquier otro camino entre ellos.",
+          "De un grafo G con pesos en las aristas, consiste en encontrar un camino entre esos nodos cuyo peso sea mayor o igual que el peso de cualquier otro camino entre ellos.",
+          "De un grafo G con pesos en las aristas, consiste en encontrar un camino entre esos nodos cuyo peso solo sea igual que el peso de cualquier otro camino entre ellos."
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. Respecto al método del camino crítico, es correcto afirmar que sirve a los encargados de proyecto para:",
+        "respuesta_correcta": "Ordenar las actividades en un flujo y hacer estimaciones sobre cuánto debería demorar el ciclo completo en condiciones normales, en condiciones optimistas, y en condiciones pesimistas.",
+        "opciones": [
+          "Ordenar las actividades en un flujo y hacer estimaciones sobre cuánto debería demorar el ciclo completo en condiciones normales, en condiciones optimistas, y en condiciones pesimistas.",
+          "Ordenar las actividades en un flujo y hacer estimaciones sobre cuánto debería demorar el ciclo completo en condiciones optimistas. Entendiendo estas como los imprevistos que pueden surgir y los tiempos que se requiere para subsanarlos.",
+          "Medir los momentos problemáticos. No se puede hacer estimaciones de demoras."
+        ]
+      },
+      {
+        "pregunta": "Respecto al método del camino, solo en algunos casos, en este se incorporan actividades que tienen flexibilidad en el plazo, pero que por ser rigurosamente importantes es imprescindible hacerlo.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "El camino crítico (PERT) calendariza las actividades teniendo en cuenta fechas de inicio y final; no pudiendo haber actividades que se realicen en paralelo.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Durante la proyección del camino crítico se consideran posibles escenarios en cuanto a plazo. Estos son:",
+        "respuesta_correcta": [
+          "Tiempo medio.",
+          "Tiempo más probable.",
+          "Tiempo óptimo.",
+          "Tiempo pésimo."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Tiempo medio.",
+          "Tiempo más probable.",
+          "Tiempo óptimo.",
+          "Tiempo pésimo.",
+          "Tiempo máximo."
+        ]
+      },
+      {
+        "pregunta": "Selecciona una (1) opción correcta. ¿Cuáles son los posibles escenarios en cuanto al plazo al proyectar el camino crítico?",
+        "respuesta_correcta": "Tiempo probable, tiempo óptimo y tiempo pésimo.",
+        "opciones": [
+          "Tiempo probable, tiempo óptimo y tiempo pésimo.",
+          "Tiempo probable, tiempo medio y tiempo máximo.",
+          "Tiempo probable, tiempo estimado y tiempo prolongado."
+        ]
+      },
+      {
+        "pregunta": "Si nos posicionamos en un nodo de camino crítico y tenemos en el hemisferio superior una A, en el cuarto inferior izquierdo un 6 y en el derecho 13. El nodo siguiente tiene en el hemisferio superior la letra B, en el cuarto inferior izquierdo un 10 y en el derecho 17. ¿Cuáles son los códigos de tareas, el tiempo de inicio temprano de ambas y la duración de la primera tarea y el inicio tardío de la segunda tarea?",
+        "respuesta_correcta": "Códigos de tareas: A y B. Tiempo de inicio temprano de A=6, tiempo de inicio temprano de B=10. Duración de A=4 Tiempo de inicio tardío de B=17",
+        "opciones": [
+          "Códigos de tareas: A y B. Tiempo de inicio temprano de A=6, tiempo de inicio temprano de B=10. Duración de A=4 Tiempo de inicio tardío de B=17",
+          "Códigos de tareas: A y B. Tiempo de inicio temprano de A=13, tiempo de inicio temprano de B=17. Duración de A=4 Tiempo de inicio tardío de B=10.",
+          "Códigos de tareas: A y B. Tiempo de inicio temprano de A=6, tiempo de inicio temprano de B=17. Duración de A=4 Tiempo de inicio tardío de B=10."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Respecto al recorrido de atrás hacia adelante del método del camino crítico, es correcto señalar que,",
+        "respuesta_correcta": "Al nodo final se le asignará el mismo valor tiempo tardío al tiempo temprano.",
+        "opciones": [
+          "Al nodo final se le asignará el mismo valor tiempo tardío al tiempo temprano.",
+          "No se requiere haber completado todos los cálculos de tiempo temprano.",
+          "Se resta al tiempo tardío de la tarea, el tiempo de la tarea anterior para obtener el tiempo tardío de la tarea en cuestión."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. En el método del camino crítico,",
+        "respuesta_correcta": "Cuando los nodos dependen de más de una tarea, se le asignará como tiempo de inicio temprano el mayor de los tiempos.",
+        "opciones": [
+          "Cuando los nodos dependen de más de una tarea, se le asignará como tiempo de inicio temprano el mayor de los tiempos.",
+          "Cuando los nodos dependen de más de una tarea, se le asignará como tiempo de inicio tardío el mayor de los tiempos.",
+          "Cuando los nodos dependen de más de una tarea, se le asignará como tiempo de inicio temprano el menor de los tiempos."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. En la proyección del camino crítico,",
+        "respuesta_correcta": "El tiempo pésimo se refiere al tiempo que debería demorar el proyecto, considerando desviaciones en etapas conocidas del proyecto, y el tiempo necesario para resolverlas.",
+        "opciones": [
+          "El tiempo pésimo se refiere al tiempo que debería demorar el proyecto, considerando desviaciones en etapas conocidas del proyecto, y el tiempo necesario para resolverlas.",
+          "El tiempo pésimo se refiere al tiempo que debería demorar la ejecución del proyecto en condiciones ideales, sin alteraciones ni desviaciones.",
+          "El tiempo óptimo es el más probable."
+        ]
+      },
+      {
+        "pregunta": "Si en la planificación de camino crítico tenemos que: la duración del tiempo medio del proyecto es de 30 días, la del tiempo óptimo es 25 días y la del pesimista es de 35 días. ¿Cuál es el menos probable?",
+        "respuesta_correcta": "25 días.",
+        "opciones": [
+          "25 días.",
+          "30 días.",
+          "35 días."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Respecto al método del camino crítico, es correcto afirmar que",
+        "respuesta_correcta": "El camino crítico es el que tiene en sus nodos los tiempos tardíos y tempranos iguales y coincide con el camino más largo.",
+        "opciones": [
+          "El camino crítico es el que tiene en sus nodos los tiempos tardíos y tempranos iguales y coincide con el camino más largo.",
+          "El camino crítico es el que tiene en sus nodos los tiempos tardíos menores y coincide con el camino más largo.",
+          "El camino crítico es el que tiene en sus nodos los tiempos tardío y tempranos iguales y coincide con el camino más corto."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento con la opción correcta. Sobre el análisis de caminos críticos, es correcto indicar que",
+        "respuesta_correcta": "El gráfico del camino crítico parte de una tabla en la que se asigna a la primera columna el código de cada tarea, a la segunda, la tarea predecesora y en la tercera el tiempo de actividad",
+        "opciones": [
+          "El gráfico del camino crítico parte de una tabla en la que se asigna a la primera columna el código de cada tarea, a la segunda, la tarea predecesora y en la tercera el tiempo de actividad",
+          "El gráfico del camino crítico parte de una tabla en la que se asigna a la primera columna el código de cada tarea, a la segunda la tarea sucesora y en la tercera el tiempo de actividad.",
+          "En el camino crítico, la matriz de adyacencia siempre será simétrica."
+        ]
+      },
+      {
+        "pregunta": "Si en un nodo o vértice tengo como tarea A un tiempo de inicio temprano de 6 y un tiempo de inicio tardío de 10 y la duración de la tarea es de 5. ¿Cuál es el margen de demora que dispongo para finalizar la tarea, es decir, cuánto me puedo demorar?",
+        "respuesta_correcta": "4.",
+        "opciones": [
+          "4.",
+          "10.",
+          "8."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Acerca de los grafos, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Son representaciones gráficas.",
+          "Los arcos pueden ser bidireccionales.",
+          "Son regulares si todos sus vértices tienen el mismo grado.",
+          "Si los arcos son unidireccionales se llaman digrafos."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Son representaciones gráficas.",
+          "Los arcos pueden ser bidireccionales.",
+          "Son regulares si todos sus vértices tienen el mismo grado.",
+          "Si los arcos son unidireccionales se llaman digrafos.",
+          "Si los arcos son bidireccionales se denominan grafos dirigidos o digrafos."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Si tenemos un árbol cuyos caminos desde la raíz, que es A, hasta sus hojas son: ABCD, ABEFG, AHIJ y AHIJK, es correcto afirmar que",
+        "respuesta_correcta": "La profundidad del nodo I es 2, el nivel del nodo K es 5 y la cantidad de nodos del árbol es 11.",
+        "opciones": [
+          "La profundidad del nodo I es 2, el nivel del nodo K es 5 y la cantidad de nodos del árbol es 11.",
+          "La profundidad del nodo I es 2, el nivel del nodo B es 2 y la altura del árbol es 6.",
+          "La altura del árbol es 5, el camino entre A y F está compuesto por ABEF y la cantidad de aristas del árbol son 12."
+        ]
+      },
+      {
+        "pregunta": "¿Qué se entiende por profundidad de un nodo?",
+        "respuesta_correcta": "Es el número de brazos o arcos desde la raíz del árbol hasta un nodo.",
+        "opciones": [
+          "Es el número de brazos o arcos desde la raíz del árbol hasta un nodo.",
+          "Se define por 1 + (el número de brazos entre el nodo y la raíz).",
+          "Es el número de brazos en el camino más largo entre ese nodo y una hoja."
+        ]
+      },
+      {
+        "pregunta": "Para un número N de vértices tiene N-1 arcos (aristas). Si el árbol es finito y binario y tiene 9 vértices, ¿cuántas aristas posee? Selecciona la opción correcta.",
+        "respuesta_correcta": "8.",
+        "opciones": [
+          "8.",
+          "9.",
+          "10."
+        ]
+      },
+      {
+        "pregunta": "¿Qué es un bosque?",
+        "respuesta_correcta": "Un conjunto de árboles n>=0 disjuntos.",
+        "opciones": [
+          "Un conjunto de árboles n>=0 disjuntos.",
+          "Una secuencia de nodos y aristas conectadas con un nodo descendiente.",
+          "Una ruta del nodo raíz a cualquier otro nodo.",
+          "Un nodo con al menos un hijo.",
+          "Un nodo accesible por ascenso repetido de hijo a padre."
+        ]
+      },
+      {
+        "pregunta": "La siguiente definición 'es un árbol generado a partir de una sección determinada del árbol', ¿a qué concepto corresponde?",
+        "respuesta_correcta": "Un subárbol.",
+        "opciones": [
+          "Un subárbol.",
+          "Un bosque.",
+          "Un nodo."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Respecto a los componentes de los árboles, es correcto afirmar que",
+        "respuesta_correcta": "Los nodos que tienen aristas salientes hacia otros nodos se llaman padres; los nodos que reciben aristas desde nodos en nivel superior se llaman hijos; y, los nodos que no tienen aristas salientes se llaman hojas.",
+        "opciones": [
+          "Los nodos que tienen aristas salientes hacia otros nodos se llaman padres; los nodos que reciben aristas desde nodos en nivel superior se llaman hijos; y, los nodos que no tienen aristas salientes se llaman hojas.",
+          "Los nodos que tienen aristas salientes hacia otros nodos se llaman hijos; los nodos que reciben aristas desde nodos en nivel superior se llaman padres; y, los nodos que no tienen aristas salientes se llaman hojas.",
+          "Los nodos que tienen aristas salientes hacia otros nodos se llaman padres; los nodos que reciben aristas desde nodos en nivel superior se llaman hijos; y, los nodos que tienen aristas, una sola arista saliente, se llaman hojas."
+        ]
+      },
+      {
+        "pregunta": "¿A qué concepto pertenece esta definición 'Conjunto de árboles n>=0 disjuntos'?",
+        "respuesta_correcta": "Bosque.",
+        "opciones": [
+          "Bosque.",
+          "Arbol binario.",
+          "Subárbol."
+        ]
+      },
+      {
+        "pregunta": "Respecto a árboles generales, ¿qué definición es la correcta?",
+        "respuesta_correcta": "Nivel de un nodo: Se define por 1 + el número de brazos o aristas entre el nodo y la raíz.",
+        "opciones": [
+          "Nivel de un nodo: Se define por 1 + el número de brazos o aristas entre el nodo y la raíz.",
+          "Altura de un nodo es el número de brazos y aristas más largo entre ese nodo y una hoja.",
+          "Rama: Es un nodo accesible por descenso repetido de padre a hijo."
+        ]
+      },
+      {
+        "pregunta": "Selecciona la opción correcta. Considerando los tipos de nodos de un árbol, elige la opción que contiene definiciones correctas:",
+        "respuesta_correcta": "Hijo: Un nodo conectado directamente con otro cuando se aleja de la raíz. Hermanos: Un conjunto de nodos con el mismo padre. Descendiente: Un nodo accesible por descenso repetido de padre a hijo. Ancestro: Un nodo accesible por ascenso repetido de hijo a padre.",
+        "opciones": [
+          "Hijo: Un nodo conectado directamente con otro cuando se aleja de la raíz. Hermanos: Un conjunto de nodos con el mismo padre. Descendiente: Un nodo accesible por descenso repetido de padre a hijo. Ancestro: Un nodo accesible por ascenso repetido de hijo a padre.",
+          "Hijo: Un nodo conectado directamente con otro cuando se aleja de la raíz. Hermanos: Un conjunto de nodos con el mismo padre. Ancestro: Un nodo accesible por descenso repetido de padre a hijo. Descendiente: Un nodo accesible por ascenso repetido de hijo a padre.",
+          "Padre: Un nodo conectado directamente con otro cuando se aleja de la raíz. Hermanos: Un conjunto de nodos con el mismo padre. Medio: Un nodo accesible por descenso repetido de padre a hijo. Ancestro: Un nodo accesible por ascenso repetido de hijo a padre."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Respecto a la rotación simple, a la izquierda en un árbol de rotación, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Consiste en formar un nuevo árbol.",
+          "La raíz del árbol será la raíz del hijo derecho.",
+          "Como hijo izquierdo se construye un nuevo árbol que tendrá de raíz, la raíz del árbol original.",
+          "Tiene que tener hijo derecho no vacío."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Consiste en formar un nuevo árbol.",
+          "La raíz del árbol será la raíz del hijo derecho.",
+          "Como hijo izquierdo se construye un nuevo árbol que tendrá de raíz, la raíz del árbol original.",
+          "Tiene que tener hijo derecho no vacío.",
+          "Tiene que tener hijo izquierdo no vacío."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Un árbol es un grafo acíclicomaximal. Considerando su estructura es correcto señalar que:",
+        "respuesta_correcta": [
+          "Entre cualquier par de vértices existe un solo camino.",
+          "El grafo es conexo.",
+          "No tiene ciclos.",
+          "Si al grafo se le saca un arco deja de ser conexo."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Entre cualquier par de vértices existe un solo camino.",
+          "El grafo es conexo.",
+          "No tiene ciclos.",
+          "Si al grafo se le saca un arco deja de ser conexo.",
+          "Para formar un ciclo se deben agregar un par de arcos."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Un nodo puede ser:",
+        "respuesta_correcta": [
+          "Padre.",
+          "Hijo.",
+          "Hoja.",
+          "Raíz."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Padre.",
+          "Hijo.",
+          "Hoja.",
+          "Raíz.",
+          "Flor."
+        ]
+      },
+      {
+        "pregunta": "Sub-árbol es todo árbol generado a partir de una sección determinada del árbol. Por lo que podemos decir que un árbol es un nodo raíz con N subárboles.",
+        "respuesta_correcta": "Verdadero",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Acerca de las aplicaciones de árboles en computación, es correcto afirmar que",
+        "respuesta_correcta": "Los nodos pueden almacenar cualquier tipo de información, la cantidad de hijos puede variar, son flexibles en su implementación y no tienen limitantes para el contenido de sus nodos.",
+        "opciones": [
+          "Los nodos pueden almacenar cualquier tipo de información, la cantidad de hijos puede variar, son flexibles en su implementación y no tienen limitantes para el contenido de sus nodos.",
+          "Los nodos pueden almacenar cualquier tipo de información, la cantidad de hijos puede variar, son rígidos por lo que se dificulta su implementación y no tienen limitantes para el contenido de sus nodos.",
+          "Los nodos pueden almacenar solo datos cualitativos, la cantidad de hijos puede variar, son flexibles en su implementación y no tienen limitantes para el contenido de sus nodos."
+        ]
+      },
+      {
+        "pregunta": "Teniendo cinco nodos o vértices A, B, C, D y E podemos dibujar diferentes grafos. Considerando las definiciones de las aristas por sus nodos origen y destino. ¿Cuál de los siguientes conjuntos de aristas constituyen un árbol?",
+        "respuesta_correcta": "(D, A) (D, B) (A, C) (A, E).",
+        "opciones": [
+          "(D, A) (D, B) (A, C) (A, E).",
+          "(A, D) (D, B) (B, E) (E, C) (C, A).",
+          "(A, D) (D, B) (B, E) (C, A) (C, B)."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Si tenemos un árbol lleno de grado 2 y de altura 3, es correcto afirmar que",
+        "respuesta_correcta": "El árbol es completo, contiene 7 nodos, de los cuales 2 son ramas, 6 aristas y una profundidad de 3.",
+        "opciones": [
+          "El árbol es completo, contiene 7 nodos, de los cuales 2 son ramas, 6 aristas y una profundidad de 3.",
+          "El árbol es equilibrado, contiene 7 nodos de los cuales 4 son externos, vértices o nodos y una profundidad de 3.",
+          "El árbol es binario, sus nodos hojas son 4, sus aristas son 6 y su profundidad es de 2."
+        ]
+      },
+      {
+        "pregunta": "Los subárboles pueden contener ciclos.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "Entre las aplicaciones más comunes de los árboles se encuentran los datos que requieren una búsqueda posterior.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "En los árboles de decisión hay tres tipos diferentes de nodos. ¿Cuáles son? Selecciona la opción correcta.",
+        "respuesta_correcta": "Nodos de probabilidad, nodos de decisión y nodos terminales.",
+        "opciones": [
+          "Nodos de probabilidad, nodos de decisión y nodos terminales.",
+          "Nodos de decisión, nodos de incertidumbre y nodos de respuesta.",
+          "Nodos de incertidumbre, nodos de probabilidad y nodos terminales."
+        ]
+      },
+      {
+        "pregunta": "¿Qué significa podar un árbol?",
+        "respuesta_correcta": "Borrar una sección entera del árbol.",
+        "opciones": [
+          "Borrar una sección entera del árbol.",
+          "Eliminar las hojas.",
+          "Rotar."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Respecto a las aplicaciones de las estructuras de árboles podemos decir que un ejemplo es el sistema de directorios y archivos de un sistema operativo. Sobre esto, es correcto afirmar que:",
+        "respuesta_correcta": [
+          "Representan una estructura jerárquica.",
+          "Son árboles con dos tipos de nodos.",
+          "Tienen una gran flexibilidad.",
+          "Los nodos pueden almacenar cualquier tipo de información."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Representan una estructura jerárquica.",
+          "Son árboles con dos tipos de nodos.",
+          "Tienen una gran flexibilidad.",
+          "Los nodos pueden almacenar cualquier tipo de información.",
+          "Los nodos hoja son directorios y los nodos rama son ficheros."
+        ]
+      },
+      {
+        "pregunta": "Selecciona la opción correcta. Los árboles de decisión están formados por:",
+        "respuesta_correcta": "Nodos, vectores de números, flechas y etiquetas.",
+        "opciones": [
+          "Nodos, vectores de números, flechas y etiquetas.",
+          "Signos, nodos, propiedades y etiquetas.",
+          "Nodos, listas, aristas y formatos."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Respecto a los tipos de nodos en un árbol de decisión, es correcto afirmar que",
+        "respuesta_correcta": "Los nodos de decisión se representan con un cuadrado y muestran una decisión que se tomará.",
+        "opciones": [
+          "Los nodos de decisión se representan con un cuadrado y muestran una decisión que se tomará.",
+          "Los nodos de probabilidad se representan con un triángulo y muestran las probabilidades de ciertos resultados.",
+          "Los nodos terminales muestran el resultado definitivo de una ruta de decisión y se representa con un círculo."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Entre los elementos de construcción de un árbol de decisión, los encargados de representar cada acción distinta son",
+        "respuesta_correcta": "Las flechas.",
+        "opciones": [
+          "Las flechas.",
+          "Los nodos.",
+          "Los vectores de números."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. En un árbol de decisión, las etiquetas",
+        "respuesta_correcta": "Dan el nombre a cada acción.",
+        "opciones": [
+          "Dan el nombre a cada acción.",
+          "Son las uniones entre nodo y nodo.",
+          "Representan cada acción distinta."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Considerando las operaciones que se pueden realizar sobre árboles, es correcto señalar:",
+        "respuesta_correcta": [
+          "Podarlo.",
+          "Enumerar todos sus elementos.",
+          "Buscar un elemento.",
+          "Representarlo con un vector."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Podarlo.",
+          "Enumerar todos sus elementos.",
+          "Buscar un elemento.",
+          "Representarlo con un vector.",
+          "Eliminar un nodo sin eliminar su arista."
+        ]
+      },
+      {
+        "pregunta": "En los árboles de decisión, a medida que aumenta el número de nodos, también aumenta el número de posibles finales a los que puede llegar el individuo. ¿Cuál es la consecuencia?",
+        "respuesta_correcta": "Dificultad para realizar el análisis.",
+        "opciones": [
+          "Dificultad para realizar el análisis.",
+          "Mejora la calidad de la información.",
+          "Facilitan su dibujo a mano."
+        ]
+      },
+      {
+        "pregunta": "Respecto a los diferentes tipos de árboles, ¿qué definición es correcta?",
+        "respuesta_correcta": "Un árbol de decisión, por lo general, comienza con un único nodo y luego se ramifica en resultados posibles. Cada uno de esos resultados crea nodos adicionales, que se ramifican en otras posibilidades. Esto le da una forma similar a la de un árbol.",
+        "opciones": [
+          "Un árbol de decisión, por lo general, comienza con un único nodo y luego se ramifica en resultados posibles. Cada uno de esos resultados crea nodos adicionales, que se ramifican en otras posibilidades. Esto le da una forma similar a la de un árbol.",
+          "Un árbol de decisión, comienza con un único nodo y luego se ramifica en resultados posibles. Cada uno de esos resultados se denominan posibilidades. Esto le da una forma similar a la de un grafo con ciclos.",
+          "Un árbol equilibrado, por lo general, comienza con un único nodo y luego se ramifica en resultados posibles. Cada uno de esos resultados crea nodos adicionales, que se ramifican en otras posibilidades. Esto le da una forma similar a la de un árbol."
+        ]
+      },
+      {
+        "pregunta": "Si decimos que se ha convertido en una herramienta sumamente importante para la teoría económica y ha contribuido a comprender más adecuadamente la conducta humana frente a la toma de decisiones. Y que con ella, podemos observar como distintos tipos de interacción pueden representar en realidad una estructura de incentivo similar que represente conjuntamente una misma situación. ¿A qué nos referimos?",
+        "respuesta_correcta": "Teoría de juegos.",
+        "opciones": [
+          "Teoría de juegos.",
+          "Árboles de decisión.",
+          "Recursividad."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Respecto a la construcción de un árbol de decisión, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Las etiquetas se encuentran en cada nodo.",
+          "Al final, se obtienen las utilidades de cada solución.",
+          "Cada nodo se puede definir como el momento en el que se va a tomar una decisión entre varias posibles.",
+          "Cada flecha da nombre a la acción y son las uniones entre un nodo y otro."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Las etiquetas se encuentran en cada nodo.",
+          "Al final, se obtienen las utilidades de cada solución.",
+          "Cada nodo se puede definir como el momento en el que se va a tomar una decisión entre varias posibles.",
+          "Cada flecha da nombre a la acción y son las uniones entre un nodo y otro.",
+          "Uno de sus beneficios es que cuando las decisiones son muchas y el árbol muy grande facilita el dibujo a mano y el análisis."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 3 (tres) opciones correctas. ¿Cuáles son las características de los nodos en los árboles de decisión?",
+        "respuesta_correcta": [
+          "A medida que aumenta el número de nodos, aumenta el número de posibles finales a los que se puede llegar.",
+          "En un árbol con muchos nodos es complicado realizar el análisis debido a los numerosos caminos que se pueden seguir.",
+          "Se pueden definir como el momento en el que se ha de tomar una decisión."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "A medida que aumenta el número de nodos, aumenta el número de posibles finales a los que se puede llegar.",
+          "En un árbol con muchos nodos es complicado realizar el análisis debido a los numerosos caminos que se pueden seguir.",
+          "Se pueden definir como el momento en el que se ha de tomar una decisión.",
+          "Serían la solución final a la que se llega en función de las diferentes posibilidades que se tienen.",
+          "Dan nombre a cada acción."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 3 (tres) opciones correctas. En los árboles de decisión se deben cumplir tres reglas ¿Cuáles son?",
+        "respuesta_correcta": [
+          "Al comienzo, hay un nodo inicial que no es apuntado por nadie.",
+          "Todos los nodos que no son el inicial son apuntados por una única flecha.",
+          "Las decisiones son excluyentes."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Al comienzo, hay un nodo inicial que no es apuntado por nadie.",
+          "Todos los nodos que no son el inicial son apuntados por una única flecha.",
+          "Las decisiones son excluyentes.",
+          "Después de elegir una opción siempre quedan abiertas las otras opciones.",
+          "Las decisiones no son lineales."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 2 (dos) opciones correctas. La teoría de juegos es un campo de la matemática aplicada que utiliza modelos para estudiar interacciones en estructuras formalizadas de incentivos. Respecto a la teoría, podemos señalar que:",
+        "respuesta_correcta": [
+          "Se estructuran con base en los árboles de decisión.",
+          "Modelan juegos que presentan algún orden y de forma extensiva modelen juegos simultáneos."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Se estructuran con base en los árboles de decisión.",
+          "Modelan juegos que presentan algún orden y de forma extensiva modelen juegos simultáneos.",
+          "Se estructuran con base en grafos acíclicos y conexos.",
+          "Modeliza juegos que presentan desórdenes."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 2 (dos) opciones correctas. Respecto a la teoría de juegos, podemos señalar que:",
+        "respuesta_correcta": [
+          "Es un campo de la matemática aplicada que utiliza modelos para estudiar interacciones en estructuras formalizadas de incentivos.",
+          "Las estructuras formalizadas de incentivos son los llamados juegos."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Es un campo de la matemática aplicada que utiliza modelos para estudiar interacciones en estructuras formalizadas de incentivos.",
+          "Las estructuras formalizadas de incentivos son los llamados juegos.",
+          "En la teoría de juegos, los árboles de decisión se utilizan en forma intensiva que modelizan juegos desordenados.",
+          "Se basa en producción y no en incentivos."
+        ]
+      },
+      {
+        "pregunta": "Un árbol de decisión es un mapa de los posibles resultados de una serie de decisiones relacionadas. Por lo general, comienza con un único nodo y luego se ramifica en diferentes estados posibles.",
+        "respuesta_correcta": "Verdadero",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Un árbol binario completo es aquel árbol lleno, en el que todas sus hojas están en el nivel n o n-1 considerando que para un hijo derecho hay siempre un hijo izquierdo. Teniendo en cuenta esta afirmación, es correcto afirmar que",
+        "respuesta_correcta": "Todo árbol binario lleno es completo.",
+        "opciones": [
+          "Todo árbol binario lleno es completo.",
+          "Todo árbol equilibrado es lleno.",
+          "Todo árbol que, en el último nivel, tiene todos los hijos derechos es completo."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Respecto a los árboles binarios, es correcto afirmar que",
+        "respuesta_correcta": "Si algún hijo tiene como referencia a null, es llamado nodo externo.",
+        "opciones": [
+          "Si algún hijo tiene como referencia a null, es llamado nodo externo.",
+          "En estas estructuras cada nodo puede tener 2 hijos derechos o dos hijos izquierdos.",
+          "Pueden tener más de 2 hijos si la configuración del nodo lo permite."
+        ]
+      },
+      {
+        "pregunta": "Los árboles binarios se pueden representar en un vector. ¿Cuál de las siguientes afirmaciones indica el proceso para hacerlo?",
+        "respuesta_correcta": "Se escriben por niveles los nodos del árbol de izquierda a derecha, siendo ineficiente cuando el árbol no es completo porque podría haber muchas posiciones libres consumiendo espacio.",
+        "opciones": [
+          "Se escriben por niveles los nodos del árbol de izquierda a derecha, siendo ineficiente cuando el árbol no es completo porque podría haber muchas posiciones libres consumiendo espacio.",
+          "Se escriben por niveles los nodos del árbol de derecha a izquierda, siendo ineficiente cuando el árbol es completo porque podría haber muchas posiciones libres consumiendo espacio.",
+          "Se escriben por ramas los nodos del árbol de izquierda a derecha, siendo ineficiente cuando el árbol es lleno porque podría haber muchas posiciones libres consumiendo espacio."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo se denomina a aquel árbol binario en el que todos los nodos de cada nivel tienen sus 2 hijos o ninguno?",
+        "respuesta_correcta": "Lleno.",
+        "opciones": [
+          "Lleno.",
+          "No lleno.",
+          "Incompleto."
+        ]
+      },
+      {
+        "pregunta": "¿Qué es un montículo binario?",
+        "respuesta_correcta": "Es un árbol completo cuyos nodos almacenan elementos comparables mediante <= y donde todo nodo cumple la propiedad de monticulo.",
+        "opciones": [
+          "Es un árbol completo cuyos nodos almacenan elementos comparables mediante <= y donde todo nodo cumple la propiedad de monticulo.",
+          "Es un árbol completo cuyos nodos almacenan elementos no comparables y donde todo nodo cumple la propiedad de monticulo.",
+          "Es un árbol binario cuyos nodos almacenan un factor de equilibrio y donde todo nodo cumple la propiedad de equilibrio."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Según el tipo de árbol, es correcto afirmar que",
+        "respuesta_correcta": "Un ABB es un árbol binario cuyos nodos almacenan elementos comparables mediante <= y donde todo nodo es mayor que todos los nodos de su subárbol izquierdo y menor que todos los nodos de su subárbol derecho.",
+        "opciones": [
+          "Un ABB es un árbol binario cuyos nodos almacenan elementos comparables mediante <= y donde todo nodo es mayor que todos los nodos de su subárbol izquierdo y menor que todos los nodos de su subárbol derecho.",
+          "Un AVL es un árbol binario cuyos nodos almacenan elementos comparables mediante <= y donde todo nodo es mayor que todos los nodos de su subárbol izquierdo y menor que todos los nodos de su subárbol derecho.",
+          "Un ABB siempre está equilibrado de tal modo que para todos los nodos, la altura de la rama izquierda no difiere en más de una unidad de la altura de la derecha o viceversa."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Acerca de la propiedad de monticulo, es correcto afirmar que",
+        "respuesta_correcta": "Todo nodo es menor que sus descendientes.",
+        "opciones": [
+          "Todo nodo es menor que sus descendientes.",
+          "El nodo raíz es el máximo.",
+          "La raíz no se puede eliminar."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Los árboles AVL",
+        "respuesta_correcta": "Fueron publicados por Georgii Adelson-Velskii y Yevgeniy Landis.",
+        "opciones": [
+          "Fueron publicados por Georgii Adelson-Velskii y Yevgeniy Landis.",
+          "Describen diferencias de altura entre las ramas izquierda y derecha, y estas no influyen en su definición.",
+          "Denotan el factor de equilibrio que se almacena solamente en el nodo raíz."
+        ]
+      },
+      {
+        "pregunta": "El factor de equilibrio en un árbol equilibrado es la diferencia entre los grados de los árboles derecho e izquierdo.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Acerca de los árboles binarios de búsqueda equilibrados, es correcto afirmar que",
+        "respuesta_correcta": "Las operaciones básicas de un árbol AVL implican, generalmente, realizar los mismos algoritmos que serían realizados en un árbol binario de búsqueda desequilibrado, pero precedido o seguido por una o más llamadas AVL.",
+        "opciones": [
+          "Las operaciones básicas de un árbol AVL implican, generalmente, realizar los mismos algoritmos que serían realizados en un árbol binario de búsqueda desequilibrado, pero precedido o seguido por una o más llamadas AVL.",
+          "Las operaciones básicas de un árbol AVL implican realizar algoritmos muy distintos a los que serían realizados en un árbol binario de búsqueda desequilibrado.",
+          "Las operaciones complejas de un árbol AVL implican, generalmente, efectuar los mismos algoritmos que serían realizados en un árbol binario de búsqueda desequilibrado, solo se debe realizar un ordenamiento posterior."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Ante un árbol de grado 2 que contiene en su raiz una C, en el segundo nivel de izquierda a derecha tengo los nodos M y A, y en el tercer nivel, también de izquierda a derecha cuenta con los nodos I, J, K. Es correcto afirmar que,",
+        "respuesta_correcta": "Es un árbol binario no estricto, no vacío, equilibrado y completo, cuyos factores de equilibrio toman los valores -1 y 1.",
+        "opciones": [
+          "Es un árbol binario no estricto, no vacío, equilibrado y completo, cuyos factores de equilibrio toman los valores -1 y 1.",
+          "Es un árbol binario estricto, no vacío, equilibrado, completo y cuyos factores de equilibrio toman los valores 0 y 1.",
+          "Es un árbol binario no estricto, no vacío, no equilibrado y lleno."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Respecto al factor de equilibrio de los árboles de equilibrio, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Si su valor es mayor que 2 es necesario equilibrar.",
+          "Toma el valor 0 cuando el nodo está equilibrado y sus subárboles tienen la misma altura.",
+          "Toma el valor 1 cuando el nodo está equilibrado y su árbol derecho es de un nivel más alto.",
+          "Toma el valor 1 cuando el nodo está equilibrado y su árbol izquierdo es de un nivel más alto."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Si su valor es mayor que 2 es necesario equilibrar.",
+          "Toma el valor 0 cuando el nodo está equilibrado y sus subárboles tienen la misma altura.",
+          "Toma el valor 1 cuando el nodo está equilibrado y su árbol derecho es de un nivel más alto.",
+          "Toma el valor 1 cuando el nodo está equilibrado y su árbol izquierdo es de un nivel más alto.",
+          "Debe tomar los valores de 0, 1 o 2 para que el árbol sea equilibrado."
+        ]
+      },
+      {
+        "pregunta": "Selecciona la opción correcta. En un árbol equilibrado, ¿cuál es el objetivo de las funciones de rotación?",
+        "respuesta_correcta": "Restaurar el equilibrio en un árbol equilibrado después de que una operación de inserción o de borrado lo haya roto.",
+        "opciones": [
+          "Restaurar el equilibrio en un árbol equilibrado después de que una operación de inserción o de borrado lo haya roto.",
+          "Ordenar los nodos del árbol cada vez que salen de la secuencia.",
+          "Mantener el árbol lleno controlando que todos los nodos tengan 0 o 2 hijos."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Un monticulo es un árbol completo, en cuyos nodos se almacenan elementos comparables mediante <= y donde",
+        "respuesta_correcta": "Todo nodo es menor que sus descendientes y el nodo raíz es el mínimo.",
+        "opciones": [
+          "Todo nodo es menor que sus descendientes y el nodo raíz es el mínimo.",
+          "El nodo raíz es el máximo.",
+          "Todo nodo es mayor que sus descendientes y el nodo raíz es el mínimo."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. En un monticulo, si un solo elemento no cumple con la propiedad de montículo, es posible restablecer la propiedad mediante",
+        "respuesta_correcta": "Descensos en el árbol, intercambiando con el mayor de sus hijos y el número de operaciones es proporcional a la altura.",
+        "opciones": [
+          "Descensos en el árbol, intercambiando con el mayor de sus hijos y el número de operaciones es proporcional a la altura.",
+          "Intercambios con el último elemento y descendiendo al último nodo.",
+          "Descensos en el árbol, intercambiando con el mayor de sus hijos y el número de operaciones es proporcional al grado de sus nodos."
+        ]
+      },
+      {
+        "pregunta": "¿Qué método utilizan los AVL para mantener el equilibrio a partir de una inserción o un borrado de nodos?",
+        "respuesta_correcta": "Ambas operaciones se realizan de manera especial. Si al realizar la operación se rompe la condición de equilibrio se realizan rotaciones de los nodos.",
+        "opciones": [
+          "Ambas operaciones se realizan de manera especial. Si al realizar la operación se rompe la condición de equilibrio se realizan rotaciones de los nodos.",
+          "Ambas operaciones se realizan de la misma manera que en otros árboles sin romper el equilibrio.",
+          "Ambas operaciones conllevan restablecer el equilibrio mediante la aplicación de la propiedad de montículos."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. : es un árbol binario cuyos nodos almacenan elementos comparables mediante <= y donde todo nodo es mayor que los nodos de su subárbol izquierdo y menor que los del subárbol de la derecha.",
+        "respuesta_correcta": "Árbol de búsqueda.",
+        "opciones": [
+          "Árbol de búsqueda.",
+          "Montículo.",
+          "Árbol equilibrado."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. : es un árbol lleno hasta el penúltimo nivel y en el último los nodos están agrupados a la izquierda.",
+        "respuesta_correcta": "Árbol completo.",
+        "opciones": [
+          "Árbol completo.",
+          "Árbol lleno.",
+          "Árbol de decisión."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Ante la representación de un árbol binario en un vector, es correcto afirmar que:",
+        "respuesta_correcta": [
+          "Si el árbol es lleno, no quedarían posiciones libres.",
+          "Los nodos se escriben por niveles de manera ordenada.",
+          "Esta representación es poco eficiente cuando el árbol no es completo.",
+          "En cada posición del vector se escribe un nodo."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Si el árbol es lleno, no quedarían posiciones libres.",
+          "Los nodos se escriben por niveles de manera ordenada.",
+          "Esta representación es poco eficiente cuando el árbol no es completo.",
+          "En cada posición del vector se escribe un nodo.",
+          "No puede haber posiciones libres."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Cuando de montículos se trata, si un solo elemento no cumple la propiedad de montículo, es correcto señalar que:",
+        "respuesta_correcta": [
+          "Es posible restablecer la propiedad.",
+          "Se pueden realizar ascensos sucesivos en el árbol.",
+          "Se pueden realizar descensos sucesivos en el árbol.",
+          "El número de operaciones es proporcional a la altura."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Es posible restablecer la propiedad.",
+          "Se pueden realizar ascensos sucesivos en el árbol.",
+          "Se pueden realizar descensos sucesivos en el árbol.",
+          "El número de operaciones es proporcional a la altura.",
+          "No es posible restablecer la propiedad."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Tratándose de un árbol binario completo, podemos señalar que:",
+        "respuesta_correcta": [
+          "Todas sus hojas están en el nivel n o n-1.",
+          "Puede representarse en un vector.",
+          "No garantiza que sea lleno.",
+          "Las diferencias de alturas de sus ramas no pueden superar 1."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Todas sus hojas están en el nivel n o n-1.",
+          "Puede representarse en un vector.",
+          "No garantiza que sea lleno.",
+          "Las diferencias de alturas de sus ramas no pueden superar 1.",
+          "Si tiene 4 niveles, puede tener en cada uno un nodo con solo hijos derechos."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Tratándose de un árbol lleno, podemos señalar que:",
+        "respuesta_correcta": [
+          "Si un subárbol está vacío, el otro también.",
+          "Cada nodo puede tener 0 o 2 hijos.",
+          "En cada nodo la altura del subárbol izquierdo es igual a la del derecho.",
+          "Tanto el subárbol derecho como el izquierdo son llenos."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Si un subárbol está vacío, el otro también.",
+          "Cada nodo puede tener 0 o 2 hijos.",
+          "En cada nodo la altura del subárbol izquierdo es igual a la del derecho.",
+          "Tanto el subárbol derecho como el izquierdo son llenos.",
+          "Las diferencias de alturas de sus ramas pueden superar a 1."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Un algoritmo recurrente",
+        "respuesta_correcta": "Se llama a sí mismo.",
+        "opciones": [
+          "Se llama a sí mismo.",
+          "Se define sobre un problema de mayor complejidad para cada llamada recurrente.",
+          "Describe, al menos, un caso base para que la recurrencia sea infinita."
+        ]
+      },
+      {
+        "pregunta": "¿En qué consiste el dialecting? Selecciona la opción correcta.",
+        "respuesta_correcta": "Es un método que para simplificar divide un problema en problemas derivados de menor tamaño pero del mismo tipo.",
+        "opciones": [
+          "Es un método que para simplificar divide un problema en problemas derivados de menor tamaño pero del mismo tipo.",
+          "Es la construcción de las sintaxis recursivas considerando su caso base y el lenguaje de programación.",
+          "Es el uso de herramientas dialécticas para la construcción de estructuras de programación."
+        ]
+      },
+      {
+        "pregunta": "Un árbol binario es una estructura que contiene 3 elementos: un dato, un árbol izquierdo y un árbol binario derecho. Como definición recursiva no requiere un caso base.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. En la rotación doble a la derecha",
+        "respuesta_correcta": "Se deben realizar dos rotaciones simples, primero rotación simple a la izquierda y luego rotación simple a la derecha.",
+        "opciones": [
+          "Se deben realizar dos rotaciones simples, primero rotación simple a la izquierda y luego rotación simple a la derecha.",
+          "Se deben realizar dos rotaciones dobles, primero rotación a la izquierda y luego rotación a la derecha.",
+          "Se deben realizar dos rotaciones simples, primero rotación simple a la derecha y luego rotación simple a la izquierda."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. Cuando se trata de funciones recursivas se necesita un caso base, y en el caso de la definición de árbol binario como una estructura que contiene 3 elementos, ese caso es:",
+        "respuesta_correcta": "Un árbol binario puede ser también un árbol vacío, un símbolo especial que simboliza que el árbol no tiene hijos.",
+        "opciones": [
+          "Un árbol binario puede ser también un árbol vacío, un símbolo especial que simboliza que el árbol no tiene hijos.",
+          "Un árbol binario con las alturas de sus subárboles iguales.",
+          "Un árbol binario, de altura 2, lleno."
+        ]
+      },
+      {
+        "pregunta": "Si tengo un árbol no vacío que contiene en su raíz una C; en el segundo nivel, de izquierda a derecha, tengo los nodos M y A; y, en el tercer nivel, también de izquierda a derecha, cuenta con los nodos I, J, K y L. ¿Cuál de las siguientes opciones muestra al recorrido postorden?",
+        "respuesta_correcta": "I, J, M, K, L, A, C.",
+        "opciones": [
+          "I, J, M, K, L, A, C.",
+          "C, M, I, J, A, K, L.",
+          "I, M, J, C, K, A, L."
+        ]
+      },
+      {
+        "pregunta": "Si tenemos un árbol de 11 nodos y sus recorridos son: Inorden EDFBAIHJGCK, en preorden ABDEFCGHIJK y en postorden EFDBIJHGKCA, ¿cuál es el nodo raíz?",
+        "respuesta_correcta": "El nodo A.",
+        "opciones": [
+          "El nodo A.",
+          "El nodo F.",
+          "El nodo E.",
+          "El nodo I.",
+          "El nodo K."
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Respecto al recorrido de árboles, es correcto afirmar que:",
+        "respuesta_correcta": [
+          "En sus recorridos se visitan todo tipo de nodos: raíz, derecho e izquierdo.",
+          "Es la acción de visitar un vértice para realizar acciones determinadas.",
+          "Pueden recorrerse de diferentes formas.",
+          "Los procesos para recorrer un árbol se pueden describir desde la recursión."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "En sus recorridos se visitan todo tipo de nodos: raíz, derecho e izquierdo.",
+          "Es la acción de visitar un vértice para realizar acciones determinadas.",
+          "Pueden recorrerse de diferentes formas.",
+          "Los procesos para recorrer un árbol se pueden describir desde la recursión.",
+          "Es común usar el recorrido postorden en los árboles binarios de búsqueda."
+        ]
+      },
+      {
+        "pregunta": "Selecciona la opción correcta. Si para recorrer un árbol no vacío hay que realizar las siguientes operaciones recursivamente: a) Atraviese el subárbol izquierdo; b) Visite la raíz; y, c) Atraviese el subárbol derecho. ¿De qué tipo de recorrido se trata?",
+        "respuesta_correcta": "Recorrido inorden.",
+        "opciones": [
+          "Recorrido inorden.",
+          "Recorrido postorden.",
+          "Recorrido jerárquico."
+        ]
+      },
+      {
+        "pregunta": "¿A qué debe su nombre el algoritmo BFS?",
+        "respuesta_correcta": "A que expande uniformemente la frontera entre lo descubierto y lo no descubierto y llega al nodo k, solo tras haber llegado a todos los nodos de distancia k-1, por eso se lo llama recorrido en anchura.",
+        "opciones": [
+          "A que expande uniformemente la frontera entre lo descubierto y lo no descubierto y llega al nodo k, solo tras haber llegado a todos los nodos de distancia k-1, por eso se lo llama recorrido en anchura.",
+          "A las iniciales de los nombres de los matemáticos que lo describieron.",
+          "A que busca el mejor primero (BestFirstSearch)."
+        ]
+      },
+      {
+        "pregunta": "Completa el fragmento seleccionando la opción correcta. El recorrido en preorden de un determinado árbol binario es GEAIBMCLDFKJH y en inorden IABEGLDCFMKHJ. Su recorrido en postorden es",
+        "respuesta_correcta": "IBAEDLFCHJKMG.",
+        "opciones": [
+          "IBAEDLFCHJKMG.",
+          "IBALDEFCHJKMG.",
+          "BAIEDLFCHJKGM."
+        ]
+      },
+      {
+        "pregunta": "En el recorrido POSTORDEN de un árbol se visita la raiz y los subárboles izquierdo y derecho, en ese orden.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      },
+      {
+        "pregunta": "Selecciona las 4 (cuatro) opciones correctas. Respecto a los tipos de recorrido en un árbol binario, podemos señalar:",
+        "respuesta_correcta": [
+          "Inorden.",
+          "Postorden.",
+          "Preorden.",
+          "Por niveles."
+        ],
+        "es_multiple_seleccion": true,
+        "opciones": [
+          "Inorden.",
+          "Postorden.",
+          "Preorden.",
+          "Por niveles.",
+          "Por subárboles."
+        ]
+      },
+      {
+        "pregunta": "El algoritmo BFS recorre los árboles en orden por nivel, donde visitamos cada nodo de un nivel antes de ir a un nivel inferior. Este tipo de recorrido es también llamado postorden.",
+        "respuesta_correcta": "Falso",
+        "opciones": [
+          "Falso",
+          "Verdadero"
+        ]
+      }
+    ]
+  }
