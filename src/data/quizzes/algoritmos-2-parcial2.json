@@ -1,0 +1,2406 @@
+{
+    "title": "Cuestionario Completo de Estructuras de Datos y Algoritmos - Parcial 2",
+    "description": "Un cuestionario exhaustivo sobre árboles de búsqueda balanceados (AVL, Rojinegro, AA, B), algoritmos de compresión (Huffman, RLE, Shannon-Fano), manejo de archivos y métodos de ordenamiento externo.",
+    "questions": [
+        {
+            "pregunta": "A través de los árboles AVL se logra un procedimiento de búsqueda análogo al de los ABB, garantizando que el peor caso sea:",
+            "respuesta_correcta": [
+                "O(log₂ n)"
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "O(log₂ n)",
+                "O(n)",
+                "O(n log n)",
+                "O(1)"
+            ]
+        },
+        {
+            "pregunta": "Al insertar un nodo en un árbol rojinegro, este se inserta como una hoja roja. Si su padre es negro, entonces...",
+            "respuesta_correcta": [
+                "Ahí se termina la operatoria, ya que no se viola ninguna regla."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Ahí se termina la operatoria, ya que no se viola ninguna regla.",
+                "Se debe proceder con rotaciones para verificar el equilibrio.",
+                "Se debe cambiar el color del nodo abuelo.",
+                "La inserción es inválida y debe revertirse."
+            ]
+        },
+        {
+            "pregunta": "Si al insertar una hoja roja en un árbol rojinegro, su padre también es rojo, ¿qué regla fundamental se estaría incumpliendo?",
+            "respuesta_correcta": [
+                "La regla que prohíbe que un nodo rojo tenga un hijo rojo."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La regla que prohíbe que un nodo rojo tenga un hijo rojo.",
+                "La regla de que la raíz siempre debe ser negra.",
+                "La regla de la altura negra (mismo número de nodos negros en cada camino).",
+                "La regla de que todas las hojas (NIL) son negras."
+            ]
+        },
+        {
+            "pregunta": "En la inserción de un árbol rojinegro, el 'caso 5' se produce cuando el nuevo nodo tiene un padre ROJO y un tío NEGRO. La solución implica:",
+            "respuesta_correcta": [
+                "Aplicar rotaciones específicas y luego finalizar el reequilibrio."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Aplicar rotaciones específicas y luego finalizar el reequilibrio.",
+                "Simplemente cambiar los colores del padre y el abuelo.",
+                "Subir el problema de rebalanceo al nodo abuelo.",
+                "Eliminar el nodo tío para simplificar la estructura."
+            ]
+        },
+        {
+            "pregunta": "¿Cómo se define la Altura de un árbol AVL? (Seleccione 2 respuestas correctas)",
+            "respuesta_correcta": [
+                "0 si el árbol T contiene sólo la raíz.",
+                "1 + max(Altura(Subárbol Izquierdo), Altura(Subárbol Derecho)) si contiene más nodos."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "0 si el árbol T contiene sólo la raíz.",
+                "1 + max(Altura(Subárbol Izquierdo), Altura(Subárbol Derecho)) si contiene más nodos.",
+                "El número total de nodos en el camino más largo desde la raíz a una hoja.",
+                "El valor absoluto del factor de equilibrio del nodo raíz."
+            ]
+        },
+        {
+            "pregunta": "¿Cuáles son los casos principales a considerar al insertar en un Árbol Rojinegro (ARN) cuando se viola la regla 'padre-hijo rojos'? (Seleccione 3 respuestas correctas)",
+            "respuesta_correcta": [
+                "El tío del nuevo nodo es ROJO.",
+                "El tío es NEGRO y el nuevo nodo es un hijo 'exterior' (izquierdo-izquierdo o derecho-derecho).",
+                "El tío es NEGRO y el nuevo nodo es un hijo 'interior' (izquierdo-derecho o derecho-izquierdo)."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "El tío del nuevo nodo es ROJO.",
+                "El tío es NEGRO y el nuevo nodo es un hijo 'exterior' (izquierdo-izquierdo o derecho-derecho).",
+                "El tío es NEGRO y el nuevo nodo es un hijo 'interior' (izquierdo-derecho o derecho-izquierdo).",
+                "El padre del nuevo nodo es NEGRO."
+            ]
+        },
+        {
+            "pregunta": "¿Cuál de estas es una afirmación correcta sobre la codificación de Huffman?",
+            "respuesta_correcta": [
+                "Al comienzo, se crea un nodo hoja para cada símbolo, asociando un peso según su frecuencia de aparición."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Al comienzo, se crea un nodo hoja para cada símbolo, asociando un peso según su frecuencia de aparición.",
+                "Asigna códigos de longitud fija a todos los símbolos para simplificar la decodificación.",
+                "Construye el árbol de codificación desde la raíz hacia las hojas, dividiendo probabilidades.",
+                "Es un algoritmo de compresión con pérdida de información."
+            ]
+        },
+        {
+            "pregunta": "¿Cuál es la principal diferencia estructural entre los árboles AA y los árboles rojinegros?",
+            "respuesta_correcta": [
+                "En los árboles AA, los hijos izquierdos no pueden ser rojos (no existen enlaces horizontales izquierdos)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "En los árboles AA, los hijos izquierdos no pueden ser rojos (no existen enlaces horizontales izquierdos).",
+                "Los árboles AA no requieren rotaciones para mantener el balance.",
+                "Los árboles AA permiten que un nodo rojo tenga dos hijos rojos.",
+                "En los árboles AA, los nodos no tienen colores, sino pesos."
+            ]
+        },
+        {
+            "pregunta": "¿Cuál de las siguientes supuestas 'reglas' de los árboles rojinegros es en realidad FALSA?",
+            "respuesta_correcta": [
+                "Si un nodo es negro, todos sus hijos deben ser rojos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Si un nodo es negro, todos sus hijos deben ser rojos.",
+                "La raíz siempre es negra.",
+                "Si un nodo es rojo, ambos hijos deben ser negros.",
+                "Todo camino desde la raíz a una hoja contiene el mismo número de nodos negros."
+            ]
+        },
+        {
+            "pregunta": "¿Cuáles de estas afirmaciones sobre compresión de datos son correctas? (Seleccione 3 respuestas correctas)",
+            "respuesta_correcta": [
+                "El método Shannon-Fano está basado en la codificación de la entropía.",
+                "La reducción de datos en la compresión puede ser con pérdida (lossy) o sin pérdida (lossless).",
+                "La compresión sin pérdida permite la reconstrucción exacta de los datos originales."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "El método Shannon-Fano está basado en la codificación de la entropía.",
+                "La reducción de datos en la compresión puede ser con pérdida (lossy) o sin pérdida (lossless).",
+                "La compresión sin pérdida permite la reconstrucción exacta de los datos originales.",
+                "El método RLE (Run-Length Encoding) es un algoritmo basado en diccionario como LZW."
+            ]
+        },
+        {
+            "pregunta": "Al comprimir con Huffman, el flujo de bits resultante no siempre ocupa un número exacto de bytes. ¿Qué se hace convencionalmente con el último byte si queda incompleto?",
+            "respuesta_correcta": [
+                "Se rellena con bits cero, y se almacena aparte cuántos bits son válidos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Se rellena con bits cero, y se almacena aparte cuántos bits son válidos.",
+                "Se rellena con bits uno para diferenciarlo de los datos.",
+                "El último byte se descarta si no está completo para ahorrar espacio.",
+                "Se añade un código especial de 'fin de transmisión' que ocupa el resto del byte."
+            ]
+        },
+        {
+            "pregunta": "Al descomprimir con Huffman, ¿por qué es crucial conocer la cantidad de datos originales o el número de bits válidos en el último byte?",
+            "respuesta_correcta": [
+                "Para no decodificar erróneamente los bits de relleno del último byte como si fueran parte del mensaje."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Para no decodificar erróneamente los bits de relleno del último byte como si fueran parte del mensaje.",
+                "Para saber cuánta memoria RAM asignar antes de iniciar la descompresión.",
+                "No es importante, el árbol de Huffman contiene un símbolo de fin de archivo.",
+                "Para verificar la integridad del archivo usando un checksum que depende del tamaño."
+            ]
+        },
+        {
+            "pregunta": "Al leer un archivo en la mayoría de los lenguajes de programación, la condición estándar para detectar que se ha llegado al final es:",
+            "respuesta_correcta": [
+                "EOF (End Of File)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "EOF (End Of File).",
+                "NULL, que indica el final de un string en memoria.",
+                "EOT (End Of Transmission), usado en protocolos de comunicación.",
+                "El caracter con valor ASCII 0."
+            ]
+        },
+        {
+            "pregunta": "Un árbol binario donde, para cualquier nodo, todos los valores en su subárbol izquierdo son menores y todos los del subárbol derecho son mayores, es un:",
+            "respuesta_correcta": [
+                "Árbol Binario de Búsqueda (ABB)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Árbol Binario de Búsqueda (ABB).",
+                "Árbol Binario Completo.",
+                "Heap (Montículo).",
+                "Árbol de Expresión."
+            ]
+        },
+        {
+            "pregunta": "Se dice que un árbol M-ario es completo si cumple que:",
+            "respuesta_correcta": [
+                "Cada nodo interno tiene exactamente M hijos y todas las hojas están en el mismo nivel."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Cada nodo interno tiene exactamente M hijos y todas las hojas están en el mismo nivel.",
+                "Todos los nodos, incluyendo las hojas, tienen M hijos.",
+                "Tiene al menos M niveles de profundidad.",
+                "La suma de las claves de cada nivel es M."
+            ]
+        },
+        {
+            "pregunta": "En teoría de la información y compresión, ¿cuáles de estas definiciones son correctas? (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "La redundancia se refiere a datos repetitivos o previsibles que pueden ser eliminados.",
+                "Factor de compresión = (tamaño original / tamaño comprimido).",
+                "Razón de compresión = (tamaño comprimido / tamaño original).",
+                "La información irrelevante es aquella cuya eliminación no es perceptible por el receptor."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "La redundancia se refiere a datos repetitivos o previsibles que pueden ser eliminados.",
+                "Factor de compresión = (tamaño original / tamaño comprimido).",
+                "Razón de compresión = (tamaño comprimido / tamaño original).",
+                "La información irrelevante es aquella cuya eliminación no es perceptible por el receptor.",
+                "Entropía es la cantidad de información redundante en un mensaje."
+            ]
+        },
+        {
+            "pregunta": "El acceso a un archivo leyendo sus registros en el orden físico en que están almacenados se denomina:",
+            "respuesta_correcta": [
+                "Acceso secuencial."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Acceso secuencial.",
+                "Acceso aleatorio.",
+                "Acceso indexado.",
+                "Acceso por hash."
+            ]
+        },
+        {
+            "pregunta": "El acceso a cualquier registro de un archivo directamente, sin necesidad de leer los anteriores, se denomina:",
+            "respuesta_correcta": [
+                "Acceso Directo (o aleatorio)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Acceso Directo (o aleatorio).",
+                "Acceso Secuencial.",
+                "Acceso por Lotes (Batch).",
+                "Acceso FIFO (First-In, First-Out)."
+            ]
+        },
+        {
+            "pregunta": "El algoritmo de eliminación en los árboles AA es relativamente directo porque su estructura asegura que:",
+            "respuesta_correcta": [
+                "Los hijos izquierdos rojos (enlaces horizontales izquierdos) están prohibidos, simplificando los casos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Los hijos izquierdos rojos (enlaces horizontales izquierdos) están prohibidos, simplificando los casos.",
+                "Todos los nodos internos deben tener dos hijos.",
+                "Nunca se necesitan rotaciones dobles durante la eliminación.",
+                "La altura del árbol nunca aumenta tras una eliminación."
+            ]
+        },
+        {
+            "pregunta": "El algoritmo de Huffman, en su fase de construcción, se caracteriza por:",
+            "respuesta_correcta": [
+                "Armar una lista de árboles (inicialmente de un solo nodo) y fusionarlos iterativamente."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Armar una lista de árboles (inicialmente de un solo nodo) y fusionarlos iterativamente.",
+                "Crear una tabla de frecuencias y asignarle códigos secuencialmente.",
+                "Dividir el conjunto de símbolos en dos subconjuntos de probabilidad similar.",
+                "Generar códigos aleatorios y probar su eficiencia."
+            ]
+        },
+        {
+            "pregunta": "El algoritmo de Huffman consiste en crear una lista de árboles de un solo nodo (uno por símbolo) para luego:",
+            "respuesta_correcta": [
+                "Combinar repetidamente los dos árboles de menor frecuencia hasta que solo quede uno, y a partir de ahí generar la tabla de códigos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Combinar repetidamente los dos árboles de menor frecuencia hasta que solo quede uno, y a partir de ahí generar la tabla de códigos.",
+                "Ordenar los árboles por frecuencia y asignarles códigos binarios secuenciales.",
+                "Unir los dos árboles de mayor frecuencia para priorizar los símbolos comunes.",
+                "Descartar los símbolos con frecuencia por debajo de un umbral."
+            ]
+        },
+        {
+            "pregunta": "El algoritmo de ordenamiento por mapa de bits (Bitmapping) funciona al pensar en una porción de memoria como:",
+            "respuesta_correcta": [
+                "Un conjunto de bits numerados, donde cada bit representa la presencia o ausencia de un número."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Un conjunto de bits numerados, donde cada bit representa la presencia o ausencia de un número.",
+                "Una tabla hash para resolver colisiones de números.",
+                "Un conjunto de bytes, donde cada byte almacena un número a ordenar.",
+                "Una estructura de árbol para organizar los números jerárquicamente."
+            ]
+        },
+        {
+            "pregunta": "El algoritmo de Shannon-Fano se caracteriza por ser un método de codificación en el que:",
+            "respuesta_correcta": [
+                "Se construye un código de prefijo basado en la división recursiva del conjunto de símbolos en dos grupos de probabilidades similares."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Se construye un código de prefijo basado en la división recursiva del conjunto de símbolos en dos grupos de probabilidades similares.",
+                "Se fusionan los dos símbolos de menor probabilidad para construir un árbol de abajo hacia arriba.",
+                "Se asigna el código más corto al símbolo más frecuente y así sucesivamente, sin construir un árbol.",
+                "Se reemplazan secuencias de símbolos repetidos por un contador."
+            ]
+        },
+        {
+            "pregunta": "La estrategia principal del algoritmo de Shannon-Fano es:",
+            "respuesta_correcta": [
+                "Dividir el conjunto de símbolos ordenados por frecuencia en 2 subconjuntos cuyas sumas de probabilidades sean tan iguales como sea posible."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Dividir el conjunto de símbolos ordenados por frecuencia en 2 subconjuntos cuyas sumas de probabilidades sean tan iguales como sea posible.",
+                "Fusionar los 2 símbolos con las probabilidades más bajas.",
+                "Asignar códigos basados en la longitud del símbolo en lugar de su probabilidad.",
+                "Crear un árbol perfectamente balanceado para todos los símbolos."
+            ]
+        },
+        {
+            "pregunta": "Respecto al algoritmo para encontrar anagramas computando una 'firma' para cada palabra, ¿cuál afirmación es VERDADERA?",
+            "respuesta_correcta": [
+                "Requiere al menos dos pasadas: una para leer y computar firmas, y otra (tras ordenar) para agrupar e imprimir los anagramas."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Requiere al menos dos pasadas: una para leer y computar firmas, y otra (tras ordenar) para agrupar e imprimir los anagramas.",
+                "Realiza todo el trabajo en una única pasada sobre el archivo, imprimiendo anagramas a medida que los encuentra.",
+                "Funciona comparando cada palabra con todas las demás en el archivo, lo que resulta en una complejidad O(n²).",
+                "No necesita ordenar las palabras, utiliza una tabla hash para agrupar las firmas."
+            ]
+        },
+        {
+            "pregunta": "El algoritmo para mantener un árbol AVL equilibrado se basa fundamentalmente en:",
+            "respuesta_correcta": [
+                "Reequilibrios locales, aplicando rotaciones solo en los nodos del camino de inserción/borrado cuyo factor de equilibrio se ve afectado."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Reequilibrios locales, aplicando rotaciones solo en los nodos del camino de inserción/borrado cuyo factor de equilibrio se ve afectado.",
+                "Reconstruir todo el árbol cada vez que se produce un desequilibrio.",
+                "Mover nodos entre subárboles para igualar la cantidad de nodos a cada lado.",
+                "Añadir nodos 'fantasma' para rellenar los niveles incompletos."
+            ]
+        },
+        {
+            "pregunta": "En ordenamiento externo, el algoritmo que busca reducir el número de pasadas sobre los datos utilizando más de dos archivos auxiliares es:",
+            "respuesta_correcta": [
+                "Mezcla Equilibrada Múltiple (o Polifásica)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Mezcla Equilibrada Múltiple (o Polifásica).",
+                "Mezcla Directa (Merge Sort estándar).",
+                "Mezcla Natural.",
+                "Ordenamiento por Radix."
+            ]
+        },
+        {
+            "pregunta": "El algoritmo de compresión RLE (Run-Length Encoding) se caracteriza por:",
+            "respuesta_correcta": [
+                "Comprimir secuencias de bytes (o caracteres) idénticos y adyacentes, reemplazándolos por el byte y un contador."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Comprimir secuencias de bytes (o caracteres) idénticos y adyacentes, reemplazándolos por el byte y un contador.",
+                "Comprimir bits repetidos adyacentes.",
+                "Crear un diccionario de secuencias de bytes recurrentes en todo el archivo.",
+                "Asignar códigos más cortos a los bytes más frecuentes en el archivo."
+            ]
+        },
+        {
+            "pregunta": "El árbol Adelson-Velskii-Landis (AVL) se caracteriza por ser:",
+            "respuesta_correcta": [
+                "Un árbol binario de búsqueda auto-balanceado que garantiza que la altura del subárbol izquierdo y derecho de cualquier nodo difiera como máximo en 1."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Un árbol binario de búsqueda auto-balanceado que garantiza que la altura del subárbol izquierdo y derecho de cualquier nodo difiera como máximo en 1.",
+                "Un árbol perfectamente equilibrado, donde el número de nodos de cada subárbol difiere como máximo en 1.",
+                "Un árbol donde los nodos tienen colores para mantener el equilibrio.",
+                "Un árbol M-ario optimizado para acceso a disco."
+            ]
+        },
+        {
+            "pregunta": "El borrado en un árbol BST de un nodo con 2 hijos:",
+            "respuesta_correcta": [
+                "Tiene 2 soluciones comunes: reemplazarlo por su sucesor in-orden o por su predecesor in-orden."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Tiene 2 soluciones comunes: reemplazarlo por su sucesor in-orden o por su predecesor in-orden.",
+                "Requiere promover al hijo izquierdo como nueva raíz del subárbol y reinsertar el hijo derecho.",
+                "Es imposible sin desbalancear el árbol, por lo que se marca como 'borrado' pero no se elimina físicamente.",
+                "Implica reemplazarlo por el valor del nodo abuelo."
+            ]
+        },
+        {
+            "pregunta": "Al borrar un nodo con un solo hijo en un árbol BST, el procedimiento correcto es:",
+            "respuesta_correcta": [
+                "Hacer que el padre del nodo a borrar apunte directamente al único hijo de este."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Hacer que el padre del nodo a borrar apunte directamente al único hijo de este.",
+                "Reemplazar el valor del nodo a borrar con el de su hijo y luego borrar el hijo.",
+                "Promover al hijo a la posición de su padre, desplazando al padre hacia arriba.",
+                "Poner en nulo el puntero del padre y reinsertar el subárbol del hijo desde la raíz."
+            ]
+        },
+        {
+            "pregunta": "El borrado de un nodo sin hijos (una hoja) en un árbol BST consiste en:",
+            "respuesta_correcta": [
+                "Poner en nulo el puntero que lo apuntaba desde su nodo padre y liberar la memoria del nodo."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Poner en nulo el puntero que lo apuntaba desde su nodo padre y liberar la memoria del nodo.",
+                "Reemplazar su valor por un -1 para marcarlo como inactivo.",
+                "Buscar su sucesor in-orden para que ocupe su lugar.",
+                "No hacer nada, las hojas no se pueden borrar directamente."
+            ]
+        },
+        {
+            "pregunta": "El concepto de 'árbol equilibrado' (según la definición de AVL) es:",
+            "respuesta_correcta": [
+                "Para cada nodo, la altura de su subárbol izquierdo difiere como máximo en 1 con la altura de su subárbol derecho."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Para cada nodo, la altura de su subárbol izquierdo difiere como máximo en 1 con la altura de su subárbol derecho.",
+                "El número total de nodos en el subárbol izquierdo y derecho es el mismo.",
+                "Todos los niveles del árbol están completos, excepto posiblemente el último.",
+                "La raíz del árbol tiene un factor de equilibrio de 0."
+            ]
+        },
+        {
+            "pregunta": "El concepto de 'árbol perfectamente equilibrado' es:",
+            "respuesta_correcta": [
+                "Para cada nodo, el número de nodos de su subárbol izquierdo difiere como máximo en 1 con el número de nodos de su subárbol derecho."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Para cada nodo, el número de nodos de su subárbol izquierdo difiere como máximo en 1 con el número de nodos de su subárbol derecho.",
+                "La altura de ambos subárboles es exactamente la misma.",
+                "Todos los niveles del árbol están completamente llenos.",
+                "El árbol es un heap (montículo)."
+            ]
+        },
+        {
+            "pregunta": "El concepto principal de un BST (Árbol Binario de Búsqueda) es:",
+            "respuesta_correcta": [
+                "Para cualquier nodo del árbol, todos los nodos con clave menor que la suya están en su subárbol izquierdo, y los de clave mayor en el derecho."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Para cualquier nodo del árbol, todos los nodos con clave menor que la suya están en su subárbol izquierdo, y los de clave mayor en el derecho.",
+                "Los nodos se insertan nivel por nivel, de izquierda a derecha.",
+                "La clave de un nodo siempre es mayor que la de sus dos hijos.",
+                "La altura de los subárboles izquierdo y derecho nunca puede diferir en más de 1."
+            ]
+        },
+        {
+            "pregunta": "El coste (complejidad temporal) de una operación en un árbol BST es proporcional a:",
+            "respuesta_correcta": [
+                "La profundidad del nodo buscado, insertado o eliminado."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La profundidad del nodo buscado, insertado o eliminado.",
+                "El número total de nodos en el árbol (N).",
+                "El número de hojas del árbol.",
+                "El valor de la clave del nodo raíz."
+            ]
+        },
+        {
+            "pregunta": "El equilibrio de un árbol AVL se mantiene:",
+            "respuesta_correcta": [
+                "Haciendo operaciones de re-equilibrio (rotaciones) inmediatamente después de una operación de inserción o de borrado que lo necesite."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Haciendo operaciones de re-equilibrio (rotaciones) inmediatamente después de una operación de inserción o de borrado que lo necesite.",
+                "Ejecutando un proceso de balanceo global cada cierto número de operaciones.",
+                "Automáticamente por la estructura del árbol, sin necesidad de rotaciones.",
+                "Previniendo inserciones o borrados que puedan causar desequilibrio."
+            ]
+        },
+        {
+            "pregunta": "El Factor de Equilibrio (FE) de un nodo en un árbol AVL se calcula como Altura(subárbol izq) - Altura(subárbol der). Si su valor es 1, significa que:",
+            "respuesta_correcta": [
+                "El nodo está equilibrado y su subárbol izquierdo es un nivel más alto que el derecho."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El nodo está equilibrado y su subárbol izquierdo es un nivel más alto que el derecho.",
+                "El nodo está desequilibrado y necesita una rotación a la derecha.",
+                "El nodo está equilibrado y su subárbol derecho es un nivel más alto.",
+                "El nodo está perfectamente equilibrado, con subárboles de igual altura."
+            ]
+        },
+        {
+            "pregunta": "El método de ordenamiento externo que se caracteriza por incrementar el número de archivos auxiliares para mejorar la eficiencia es:",
+            "respuesta_correcta": [
+                "Mezcla equilibrada múltiple (o polifásica)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Mezcla equilibrada múltiple (o polifásica).",
+                "Mezcla directa.",
+                "Mezcla natural.",
+                "QuickSort externo."
+            ]
+        },
+        {
+            "pregunta": "El marcador EOF de un archivo... (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "Conceptualmente, indica que se llegó al final del mismo.",
+                "Es un indicador o marca de que no hay más información que recuperar de una fuente de datos.",
+                "Existe en la tabla ASCII, aunque es un carácter no imprimible (código 4 o 26).",
+                "En sistemas operativos como UNIX/Linux se puede generar desde la consola con Ctrl+D, y en Windows con Ctrl+Z."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Conceptualmente, indica que se llegó al final del mismo.",
+                "Es un indicador o marca de que no hay más información que recuperar de una fuente de datos.",
+                "Existe en la tabla ASCII, aunque es un carácter no imprimible (código 4 o 26).",
+                "En sistemas operativos como UNIX/Linux se puede generar desde la consola con Ctrl+D, y en Windows con Ctrl+Z.",
+                "Es un byte físico que siempre se escribe al final de cada archivo en el disco."
+            ]
+        },
+        {
+            "pregunta": "El método de compresión de datos basado en un diccionario que reemplaza cadenas de datos recurrentes por una referencia se conoce como:",
+            "respuesta_correcta": [
+                "Compresión Lempel-Ziv (y sus variantes como LZW)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Compresión Lempel-Ziv (y sus variantes como LZW).",
+                "Compresión Huffman.",
+                "Compresión RLE (Run-Length Encoding).",
+                "Codificación Aritmética."
+            ]
+        },
+        {
+            "pregunta": "El método de ordenamiento externo 'fusión natural' se diferencia del de 'mezcla directa' principalmente en:",
+            "respuesta_correcta": [
+                "La longitud de las secuencias ordenadas iniciales (tramos); Fusión Natural aprovecha las secuencias ya ordenadas que existan en los datos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La longitud de las secuencias ordenadas iniciales (tramos); Fusión Natural aprovecha las secuencias ya ordenadas que existan en los datos.",
+                "El número de archivos auxiliares que utiliza, Fusión Natural siempre usa tres.",
+                "La dirección del ordenamiento, uno es ascendente y el otro descendente.",
+                "Fusión Natural ordena en memoria principal, mientras que Mezcla Directa lo hace en disco."
+            ]
+        },
+        {
+            "pregunta": "El método de ordenamiento externo 'mezcla directa', para un archivo de N registros, tiene una complejidad total de movimientos de:",
+            "respuesta_correcta": [
+                "O(n log n)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "O(n log n).",
+                "O(log₂ n).",
+                "O(n²).",
+                "O(n)."
+            ]
+        },
+        {
+            "pregunta": "El algoritmo de 'Mezcla directa' se repite hasta que:",
+            "respuesta_correcta": [
+                "La longitud de la subsecuencia ordenada es igual (o mayor) a la del archivo original, quedando todo en un solo tramo."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La longitud de la subsecuencia ordenada es igual (o mayor) a la del archivo original, quedando todo en un solo tramo.",
+                "Se han realizado log₂(n) pasadas.",
+                "Uno de los archivos auxiliares queda vacío.",
+                "El archivo de salida es idéntico al de entrada."
+            ]
+        },
+        {
+            "pregunta": "En el método de ordenación externa 'mezcla directa', en el paso (o pasada) 'i', se obtienen secuencias ordenadas de longitud:",
+            "respuesta_correcta": [
+                "2ⁱ (asumiendo que i empieza en 0 con secuencias de longitud 1)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "2ⁱ (asumiendo que i empieza en 0 con secuencias de longitud 1).",
+                "2 * i.",
+                "i².",
+                "N / i, donde N es el total de registros."
+            ]
+        },
+        {
+            "pregunta": "El método de ordenación 'fusión natural' se caracteriza porque en cada pasada:",
+            "respuesta_correcta": [
+                "Distribuye secuencias ordenadas (tramos) lo más largas posibles, aprovechando el orden preexistente en los datos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Distribuye secuencias ordenadas (tramos) lo más largas posibles, aprovechando el orden preexistente en los datos.",
+                "Divide el archivo en secuencias de longitud fija 2ⁱ.",
+                "Garantiza que el número de tramos se reduce exactamente a la mitad.",
+                "Utiliza un pivot para dividir los datos como en QuickSort."
+            ]
+        },
+        {
+            "pregunta": "El método de ordenamiento externo que aprovecha las 'carreras' o secuencias ya ordenadas de máxima longitud en los datos se llama:",
+            "respuesta_correcta": [
+                "Mezcla Natural (o Fusión Natural)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Mezcla Natural (o Fusión Natural).",
+                "Método Polifásico.",
+                "Mezcla Directa.",
+                "Radix Sort Externo."
+            ]
+        },
+        {
+            "pregunta": "El método de ordenamiento externo que utiliza 'm' archivos, donde 'm-1' son de entrada y 1 de salida en cada paso, es:",
+            "respuesta_correcta": [
+                "Método Polifásico (o Mezcla Equilibrada Múltiple)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Método Polifásico (o Mezcla Equilibrada Múltiple).",
+                "Mezcla Natural.",
+                "Mezcla Directa.",
+                "HeapSort Externo."
+            ]
+        },
+        {
+            "pregunta": "El método de ordenamiento por Mezcla Natural... (Seleccione 2 respuestas correctas)",
+            "respuesta_correcta": [
+                "Generalmente mejora el tiempo de ejecución de la mezcla directa si los datos tienen algo de orden previo.",
+                "Distribuye secuencias ordenadas (tramos) de longitud variable, lo más largas posible."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Generalmente mejora el tiempo de ejecución de la mezcla directa si los datos tienen algo de orden previo.",
+                "Distribuye secuencias ordenadas (tramos) de longitud variable, lo más largas posible.",
+                "Siempre requiere un número fijo de pasadas, log₂(n).",
+                "Necesita que todos los registros quepan en memoria para la primera pasada."
+            ]
+        },
+        {
+            "pregunta": "Una mejora al algoritmo de Huffman, que evita la primera pasada para contar frecuencias construyendo el árbol dinámicamente, se llama:",
+            "respuesta_correcta": [
+                "Huffman Adaptable."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Huffman Adaptable.",
+                "Huffman Estático.",
+                "Shannon-Fano.",
+                "Codificación Aritmética."
+            ]
+        },
+        {
+            "pregunta": "El 'nivel' de un nodo en un árbol AA se define como:",
+            "respuesta_correcta": [
+                "El número de enlaces izquierdos que hay en el camino desde la raíz hasta el nodo."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El número de enlaces izquierdos que hay en el camino desde la raíz hasta el nodo.",
+                "La distancia desde la raíz (profundidad).",
+                "El número de enlaces horizontales (rojos) por encima del nodo.",
+                "Un valor almacenado que puede o no coincidir con su profundidad."
+            ]
+        },
+        {
+            "pregunta": "El número mínimo de nodos de un árbol AVL de altura 'h' es:",
+            "respuesta_correcta": [
+                "Exponencial respecto a su altura, relacionado con la secuencia de Fibonacci."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Exponencial respecto a su altura, relacionado con la secuencia de Fibonacci.",
+                "Lineal respecto a su altura (2h).",
+                "Cuadrático respecto a su altura (h²).",
+                "Logarítmico respecto a su altura."
+            ]
+        },
+        {
+            "pregunta": "El ordenamiento externo... (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "Es el ordenamiento de datos que residen en almacenamiento secundario (archivos).",
+                "Su principal técnica es reducir el número de accesos a disco.",
+                "Usa un esquema de 'dividir y mezclar' (sort-merge).",
+                "El acceso a los datos en una cinta magnética es mucho más lento que en un disco."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Es el ordenamiento de datos que residen en almacenamiento secundario (archivos).",
+                "Su principal técnica es reducir el número de accesos a disco.",
+                "Usa un esquema de 'dividir y mezclar' (sort-merge).",
+                "El acceso a los datos en una cinta magnética es mucho más lento que en un disco.",
+                "Siempre es más lento que cualquier algoritmo de ordenamiento interno."
+            ]
+        },
+        {
+            "pregunta": "El peor caso de complejidad de búsqueda, inserción o borrado en un árbol BST no balanceado es:",
+            "respuesta_correcta": [
+                "O(N), cuando el árbol degenera en una lista enlazada."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "O(N), cuando el árbol degenera en una lista enlazada.",
+                "O(log n).",
+                "O(n log n).",
+                "O(N²)."
+            ]
+        },
+        {
+            "pregunta": "El principal objetivo de los algoritmos de ordenamiento externo es:",
+            "respuesta_correcta": [
+                "Reducir el número de accesos a los archivos en almacenamiento secundario."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Reducir el número de accesos a los archivos en almacenamiento secundario.",
+                "Minimizar el uso de memoria RAM.",
+                "Lograr una complejidad temporal de O(n).",
+                "Ordenar los datos sin usar archivos auxiliares."
+            ]
+        },
+        {
+            "pregunta": "En un árbol BST, el borrado de un nodo con 2 hijos se soluciona reemplazando su valor por el de su predecesor o sucesor in-orden, y luego:",
+            "respuesta_correcta": [
+                "Borrando el nodo que contenía al predecesor/sucesor (que tendrá 0 o 1 hijo)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Borrando el nodo que contenía al predecesor/sucesor (que tendrá 0 o 1 hijo).",
+                "Reinsertando ambos subárboles del nodo original.",
+                "Realizando una rotación para mover el nodo a una posición de hoja.",
+                "Intercambiando el nodo con su hijo derecho."
+            ]
+        },
+        {
+            "pregunta": "En árboles AVL, el Factor de Equilibrio (FE) se define como:",
+            "respuesta_correcta": [
+                "La diferencia entre las alturas del subárbol izquierdo y el derecho (FE = h_izq - h_der)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La diferencia entre las alturas del subárbol izquierdo y el derecho (FE = h_izq - h_der).",
+                "La diferencia entre el número de nodos del subárbol izquierdo y el derecho.",
+                "La altura total del árbol.",
+                "El máximo entre la altura del subárbol izquierdo y derecho."
+            ]
+        },
+        {
+            "pregunta": "En el algoritmo de búsqueda de anagramas basado en 'firmas'... (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "Una 'firma' se crea ordenando alfabéticamente las letras de una palabra.",
+                "Los anagramas son todas las palabras que comparten la misma firma.",
+                "Generalmente se implementa con un método de 2 pasadas (crear firmas, ordenar y agrupar).",
+                "La permutación de letras es el concepto fundamental que define un anagrama."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Una 'firma' se crea ordenando alfabéticamente las letras de una palabra.",
+                "Los anagramas son todas las palabras que comparten la misma firma.",
+                "Generalmente se implementa con un método de 2 pasadas (crear firmas, ordenar y agrupar).",
+                "La permutación de letras es el concepto fundamental que define un anagrama.",
+                "Funciona eficientemente en una sola pasada sin necesidad de ordenar."
+            ]
+        },
+        {
+            "pregunta": "En el algoritmo de Huffman, para descomprimir un archivo, además del flujo de bits comprimido, ¿qué otra información es indispensable?",
+            "respuesta_correcta": [
+                "El árbol o la tabla de frecuencias para reconstruir los códigos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El árbol o la tabla de frecuencias para reconstruir los códigos.",
+                "El tamaño del archivo comprimido.",
+                "El nombre del archivo original.",
+                "La clave de encriptación utilizada."
+            ]
+        },
+        {
+            "pregunta": "En el árbol generado por el algoritmo de Huffman, la información (los símbolos originales) se encuentra:",
+            "respuesta_correcta": [
+                "Únicamente en los nodos hoja."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Únicamente en los nodos hoja.",
+                "En todos los nodos del árbol.",
+                "Solamente en el nodo raíz.",
+                "En los nodos internos, y las hojas indican el fin de un código."
+            ]
+        },
+        {
+            "pregunta": "En el algoritmo de Huffman, los códigos binarios para cada símbolo se leen:",
+            "respuesta_correcta": [
+                "Siguiendo el camino desde la raíz hasta la hoja correspondiente al símbolo."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Siguiendo el camino desde la raíz hasta la hoja correspondiente al símbolo.",
+                "Contando el número de nodos desde la hoja hasta la raíz.",
+                "En orden ascendente según la frecuencia del símbolo.",
+                "De forma predeterminada según la tabla ASCII."
+            ]
+        },
+        {
+            "pregunta": "En el ámbito de la teoría de la información, la entropía de Shannon mide:",
+            "respuesta_correcta": [
+                "La incertidumbre o la cantidad promedio de 'sorpresa' de una fuente de información."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La incertidumbre o la cantidad promedio de 'sorpresa' de una fuente de información.",
+                "La cantidad de datos redundantes en un mensaje.",
+                "La velocidad máxima a la que se puede transmitir información.",
+                "El factor de compresión óptimo de un archivo."
+            ]
+        },
+        {
+            "pregunta": "En el método polifásico, en el momento en que un archivo de entrada se agota, este pasa a ser el nuevo archivo de salida. ¿Verdadero o Falso?",
+            "respuesta_correcta": [
+                "Verdadero"
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Verdadero",
+                "Falso"
+            ]
+        },
+        {
+            "pregunta": "En el tratamiento de archivos, si los registros son de tamaño variable, la forma más práctica de procesarlos es:",
+            "respuesta_correcta": [
+                "En forma secuencial, ya que no se puede calcular la posición de un registro específico."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "En forma secuencial, ya que no se puede calcular la posición de un registro específico.",
+                "En forma directa (aleatoria), utilizando un índice.",
+                "Siempre se deben convertir a tamaño fijo antes de procesarlos.",
+                "Usando un mapa de bits para localizar cada registro."
+            ]
+        },
+        {
+            "pregunta": "En el tratamiento de archivos, si quiero recuperar un registro específico y los registros son de tamaño fijo, el método más eficiente es:",
+            "respuesta_correcta": [
+                "El acceso directo (aleatorio), calculando su posición como (índice_registro * tamaño_registro)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El acceso directo (aleatorio), calculando su posición como (índice_registro * tamaño_registro).",
+                "El acceso secuencial, leyendo desde el principio hasta encontrarlo.",
+                "El acceso indexado, que es la única forma posible.",
+                "La búsqueda binaria en el archivo."
+            ]
+        },
+        {
+            "pregunta": "En estructuras de datos, a una colección de datos relacionados y guardados en un dispositivo de almacenamiento permanente se la conoce como:",
+            "respuesta_correcta": [
+                "Archivo o Fichero."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Archivo o Fichero.",
+                "Buffer.",
+                "Stream (Flujo).",
+                "Base de datos."
+            ]
+        },
+        {
+            "pregunta": "En la eliminación de un nodo en un árbol AA, la operación se simplifica porque el caso de un nodo con un único hijo solo puede darse en:",
+            "respuesta_correcta": [
+                "El nivel 1, lo que limita los escenarios a manejar."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El nivel 1, lo que limita los escenarios a manejar.",
+                "La raíz del árbol.",
+                "Cualquier nivel del árbol.",
+                "Los nodos hoja."
+            ]
+        },
+        {
+            "pregunta": "En los casos de borrado en un árbol rojo-negro, ¿cuáles de las siguientes situaciones se analizan para el reequilibrio? (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "El caso en que el nodo a eliminar es la raíz.",
+                "El caso en que el nodo 'X' (que ocupa el lugar del eliminado) es 'doble negro' y su hermano es ROJO.",
+                "El caso en que 'X' es 'doble negro', su hermano es NEGRO y los hijos del hermano también son NEGROS.",
+                "El caso en que 'X' es 'doble negro', su hermano es NEGRO y al menos uno de los hijos del hermano es ROJO."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "El caso en que el nodo a eliminar es la raíz.",
+                "El caso en que el nodo 'X' (que ocupa el lugar del eliminado) es 'doble negro' y su hermano es ROJO.",
+                "El caso en que 'X' es 'doble negro', su hermano es NEGRO y los hijos del hermano también son NEGROS.",
+                "El caso en que 'X' es 'doble negro', su hermano es NEGRO y al menos uno de los hijos del hermano es ROJO.",
+                "El caso en que el nodo eliminado era ROJO y sin hijos."
+            ]
+        },
+        {
+            "pregunta": "En los árboles AA, si una inserción provoca la aparición de dos enlaces horizontales derechos consecutivos (un 'abuelo' y un 'padre' rojos), ¿qué operación se realiza?",
+            "respuesta_correcta": [
+                "Se realiza una operación de 'reparto' (split), que sube el nivel del nodo 'padre' y lo convierte en la nueva raíz del subárbol."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Se realiza una operación de 'reparto' (split), que sube el nivel del nodo 'padre' y lo convierte en la nueva raíz del subárbol.",
+                "Se realiza una rotación doble a la izquierda.",
+                "Se cambia el color del nodo 'abuelo' a negro.",
+                "Se elimina el enlace horizontal más bajo."
+            ]
+        },
+        {
+            "pregunta": "En los árboles AA, la operación 'Giro' (skew) consiste en:",
+            "respuesta_correcta": [
+                "Eliminar enlaces horizontales izquierdos mediante una rotación simple a la derecha."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Eliminar enlaces horizontales izquierdos mediante una rotación simple a la derecha.",
+                "Eliminar enlaces horizontales derechos.",
+                "Dividir un nodo que tiene dos hijos rojos.",
+                "Aumentar el nivel de un nodo."
+            ]
+        },
+        {
+            "pregunta": "En los árboles AA, un enlace horizontal representa:",
+            "respuesta_correcta": [
+                "La conexión entre un nodo y un hijo suyo que están en el mismo nivel."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La conexión entre un nodo y un hijo suyo que están en el mismo nivel.",
+                "Un puntero al nodo hermano.",
+                "Un enlace a un subárbol vacío (NIL).",
+                "Una conexión entre dos nodos que no son padre-hijo."
+            ]
+        },
+        {
+            "pregunta": "En los árboles autobalanceados, son válidas estas definiciones de equilibrio: (Seleccione 2 respuestas correctas)",
+            "respuesta_correcta": [
+                "Árbol Equilibrado (AVL): La altura del subárbol izquierdo de cualquier nodo difiere como máximo en 1 con la del derecho.",
+                "Árbol Perfectamente Equilibrado: El número de nodos del subárbol izquierdo de cualquier nodo difiere como máximo en 1 con el del derecho."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Árbol Equilibrado (AVL): La altura del subárbol izquierdo de cualquier nodo difiere como máximo en 1 con la del derecho.",
+                "Árbol Perfectamente Equilibrado: El número de nodos del subárbol izquierdo de cualquier nodo difiere como máximo en 1 con el del derecho.",
+                "Árbol Completo: Todos los nodos tienen exactamente dos hijos.",
+                "Árbol Degenerado: Es un árbol donde cada nodo tiene solo un hijo."
+            ]
+        },
+        {
+            "pregunta": "En los árboles rojinegros, cuando eliminamos un nodo negro que es reemplazado por un hijo también negro, el problema se maneja tratando al hijo como:",
+            "respuesta_correcta": [
+                "Una hoja 'doble negra', que viola la regla de la altura negra y debe ser resuelta."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Una hoja 'doble negra', que viola la regla de la altura negra y debe ser resuelta.",
+                "Una hoja roja para compensar el negro perdido.",
+                "Un nodo sin color hasta que se resuelva el equilibrio.",
+                "Un caso simple que no requiere reequilibrio."
+            ]
+        },
+        {
+            "pregunta": "En los árboles rojinegros, al eliminar un nodo negro sin hijos:",
+            "respuesta_correcta": [
+                "Se debe realizar la eliminación y luego analizar hasta 6 casos posibles de reestructuración para corregir la altura negra."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Se debe realizar la eliminación y luego analizar hasta 6 casos posibles de reestructuración para corregir la altura negra.",
+                "Simplemente se elimina y se colorea de rojo a su padre.",
+                "La operación es inválida; primero debe rotarse hasta que tenga un hijo.",
+                "Se reemplaza por una hoja fantasma roja."
+            ]
+        },
+        {
+            "pregunta": "En los árboles rojinegros, si eliminamos un nodo rojo (que por definición debe ser una hoja):",
+            "respuesta_correcta": [
+                "Simplemente se elimina, sin necesidad de ningún análisis de reequilibrio posterior."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Simplemente se elimina, sin necesidad de ningún análisis de reequilibrio posterior.",
+                "Se debe cambiar el color de su padre a rojo.",
+                "Se requiere una rotación simple para mantener la estructura.",
+                "Se debe verificar la altura negra de todos los caminos."
+            ]
+        },
+        {
+            "pregunta": "Las reglas de los árboles rojinegros garantizan que el camino más largo desde la raíz hasta una hoja es, como máximo:",
+            "respuesta_correcta": [
+                "Dos veces más largo que el camino más corto."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Dos veces más largo que el camino más corto.",
+                "Tres veces más largo que el camino más corto.",
+                "Logarítmico con respecto al camino más corto.",
+                "Igual en longitud al camino más corto."
+            ]
+        },
+        {
+            "pregunta": "En los árboles rojinegros, el algoritmo de borrado está diseñado para borrar directamente:",
+            "respuesta_correcta": [
+                "Un nodo hoja o un nodo con un solo hijo."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Un nodo hoja o un nodo con un solo hijo.",
+                "Solo nodos hoja.",
+                "Cualquier nodo, sin importar el número de hijos.",
+                "Solo nodos rojos."
+            ]
+        },
+        {
+            "pregunta": "Seleccione 3 propiedades fundamentales de los árboles rojinegros:",
+            "respuesta_correcta": [
+                "Cada camino desde un nodo a sus hojas descendientes contiene el mismo número de nodos negros.",
+                "Todo nodo es o bien rojo o bien negro.",
+                "Si un nodo es rojo, entonces sus dos hijos son negros."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Cada camino desde un nodo a sus hojas descendientes contiene el mismo número de nodos negros.",
+                "Todo nodo es o bien rojo o bien negro.",
+                "Si un nodo es rojo, entonces sus dos hijos son negros.",
+                "La raíz siempre es roja."
+            ]
+        },
+        {
+            "pregunta": "En la teoría de los árboles rojinegros, las hojas (NIL):",
+            "respuesta_correcta": [
+                "No contienen datos, se consideran negras y son cruciales para definir y verificar las propiedades del árbol."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "No contienen datos, se consideran negras y son cruciales para definir y verificar las propiedades del árbol.",
+                "Son relevantes porque contienen los valores mínimos del árbol.",
+                "Pueden ser rojas o negras dependiendo de su padre.",
+                "Son una optimización y pueden omitirse en la implementación."
+            ]
+        },
+        {
+            "pregunta": "Sobre los archivos secuenciales, ¿qué afirmaciones son correctas? (Seleccione 4)",
+            "respuesta_correcta": [
+                "Pueden ser implementados en dispositivos de acceso directo como discos.",
+                "Su funcionamiento se inspira en el manejo de cintas magnéticas.",
+                "Permiten registros de longitud variable.",
+                "Un archivo de texto plano (.txt) es un claro ejemplo."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Pueden ser implementados en dispositivos de acceso directo como discos.",
+                "Su funcionamiento se inspira en el manejo de cintas magnéticas.",
+                "Permiten registros de longitud variable.",
+                "Un archivo de texto plano (.txt) es un claro ejemplo.",
+                "Son ideales para acceder a un registro específico en el medio del archivo."
+            ]
+        },
+        {
+            "pregunta": "Sobre los archivos de acceso aleatorio (directo), ¿qué afirmaciones son correctas? (Seleccione 3)",
+            "respuesta_correcta": [
+                "Sus registros deben ser de tamaño fijo para poder calcular su posición.",
+                "Un programa puede comenzar a leer o escribir en cualquier posición del archivo sin leer lo anterior.",
+                "Permiten la simulación de acceso secuencial, leyendo un registro tras otro."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Sus registros deben ser de tamaño fijo para poder calcular su posición.",
+                "Un programa puede comenzar a leer o escribir en cualquier posición del archivo sin leer lo anterior.",
+                "Permiten la simulación de acceso secuencial, leyendo un registro tras otro.",
+                "Pueden ser implementados eficientemente en dispositivos secuenciales, como cintas."
+            ]
+        },
+        {
+            "pregunta": "¿En qué consiste el proceso de compresión de datos?",
+            "respuesta_correcta": [
+                "En el proceso de recodificar información para que utilice menos bits que la representación original."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "En el proceso de recodificar información para que utilice menos bits que la representación original.",
+                "En encriptar la información para que no pueda ser leída.",
+                "En añadir bits de paridad para la corrección de errores.",
+                "En aumentar la cantidad de información para mejorar la calidad."
+            ]
+        },
+        {
+            "pregunta": "En un árbol AVL, después de un borrado, se aplica una Rotación Doble a Derecha (RDD) si el nodo desequilibrado tiene un FE de +2 y...",
+            "respuesta_correcta": [
+                "Su hijo izquierdo tiene un FE de -1."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Su hijo izquierdo tiene un FE de -1.",
+                "Su hijo izquierdo tiene un FE de +1.",
+                "Su hijo izquierdo tiene un FE de 0.",
+                "Su hijo derecho tiene un FE de -1."
+            ]
+        },
+        {
+            "pregunta": "En un árbol AVL, después de una inserción, se aplica una Rotación Doble a Izquierda (RDI) si el nodo desequilibrado tiene un FE de -2 y...",
+            "respuesta_correcta": [
+                "Su hijo derecho tiene un FE de +1."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Su hijo derecho tiene un FE de +1.",
+                "Su hijo derecho tiene un FE de -1.",
+                "Su hijo derecho tiene un FE de 0.",
+                "Su hijo izquierdo tiene un FE de +1."
+            ]
+        },
+        {
+            "pregunta": "En un árbol AVL, por convención, el Factor de Equilibrio (FE) de un nodo se calcula como:",
+            "respuesta_correcta": [
+                "Altura del subárbol izquierdo - Altura del subárbol derecho."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Altura del subárbol izquierdo - Altura del subárbol derecho.",
+                "Altura del subárbol derecho - Altura del subárbol izquierdo.",
+                "Número de nodos del subárbol izquierdo - Número de nodos del subárbol derecho.",
+                "Profundidad del nodo."
+            ]
+        },
+        {
+            "pregunta": "En un árbol B... (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "Cada elemento de un nodo interno actúa como un valor separador, que lo divide en subárboles.",
+                "Se mantiene balanceado porque requiere que todos los nodos hoja se encuentren a la misma altura.",
+                "La altura de un árbol-B es logarítmica en base M (el orden del árbol) respecto al número de claves.",
+                "Está optimizado para sistemas que leen y escriben grandes bloques de datos, como las bases de datos."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Cada elemento de un nodo interno actúa como un valor separador, que lo divide en subárboles.",
+                "Se mantiene balanceado porque requiere que todos los nodos hoja se encuentren a la misma altura.",
+                "La altura de un árbol-B es logarítmica en base M (el orden del árbol) respecto al número de claves.",
+                "Está optimizado para sistemas que leen y escriben grandes bloques de datos, como las bases de datos.",
+                "En el peor de los casos, la altura de un árbol-B es N (lineal)."
+            ]
+        },
+        {
+            "pregunta": "En un árbol B de orden M... (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "Cada nodo (excepto la raíz) tiene como mínimo ⌈M/2⌉ hijos.",
+                "Cada nodo tiene como máximo M hijos.",
+                "Todos los nodos hoja aparecen al mismo nivel.",
+                "Un nodo no hoja con k hijos contiene k-1 claves."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Cada nodo (excepto la raíz) tiene como mínimo ⌈M/2⌉ hijos.",
+                "Cada nodo tiene como máximo M hijos.",
+                "Todos los nodos hoja aparecen al mismo nivel.",
+                "Un nodo no hoja con k hijos contiene k-1 claves.",
+                "La raíz siempre debe estar llena (M-1 claves)."
+            ]
+        },
+        {
+            "pregunta": "En un árbol B M-ario, los nodos internos contienen:",
+            "respuesta_correcta": [
+                "Hasta m-1 claves para guiar la búsqueda hacia m posibles hijos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Hasta m-1 claves para guiar la búsqueda hacia m posibles hijos.",
+                "Exactamente m-1 claves en todos los casos.",
+                "Los datos finales, mientras que las hojas contienen los índices.",
+                "Solo punteros a otros nodos, sin claves."
+            ]
+        },
+        {
+            "pregunta": "En un árbol de búsqueda M-ario, ¿cuántas claves se necesitan en un nodo para decidir entre M posibles ramas (hijos)?",
+            "respuesta_correcta": [
+                "M-1 claves."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "M-1 claves.",
+                "M claves.",
+                "M+1 claves.",
+                "log₂(M) claves."
+            ]
+        },
+        {
+            "pregunta": "En un árbol rojinegro, cuando se elimina un nodo negro con un solo hijo (que debe ser rojo y tener dos hojas NIL negras), el procedimiento implica:",
+            "respuesta_correcta": [
+                "Reemplazar el nodo negro por su hijo rojo, y luego colorear a este hijo de negro."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Reemplazar el nodo negro por su hijo rojo, y luego colorear a este hijo de negro.",
+                "Generar un nodo 'doble negro' que debe ser resuelto.",
+                "Realizar una rotación para que el nodo a eliminar se convierta en hoja.",
+                "Promover al hijo rojo y a su padre un nivel hacia arriba."
+            ]
+        },
+        {
+            "pregunta": "En una rotación doble a derecha (RDD) sobre un nodo P desequilibrado (fe=+2), su hijo izquierdo Q (fe=-1) y el hijo derecho de Q llamado R...",
+            "respuesta_correcta": [
+                "Verdadero: El nodo R se convierte en la nueva raíz del subárbol, con Q y P como sus hijos izquierdo y derecho respectivamente."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Verdadero: El nodo R se convierte en la nueva raíz del subárbol, con Q y P como sus hijos izquierdo y derecho respectivamente.",
+                "Falso: La rotación se realiza en un solo paso moviendo P como hijo de Q."
+            ]
+        },
+        {
+            "pregunta": "En una rotación simple a la derecha, la raíz del subárbol original se convierte en:",
+            "respuesta_correcta": [
+                "El hijo derecho de su antiguo hijo izquierdo."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El hijo derecho de su antiguo hijo izquierdo.",
+                "El hijo izquierdo de su antiguo hijo izquierdo.",
+                "La nueva raíz del árbol completo.",
+                "Un nodo hoja que luego se elimina."
+            ]
+        },
+        {
+            "pregunta": "En una rotación simple a la izquierda, la raíz del subárbol original se convierte en:",
+            "respuesta_correcta": [
+                "El hijo izquierdo de su antiguo hijo derecho."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El hijo izquierdo de su antiguo hijo derecho.",
+                "El hijo derecho de su antiguo hijo derecho.",
+                "Un nodo que es eliminado tras la rotación.",
+                "La nueva raíz del árbol completo."
+            ]
+        },
+        {
+            "pregunta": "En una rotación simple de un árbol AVL, ¿qué se intercambia?",
+            "respuesta_correcta": [
+                "Se reestructuran los punteros entre el nodo desequilibrado (padre), su hijo y su nieto, de forma que el hijo ocupa el lugar del padre."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Se reestructuran los punteros entre el nodo desequilibrado (padre), su hijo y su nieto, de forma que el hijo ocupa el lugar del padre.",
+                "Solamente se intercambian los valores de las claves entre el padre y el hijo.",
+                "Se intercambian los factores de equilibrio del padre y el hijo.",
+                "Se eliminan los nodos y se reinsertan en el orden correcto."
+            ]
+        },
+        {
+            "pregunta": "El método más simple de ordenamiento externo es:",
+            "respuesta_correcta": [
+                "Mezcla Directa."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Mezcla Directa.",
+                "Mezcla Natural.",
+                "Método Polifásico.",
+                "QuickSort Externo."
+            ]
+        },
+        {
+            "pregunta": "¿Es posible buscar eficientemente el k-ésimo menor elemento en un árbol BST?",
+            "respuesta_correcta": [
+                "Sí, si en cada nodo se almacena y actualiza el tamaño de su subárbol (el número de nodos que contiene)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Sí, si en cada nodo se almacena y actualiza el tamaño de su subárbol (el número de nodos que contiene).",
+                "No, es necesario recorrer el árbol en in-orden y contar hasta k, lo que es ineficiente.",
+                "Sí, pero solo si el árbol es perfectamente balanceado.",
+                "No, esta operación solo es posible en un array ordenado."
+            ]
+        },
+        {
+            "pregunta": "Este método de ordenamiento externo mejora el tiempo de ejecución de la mezcla directa al aprovechar las secuencias ya ordenadas en los datos:",
+            "respuesta_correcta": [
+                "Mezcla Natural."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Mezcla Natural.",
+                "Algoritmos Genéticos.",
+                "Mezcla Polifásica.",
+                "Radix Sort."
+            ]
+        },
+        {
+            "pregunta": "Los algoritmos que funcionan manteniendo un conjunto de posibles soluciones que compiten y se combinan entre sí, de forma que las más aptas prevalecen, son los:",
+            "respuesta_correcta": [
+                "Algoritmos Genéticos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Algoritmos Genéticos.",
+                "Mezcla natural.",
+                "Algoritmos de Huffman.",
+                "Métodos de ordenamiento por mezcla."
+            ]
+        },
+        {
+            "pregunta": "Indique qué afirmación sobre la construcción del árbol de Huffman es correcta:",
+            "respuesta_correcta": [
+                "Construye el árbol de abajo hacia arriba, combinando repetidamente los dos nodos (o subárboles) de menor frecuencia en la lista."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Construye el árbol de abajo hacia arriba, combinando repetidamente los dos nodos (o subárboles) de menor frecuencia en la lista.",
+                "Construye el árbol de arriba hacia abajo, dividiendo el conjunto de símbolos en dos.",
+                "Combina repetidamente los dos nodos de mayor frecuencia.",
+                "Crea un árbol perfectamente balanceado para asignar los códigos."
+            ]
+        },
+        {
+            "pregunta": "La característica única llamada división 'dos a tres' (2-3 split), que mejora la utilización de espacio, es una ventaja de:",
+            "respuesta_correcta": [
+                "Los árboles B* sobre los árboles B."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Los árboles B* sobre los árboles B.",
+                "Los árboles B+ sobre los árboles B.",
+                "Los árboles AVL sobre los árboles rojinegros.",
+                "Los árboles B sobre los árboles BST."
+            ]
+        },
+        {
+            "pregunta": "La codificación de Huffman es un método en el que se asignan códigos binarios:",
+            "respuesta_correcta": [
+                "Más cortos a aquellos símbolos que ocurren con mayor frecuencia."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Más cortos a aquellos símbolos que ocurren con mayor frecuencia.",
+                "Más cortos a aquellos símbolos que ocurren con menor frecuencia.",
+                "De longitud fija a todos los símbolos.",
+                "Basados en el valor ASCII del símbolo."
+            ]
+        },
+        {
+            "pregunta": "Una de las afirmaciones correctas sobre la compresión de datos es que:",
+            "respuesta_correcta": [
+                "Consiste en encontrar algoritmos que manipulen datos, produciendo una representación más compacta."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Consiste en encontrar algoritmos que manipulen datos, produciendo una representación más compacta.",
+                "Busca aumentar la entropía del texto comprimido.",
+                "Siempre implica una pérdida de calidad en la información.",
+                "Funciona mejor en datos completamente aleatorios."
+            ]
+        },
+        {
+            "pregunta": "La compresión de Huffman consiste en:",
+            "respuesta_correcta": [
+                "Leer el archivo original byte a byte (para contar frecuencias) y luego escribir el archivo nuevo bit a bit (según los códigos generados)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Leer el archivo original byte a byte (para contar frecuencias) y luego escribir el archivo nuevo bit a bit (según los códigos generados).",
+                "Leer el archivo original bit a bit y codificarlo byte a byte.",
+                "Reemplazar secuencias de bytes repetidos por un contador.",
+                "Construir un diccionario de palabras y reemplazarlas por un índice."
+            ]
+        },
+        {
+            "pregunta": "La compresión es un caso particular de:",
+            "respuesta_correcta": [
+                "Recodificación de la información."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Recodificación de la información.",
+                "Encriptación de datos.",
+                "Corrección de errores.",
+                "Indexación de archivos."
+            ]
+        },
+        {
+            "pregunta": "La compresión RLE (Run-length encoding) es un método en el que:",
+            "respuesta_correcta": [
+                "Secuencias de datos con el mismo valor y consecutivas son almacenadas como un único valor más su recuento."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Secuencias de datos con el mismo valor y consecutivas son almacenadas como un único valor más su recuento.",
+                "Las secuencias de datos más frecuentes en todo el archivo son reemplazadas por un código.",
+                "Se asigna un código binario más corto a los valores más frecuentes.",
+                "Se eliminan los datos que son perceptualmente irrelevantes."
+            ]
+        },
+        {
+            "pregunta": "La condición de equilibrio de un árbol AVL implica que tendrá una profundidad:",
+            "respuesta_correcta": [
+                "Logarítmica con respecto al número de nodos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Logarítmica con respecto al número de nodos.",
+                "Lineal con respecto al número de nodos.",
+                "Constante, independientemente del número de nodos.",
+                "Relacionada con la serie de Fibonacci."
+            ]
+        },
+        {
+            "pregunta": "La definición 'uso de una tabla de códigos de longitud variable para codificar un símbolo, basada en la probabilidad de aparición de cada símbolo' pertenece a:",
+            "respuesta_correcta": [
+                "Codificación de Huffman (o entrópica en general)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Codificación de Huffman (o entrópica en general).",
+                "Codificación RLE.",
+                "Compresión LZW.",
+                "Codificación por diccionario."
+            ]
+        },
+        {
+            "pregunta": "La definición 'forma simple de compresión donde secuencias de datos con el mismo valor consecutivas son almacenadas como un único valor más su recuento' pertenece a:",
+            "respuesta_correcta": [
+                "Codificación RLE (Run-Length Encoding)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Codificación RLE (Run-Length Encoding).",
+                "Codificación de Huffman.",
+                "Codificación LZW.",
+                "Codificación Aritmética."
+            ]
+        },
+        {
+            "pregunta": "La definición 'los símbolos se ordenan por probabilidad y se dividen en 2 conjuntos cuya suma de probabilidades sean tan iguales como sea posible' pertenece a:",
+            "respuesta_correcta": [
+                "Codificación Shannon-Fano."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Codificación Shannon-Fano.",
+                "Codificación RLE.",
+                "Codificación de Huffman.",
+                "Algoritmo de LZW."
+            ]
+        },
+        {
+            "pregunta": "La descompresión por medio del algoritmo de Huffman es imposible sin:",
+            "respuesta_correcta": [
+                "Tener el árbol de Huffman o una estructura equivalente (como una tabla de códigos canónica)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Tener el árbol de Huffman o una estructura equivalente (como una tabla de códigos canónica).",
+                "Conocer el tamaño exacto del archivo comprimido.",
+                "El algoritmo de compresión original.",
+                "Una conexión a internet para descargar el diccionario."
+            ]
+        },
+        {
+            "pregunta": "La descompresión por medio del algoritmo de Huffman implica la reconstrucción del archivo original:",
+            "respuesta_correcta": [
+                "Byte a Byte, leyendo el flujo de entrada bit a bit hasta formar un código válido."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Byte a Byte, leyendo el flujo de entrada bit a bit hasta formar un código válido.",
+                "Bit a bit, expandiendo cada byte comprimido a su secuencia original.",
+                "Palabra por palabra, utilizando un diccionario.",
+                "Línea por línea, basado en caracteres de nueva línea."
+            ]
+        },
+        {
+            "pregunta": "La diferencia fundamental entre la codificación de Shannon-Fano y la de Huffman radica en:",
+            "respuesta_correcta": [
+                "Cómo construyen el árbol: Huffman es de abajo hacia arriba (óptimo) y Shannon-Fano de arriba hacia abajo (subóptimo)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Cómo construyen el árbol: Huffman es de abajo hacia arriba (óptimo) y Shannon-Fano de arriba hacia abajo (subóptimo).",
+                "Que Huffman es con pérdida y Shannon-Fano sin pérdida.",
+                "El tipo de datos que pueden comprimir.",
+                "La velocidad de descompresión, siendo Shannon-Fano mucho más rápido."
+            ]
+        },
+        {
+            "pregunta": "La estructura de datos tipo árbol mejor preparada para almacenar grandes volúmenes de datos en disco es:",
+            "respuesta_correcta": [
+                "Árbol B (y sus variantes como B+)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Árbol B (y sus variantes como B+).",
+                "Árbol AVL.",
+                "Árbol Rojinegro.",
+                "Árbol Binario de Búsqueda (BST)."
+            ]
+        },
+        {
+            "pregunta": "La inserción en un árbol AA se realiza siempre:",
+            "respuesta_correcta": [
+                "Como un nodo hoja en el nivel 1 (rojo)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Como un nodo hoja en el nivel 1 (rojo).",
+                "En el nivel más alto posible.",
+                "Directamente en la raíz.",
+                "En el nivel 0 (negro)."
+            ]
+        },
+        {
+            "pregunta": "La inserción en un árbol BST consiste en:",
+            "respuesta_correcta": [
+                "Realizar una búsqueda que termina sin éxito, e insertar el nuevo nodo en esa posición vacía."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Realizar una búsqueda que termina sin éxito, e insertar el nuevo nodo en esa posición vacía.",
+                "Insertar siempre el nuevo nodo como hijo izquierdo de la raíz.",
+                "Buscar un nodo con el mismo valor y reemplazarlo.",
+                "Colocar el nuevo nodo en el primer nivel disponible de izquierda a derecha."
+            ]
+        },
+        {
+            "pregunta": "La altura en el peor caso de un árbol AVL de n nodos nunca excede en más de un 44% a la del árbol binario de búsqueda perfectamente balanceado. Este valor proviene del análisis de su relación con:",
+            "respuesta_correcta": [
+                "El número áureo (phi, φ) y la serie de Fibonacci."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El número áureo (phi, φ) y la serie de Fibonacci.",
+                "La constante de Euler (e).",
+                "El logaritmo natural.",
+                "La distribución de claves de forma aleatoria."
+            ]
+        },
+        {
+            "pregunta": "La mejor forma de buscar anagramas en un diccionario es:",
+            "respuesta_correcta": [
+                "Hacer una pasada para 'firmar' cada palabra (ordenando sus letras) y luego agrupar las que tienen la misma firma."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Hacer una pasada para 'firmar' cada palabra (ordenando sus letras) y luego agrupar las que tienen la misma firma.",
+                "Comparar cada palabra con todas las demás del diccionario.",
+                "Generar todas las permutaciones de una palabra y buscarlas.",
+                "Utilizar un árbol de prefijos (Trie)."
+            ]
+        },
+        {
+            "pregunta": "La mezcla de 2 archivos por intercalación (merge) presupone que:",
+            "respuesta_correcta": [
+                "Los 2 archivos a intercalar ya están ordenados."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Los 2 archivos a intercalar ya están ordenados.",
+                "Los archivos tienen el mismo número de registros.",
+                "Los registros son de tamaño fijo.",
+                "Hay suficiente memoria RAM para cargar ambos archivos."
+            ]
+        },
+        {
+            "pregunta": "La rotación doble en un árbol AVL es conceptualmente:",
+            "respuesta_correcta": [
+                "La aplicación consecutiva de dos rotaciones simples (por ejemplo, una a la izquierda seguida de una a la derecha para RDD)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La aplicación consecutiva de dos rotaciones simples (por ejemplo, una a la izquierda seguida de una a la derecha para RDD).",
+                "Una sola operación compleja que mueve tres nodos a la vez.",
+                "Una rotación que involucra a los nodos abuelo, padre e hijo del mismo lado (izq-izq o der-der).",
+                "El intercambio de los subárboles izquierdo y derecho completos."
+            ]
+        },
+        {
+            "pregunta": "La rotación simple en un árbol es una operación de cambio de estructura donde:",
+            "respuesta_correcta": [
+                "Se pone al padre como nuevo hijo de su actual hijo, reordenando los punteros para mantener el orden."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Se pone al padre como nuevo hijo de su actual hijo, reordenando los punteros para mantener el orden.",
+                "Se intercambian las claves del padre y el hijo.",
+                "Se invierte el orden de todos los nodos del subárbol.",
+                "El padre se elimina y el hijo ocupa su lugar."
+            ]
+        },
+        {
+            "pregunta": "La rutina 'reverse' aplicada a un sub-vector es útil para:",
+            "respuesta_correcta": [
+                "Implementar una rotación (shift circular) de los elementos de un vector de forma eficiente."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Implementar una rotación (shift circular) de los elementos de un vector de forma eficiente.",
+                "Ordenar el vector en orden descendente.",
+                "Buscar un elemento en el vector.",
+                "Eliminar elementos duplicados."
+            ]
+        },
+        {
+            "pregunta": "La solución óptima para rotar (shift circular) un vector 'k' posiciones es:",
+            "respuesta_correcta": [
+                "Usar tres llamadas a una rutina 'reverse': reverse(0, k-1), reverse(k, n-1), y finalmente reverse(0, n-1)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Usar tres llamadas a una rutina 'reverse': reverse(0, k-1), reverse(k, n-1), y finalmente reverse(0, n-1).",
+                "Mover cada elemento 'k' veces, uno por uno.",
+                "Crear un nuevo vector y copiar los elementos en la nueva posición.",
+                "Usar un bucle que mueve el primer elemento al final 'k' veces."
+            ]
+        },
+        {
+            "pregunta": "La solución de ordenamiento que hace una sola lectura del archivo de entrada, utilizando un bit por cada posible elemento, se llama:",
+            "respuesta_correcta": [
+                "Ordenamiento por mapa de bits (Bitmap sort)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Ordenamiento por mapa de bits (Bitmap sort).",
+                "Ordenamiento por mezcla directa.",
+                "Heapsort.",
+                "Counting sort."
+            ]
+        },
+        {
+            "pregunta": "La técnica de bitmaping consta de 3 fases: 1) Inicializar el vector de bits a cero; 2) Leer cada elemento y poner a 1 el bit correspondiente; 3)...",
+            "respuesta_correcta": [
+                "Recorrer el vector de bits y, si un bit 'i' está en 1, escribir el número 'i' en la salida."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Recorrer el vector de bits y, si un bit 'i' está en 1, escribir el número 'i' en la salida.",
+                "Ordenar el vector de bits.",
+                "Contar cuántos bits están en 1.",
+                "Invertir todos los bits del vector."
+            ]
+        },
+        {
+            "pregunta": "La técnica de bitmaping es especialmente útil para:",
+            "respuesta_correcta": [
+                "Ordenar grandes volúmenes de enteros sin repetición (o con pocas repeticiones) dentro de un rango conocido."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Ordenar grandes volúmenes de enteros sin repetición (o con pocas repeticiones) dentro de un rango conocido.",
+                "Representar imágenes en blanco y negro.",
+                "Ordenar cadenas de texto.",
+                "Comprimir archivos de forma eficiente."
+            ]
+        },
+        {
+            "pregunta": "La técnica de computar las 'firmas' de las palabras es un método eficaz para:",
+            "respuesta_correcta": [
+                "Clasificar y agrupar anagramas."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Clasificar y agrupar anagramas.",
+                "Verificar la ortografía de las palabras.",
+                "Comprimir textos.",
+                "Buscar palíndromos."
+            ]
+        },
+        {
+            "pregunta": "Las 2 operaciones básicas para mantener el equilibrio en los árboles AA son:",
+            "respuesta_correcta": [
+                "Giro (skew) y Reparto (split)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Giro (skew) y Reparto (split).",
+                "Rotación simple y Rotación doble.",
+                "Inserción y Eliminación.",
+                "Cambio de color y Rotación."
+            ]
+        },
+        {
+            "pregunta": "Las iteraciones en la fase de construcción del árbol de Huffman terminan cuando:",
+            "respuesta_correcta": [
+                "Queda un sólo nodo (el árbol completo) en la lista."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Queda un sólo nodo (el árbol completo) en la lista.",
+                "Quedan dos nodos en la lista.",
+                "Se han procesado todos los símbolos originales.",
+                "La altura del árbol alcanza log₂(n)."
+            ]
+        },
+        {
+            "pregunta": "Las operaciones de reequilibrado de un árbol AVL consisten en:",
+            "respuesta_correcta": [
+                "Rotaciones simples y dobles, cuya aplicación depende del factor de equilibrio del nodo y de su hijo."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Rotaciones simples y dobles, cuya aplicación depende del factor de equilibrio del nodo y de su hijo.",
+                "Únicamente rotaciones dobles.",
+                "Cambios de color en los nodos, como en los árboles rojinegros.",
+                "Reconstrucción parcial del subárbol desequilibrado."
+            ]
+        },
+        {
+            "pregunta": "Las reglas de los árboles rojinegros garantizan que:",
+            "respuesta_correcta": [
+                "El camino más largo desde la raíz hasta una hoja no es más del doble de largo que el camino más corto."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El camino más largo desde la raíz hasta una hoja no es más del doble de largo que el camino más corto.",
+                "El árbol es perfectamente simétrico.",
+                "Todos los caminos desde la raíz a las hojas tienen la misma longitud.",
+                "No hay dos nodos rojos adyacentes en ningún camino."
+            ]
+        },
+        {
+            "pregunta": "Los algoritmos evolutivos, que se basan en postulados de la evolución biológica (selección, cruce, mutación) para encontrar soluciones a problemas, son:",
+            "respuesta_correcta": [
+                "Verdadero."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Verdadero.",
+                "Falso."
+            ]
+        },
+        {
+            "pregunta": "Los árboles AA se diferencian de los árboles rojinegros en que:",
+            "respuesta_correcta": [
+                "En los árboles AA los hijos izquierdos no pueden ser rojos (no hay enlaces horizontales izquierdos)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "En los árboles AA los hijos izquierdos no pueden ser rojos (no hay enlaces horizontales izquierdos).",
+                "Los árboles AA no utilizan el concepto de balance, se basan en niveles.",
+                "Los árboles AA permiten que un nodo rojo tenga hijos rojos.",
+                "Los árboles AA son siempre más altos que los rojinegros para el mismo conjunto de datos."
+            ]
+        },
+        {
+            "pregunta": "Los árboles AA... (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "Reciben el nombre de su inventor, Arne Andersson.",
+                "Son una variación simplificada del árbol rojo-negro.",
+                "Cada nodo de nivel mayor que uno debe tener dos hijos.",
+                "Ningún nodo puede tener un enlace horizontal izquierdo (hijo izquierdo rojo)."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Reciben el nombre de su inventor, Arne Andersson.",
+                "Son una variación simplificada del árbol rojo-negro.",
+                "Cada nodo de nivel mayor que uno debe tener dos hijos.",
+                "Ningún nodo puede tener un enlace horizontal izquierdo (hijo izquierdo rojo).",
+                "No requieren rebalanceo tras las inserciones."
+            ]
+        },
+        {
+            "pregunta": "Los árboles B satisfacen 5 propiedades fundamentales, entre las que se incluye:",
+            "respuesta_correcta": [
+                "Que todos los nodos hoja están al mismo nivel."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Que todos los nodos hoja están al mismo nivel.",
+                "Que la raíz debe tener al menos dos hijos.",
+                "Que cada nodo debe estar al menos medio lleno (excepto la raíz).",
+                "Todas las anteriores son correctas."
+            ]
+        },
+        {
+            "pregunta": "Se considera que los árboles rojinegros son más eficientes en la práctica (que los AVL) porque:",
+            "respuesta_correcta": [
+                "Requieren menos rotaciones en promedio, ya que sus condiciones de equilibrio son menos estrictas."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Requieren menos rotaciones en promedio, ya que sus condiciones de equilibrio son menos estrictas.",
+                "Sus rutinas de inserción y eliminación se hacen con un solo recorrido descendente.",
+                "Siempre son menos altos que los árboles AVL.",
+                "No necesitan almacenar el factor de equilibrio en cada nodo."
+            ]
+        },
+        {
+            "pregunta": "¿Es cierto que los archivos de acceso aleatorio consisten en registros que se pueden acceder en cualquier secuencia, pero que deben ser de tamaño fijo?",
+            "respuesta_correcta": [
+                "Verdadero"
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Verdadero",
+                "Falso, pueden ser también de tamaño variable."
+            ]
+        },
+        {
+            "pregunta": "Los archivos pueden ser abiertos en diferentes modos, como:",
+            "respuesta_correcta": [
+                "Como 'de solo lectura', 'de solo escritura', o 'de lectura y escritura', además de modos para añadir (append)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Como 'de solo lectura', 'de solo escritura', o 'de lectura y escritura', además de modos para añadir (append).",
+                "Solamente como 'de lectura' o 'de escritura'.",
+                "Como 'binario' o 'texto', que son los únicos modos.",
+                "Como 'secuencial' o 'aleatorio'."
+            ]
+        },
+        {
+            "pregunta": "Los casos de borrado en un árbol ARN se simplifican manejando la eliminación de:",
+            "respuesta_correcta": [
+                "Un nodo con 0 hijos o con 1 hijo, ya que un nodo con 2 hijos se reduce a uno de estos casos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Un nodo con 0 hijos o con 1 hijo, ya que un nodo con 2 hijos se reduce a uno de estos casos.",
+                "Únicamente nodos con 1 hijo.",
+                "Nodos rojos exclusivamente.",
+                "Nodos negros exclusivamente."
+            ]
+        },
+        {
+            "pregunta": "Los métodos de compresión con pérdida, que eliminan información no perceptible, son también llamados:",
+            "respuesta_correcta": [
+                "Métodos de codificación perceptiva."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Métodos de codificación perceptiva.",
+                "Métodos de compresión entrópica.",
+                "Métodos de compresión sin pérdida.",
+                "Codificación por diccionario."
+            ]
+        },
+        {
+            "pregunta": "Los métodos de ordenamiento interno tienen un rendimiento más alto que los externos porque:",
+            "respuesta_correcta": [
+                "Trabajan completamente en la memoria principal (RAM), que es órdenes de magnitud más rápida que el disco."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Trabajan completamente en la memoria principal (RAM), que es órdenes de magnitud más rápida que el disco.",
+                "Utilizan algoritmos con menor complejidad teórica.",
+                "No necesitan archivos auxiliares.",
+                "Están optimizados a nivel de hardware por el procesador."
+            ]
+        },
+        {
+            "pregunta": "El proceso de segmentación, extracción de características y descripción, donde cada objeto queda representado por descriptores, se refiere a:",
+            "respuesta_correcta": [
+                "Reconocimiento de patrones."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Reconocimiento de patrones.",
+                "Compresión de datos.",
+                "Ordenamiento externo.",
+                "Criptografía."
+            ]
+        },
+        {
+            "pregunta": "Los siguientes son métodos de ordenamiento externo: (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "Mezcla Directa.",
+                "Mezcla Natural.",
+                "Mezcla Equilibrada Múltiple (Polifásica).",
+                "Polyphase Merge Sort."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Mezcla Directa.",
+                "Mezcla Natural.",
+                "Mezcla Equilibrada Múltiple (Polifásica).",
+                "Polyphase Merge Sort.",
+                "QuickSort (versión estándar)."
+            ]
+        },
+        {
+            "pregunta": "Los dos tipos fundamentales de manejo o acceso a archivos son: (Seleccione 2 respuestas correctas)",
+            "respuesta_correcta": [
+                "Acceso directo (aleatorio).",
+                "Acceso secuencial."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Acceso directo (aleatorio).",
+                "Acceso secuencial.",
+                "Acceso en modo texto.",
+                "Acceso en modo binario."
+            ]
+        },
+        {
+            "pregunta": "Los valores aceptables del Factor de Equilibrio en un nodo de un árbol AVL son:",
+            "respuesta_correcta": [
+                "-1, 0, 1."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "-1, 0, 1.",
+                "0, 1.",
+                "-2, -1, 0, 1, 2.",
+                "Cualquier número entero."
+            ]
+        },
+        {
+            "pregunta": "¿Por qué el tiempo de acceso a los archivos puede ser un factor crítico en el ordenamiento externo?",
+            "respuesta_correcta": [
+                "Porque el acceso a dispositivos de almacenamiento secundario (disco, SSD) es mucho más lento que el acceso a la memoria RAM."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Porque el acceso a dispositivos de almacenamiento secundario (disco, SSD) es mucho más lento que el acceso a la memoria RAM.",
+                "Porque los archivos pueden estar encriptados.",
+                "Porque el sistema operativo limita la velocidad de lectura.",
+                "Porque los algoritmos de ordenamiento externo son inherentemente ineficientes."
+            ]
+        },
+        {
+            "pregunta": "¿Por qué en los árboles AA podemos decir que los enlaces horizontales son equivalentes a enlaces 'rojos' de lado derecho?",
+            "respuesta_correcta": [
+                "Porque por definición, solo los hijos derechos pueden estar en el mismo nivel que su padre (enlaces horizontales), y los hijos izquierdos no."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Porque por definición, solo los hijos derechos pueden estar en el mismo nivel que su padre (enlaces horizontales), y los hijos izquierdos no.",
+                "Porque solo los hijos izquierdos son rojos.",
+                "Porque el color rojo se asigna aleatoriamente.",
+                "Porque todos los nodos de la derecha son siempre rojos."
+            ]
+        },
+        {
+            "pregunta": "Si al realizar una inserción en un árbol B+, el nodo hoja está lleno, ¿qué acción debe tomarse?",
+            "respuesta_correcta": [
+                "Se divide la hoja en dos, se distribuyen las claves, y se promueve la clave del medio al nodo padre."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Se divide la hoja en dos, se distribuyen las claves, y se promueve la clave del medio al nodo padre.",
+                "Se crea una nueva hoja y se enlaza a la actual, sin dividirla.",
+                "Se busca espacio en las hojas hermanas para transferir una clave.",
+                "Se rechaza la inserción hasta que se libere espacio."
+            ]
+        },
+        {
+            "pregunta": "¿Qué es la compresión de datos?",
+            "respuesta_correcta": [
+                "Es el proceso de reducir la redundancia e irrelevancia de la información para que ocupe menos espacio."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Es el proceso de reducir la redundancia e irrelevancia de la información para que ocupe menos espacio.",
+                "Es aumentar la entropía de la información.",
+                "Es organizar la información para un acceso más rápido.",
+                "Es añadir información para detectar y corregir errores."
+            ]
+        },
+        {
+            "pregunta": "La estructura que dio origen a los árboles Rojinegros fue creada por Rudolf Bayer en 1972 y se llamaba 'árboles-B binarios simétricos'. ¿Qué atributos y conceptos introdujeron Guibas y Sedgewick? (Seleccione 3)",
+            "respuesta_correcta": [
+                "El atributo de 'color' (rojo o negro) para cada nodo.",
+                "El concepto de hojas 'fantasma' o NIL, que siempre son negras.",
+                "Las reglas de equilibrio basadas en el color y la altura negra."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "El atributo de 'color' (rojo o negro) para cada nodo.",
+                "El concepto de hojas 'fantasma' o NIL, que siempre son negras.",
+                "Las reglas de equilibrio basadas en el color y la altura negra.",
+                "El atributo de 'altura' o factor de equilibrio en cada nodo."
+            ]
+        },
+        {
+            "pregunta": "Se denomina algoritmo de compresión sin pérdida (lossless) a cualquier procedimiento de codificación que:",
+            "respuesta_correcta": [
+                "Tiene como objetivo representar información ocupando menos espacio, siendo posible una reconstrucción exacta de los datos originales."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Tiene como objetivo representar información ocupando menos espacio, siendo posible una reconstrucción exacta de los datos originales.",
+                "Elimina datos perceptualmente irrelevantes para lograr una mayor compresión.",
+                "Garantiza un factor de compresión mínimo de 2:1.",
+                "Utiliza encriptación para proteger los datos."
+            ]
+        },
+        {
+            "pregunta": "Según el método de inserción ascendente para los árboles rojinegros, el nuevo elemento siempre debe insertarse como:",
+            "respuesta_correcta": [
+                "Una hoja roja."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Una hoja roja.",
+                "Una hoja negra.",
+                "La nueva raíz del árbol.",
+                "Un hijo del nodo con el valor más cercano."
+            ]
+        },
+        {
+            "pregunta": "Según el teorema de la altura de los árboles AVL, la altura en el peor caso es aproximadamente un 44% mayor que la mínima posible. Esto significa que un AVL es:",
+            "respuesta_correcta": [
+                "Bastante balanceado, garantizando una búsqueda logarítmica eficiente."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Bastante balanceado, garantizando una búsqueda logarítmica eficiente.",
+                "Poco eficiente en comparación con un árbol perfectamente balanceado.",
+                "Propenso a degenerar en una lista enlazada.",
+                "Exactamente un 44% más lento que un árbol rojinegro."
+            ]
+        },
+        {
+            "pregunta": "Según las propiedades de inserción en árboles rojinegros, una vez que se encuentra el punto de inserción, el nuevo elemento:",
+            "respuesta_correcta": [
+                "Siempre se inserta como una hoja y se colorea de rojo."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Siempre se inserta como una hoja y se colorea de rojo.",
+                "Se inserta como una hoja y se colorea de negro.",
+                "Puede insertarse como un nodo interno si hay espacio.",
+                "Se inserta en la raíz y la antigua raíz se convierte en su hijo."
+            ]
+        },
+        {
+            "pregunta": "Según los árboles AA, la conexión entre un nodo y un hijo suyo del mismo nivel se define como:",
+            "respuesta_correcta": [
+                "Enlace horizontal."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Enlace horizontal.",
+                "Enlace vertical.",
+                "Enlace nulo.",
+                "Enlace hermano."
+            ]
+        },
+        {
+            "pregunta": "Según las reglas de los árboles rojinegros, si un nodo es rojo, se debe cumplir que:",
+            "respuesta_correcta": [
+                "Sus hijos (si existen) deben ser negros."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Sus hijos (si existen) deben ser negros.",
+                "Su padre debe ser rojo.",
+                "Debe tener exactamente dos hijos.",
+                "Debe ser un nodo hoja."
+            ]
+        },
+        {
+            "pregunta": "Según los métodos de Ordenamiento Externo, podemos decir que el método de mezcla directa es:",
+            "respuesta_correcta": [
+                "El más simple de implementar, pero no siempre el más eficiente."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El más simple de implementar, pero no siempre el más eficiente.",
+                "El más rápido en todos los casos.",
+                "Un método de ordenamiento interno adaptado a archivos.",
+                "Un algoritmo que no requiere archivos auxiliares."
+            ]
+        },
+        {
+            "pregunta": "En los árboles AA, en lugar de almacenar explícitamente la información sobre el color, cada nodo almacena:",
+            "respuesta_correcta": [
+                "Su nivel dentro del árbol."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Su nivel dentro del árbol.",
+                "Un factor de equilibrio.",
+                "El número de hijos.",
+                "Un puntero a su tío."
+            ]
+        },
+        {
+            "pregunta": "Si codificamos un algoritmo de compresión construyendo un árbol de la raíz hacia las hojas, dividiendo probabilidades, estamos hablando de:",
+            "respuesta_correcta": [
+                "Algoritmo de Shannon-Fano."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Algoritmo de Shannon-Fano.",
+                "Algoritmo de Huffman.",
+                "Algoritmo LZW.",
+                "RLE."
+            ]
+        },
+        {
+            "pregunta": "Si codificamos un algoritmo de compresión construyendo un árbol de las hojas hacia la raíz, fusionando los nodos de menor probabilidad, estamos hablando de:",
+            "respuesta_correcta": [
+                "Algoritmo de Huffman."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Algoritmo de Huffman.",
+                "Algoritmo de Shannon-Fano.",
+                "Algoritmo de Dijkstra.",
+                "Algoritmo de Kruskal."
+            ]
+        },
+        {
+            "pregunta": "Si poseemos un árbol rojinegro con una raíz negra y un único hijo rojo, y deseamos borrar la raíz, el resultado será:",
+            "respuesta_correcta": [
+                "Un árbol con un solo nodo (el antiguo hijo), que se convierte en la nueva raíz y se colorea de negro."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Un árbol con un solo nodo (el antiguo hijo), que se convierte en la nueva raíz y se colorea de negro.",
+                "Un árbol con un solo nodo (raíz) que permanece rojo.",
+                "Un árbol vacío.",
+                "Una operación inválida que no se puede realizar directamente."
+            ]
+        },
+        {
+            "pregunta": "Si se tiene el desafío de ordenar archivos de gran tamaño con memoria muy limitada, una técnica de ordenamiento externo efectiva es:",
+            "respuesta_correcta": [
+                "La técnica de mezcla equilibrada múltiple (polifásica)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La técnica de mezcla equilibrada múltiple (polifásica).",
+                "Cargar todo el archivo en memoria virtual (swap).",
+                "Usar un algoritmo de ordenamiento interno como QuickSort.",
+                "Dividir el archivo en fragmentos pequeños y ordenarlos uno por uno sin mezclarlos."
+            ]
+        },
+        {
+            "pregunta": "Respecto a los archivos secuenciales en disco... (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "Los archivos de texto plano (.txt) son un claro ejemplo de ellos.",
+                "Los archivos CSV (valores separados por comas) son otro ejemplo.",
+                "Pueden contener registros de longitud variable.",
+                "Para acceder a un registro en la mitad del archivo, se deben leer todos los registros anteriores."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Los archivos de texto plano (.txt) son un claro ejemplo de ellos.",
+                "Los archivos CSV (valores separados por comas) son otro ejemplo.",
+                "Pueden contener registros de longitud variable.",
+                "Para acceder a un registro en la mitad del archivo, se deben leer todos los registros anteriores.",
+                "Son el tipo de archivo más eficiente para bases de datos."
+            ]
+        },
+        {
+            "pregunta": "Técnicamente, ¿cómo se llama al proceso de codificar información usando menos bits que una representación sin codificar?",
+            "respuesta_correcta": [
+                "Compresión."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Compresión.",
+                "Decodificación.",
+                "Encriptación.",
+                "Indexación."
+            ]
+        },
+        {
+            "pregunta": "Teniendo en cuenta las propiedades de los árboles AA, en un enlace horizontal se debe cumplir que:",
+            "respuesta_correcta": [
+                "La conexión se da entre un nodo y un hijo suyo que se consideran del mismo nivel."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La conexión se da entre un nodo y un hijo suyo que se consideran del mismo nivel.",
+                "El hijo debe ser siempre menor que el padre.",
+                "La conexión solo puede ocurrir en el nivel más bajo del árbol.",
+                "Ambos nodos, padre e hijo, deben ser negros."
+            ]
+        },
+        {
+            "pregunta": "Un árbol-B se mantiene balanceado porque una de sus propiedades fundamentales es que:",
+            "respuesta_correcta": [
+                "Requiere que todos los nodos hoja se encuentren a la misma altura (mismo nivel)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Requiere que todos los nodos hoja se encuentren a la misma altura (mismo nivel).",
+                "Utiliza rotaciones simples y dobles como los árboles AVL.",
+                "Cada nodo debe estar siempre completamente lleno de claves.",
+                "Elimina y reinserta subárboles para mantener el equilibrio."
+            ]
+        },
+        {
+            "pregunta": "Un árbol B de grado M... (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "Un nodo con k claves tiene k+1 hijos.",
+                "Tiene todos sus nodos hoja al mismo nivel.",
+                "Puede tener como máximo M-1 claves en un nodo.",
+                "Puede tener como máximo M hijos en un nodo."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Un nodo con k claves tiene k+1 hijos.",
+                "Tiene todos sus nodos hoja al mismo nivel.",
+                "Puede tener como máximo M-1 claves en un nodo.",
+                "Puede tener como máximo M hijos en un nodo.",
+                "La raíz siempre tiene M-1 claves."
+            ]
+        },
+        {
+            "pregunta": "Un árbol BST se diferencia de un árbol binario común en que:",
+            "respuesta_correcta": [
+                "Mantiene una relación de orden entre sus claves, lo que permite búsquedas eficientes."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Mantiene una relación de orden entre sus claves, lo que permite búsquedas eficientes.",
+                "Siempre está perfectamente balanceado.",
+                "No permite nodos duplicados.",
+                "Sus nodos solo pueden tener 0 o 2 hijos."
+            ]
+        },
+        {
+            "pregunta": "Un árbol BST, al estar ordenado, facilita la búsqueda de un elemento. Esta se realiza:",
+            "respuesta_correcta": [
+                "Partiendo de la raíz y descendiendo a la izquierda si el dato buscado es menor, o a la derecha si es mayor."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Partiendo de la raíz y descendiendo a la izquierda si el dato buscado es menor, o a la derecha si es mayor.",
+                "Recorriendo el árbol nivel por nivel (búsqueda en anchura).",
+                "Comparando el dato buscado primero con el hijo izquierdo y luego con el derecho.",
+                "Realizando una búsqueda en profundidad (pre-orden)."
+            ]
+        },
+        {
+            "pregunta": "Un árbol BST, al estar ordenado, facilita la búsqueda del elemento mayor, que se realiza:",
+            "respuesta_correcta": [
+                "Desde la raíz, siguiendo recursivamente los hijos derechos hasta llegar a un nodo que no tenga hijo derecho."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Desde la raíz, siguiendo recursivamente los hijos derechos hasta llegar a un nodo que no tenga hijo derecho.",
+                "Buscando el nodo hoja en el nivel más profundo.",
+                "Siguiendo el camino de los hijos izquierdos.",
+                "Comparando los dos hijos de la raíz."
+            ]
+        },
+        {
+            "pregunta": "Un árbol BST, al estar ordenado, facilita la búsqueda del elemento menor, que se realiza:",
+            "respuesta_correcta": [
+                "Desde la raíz, siguiendo recursivamente los hijos izquierdos hasta llegar a un nodo que no tenga hijo izquierdo."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Desde la raíz, siguiendo recursivamente los hijos izquierdos hasta llegar a un nodo que no tenga hijo izquierdo.",
+                "Buscando el primer nodo insertado en el árbol.",
+                "Siguiendo el camino de los hijos derechos.",
+                "Revisando el nodo hoja más a la derecha."
+            ]
+        },
+        {
+            "pregunta": "Un árbol BST (Árbol Binario de Búsqueda) es... (Seleccione 4 respuestas correctas)",
+            "respuesta_correcta": [
+                "Un tipo de árbol binario.",
+                "Un tipo de grafo dirigido acíclico.",
+                "Una estructura de datos que puede degenerar y comportarse como una lista enlazada en el peor caso.",
+                "Una estructura que mantiene los datos ordenados en todo momento."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Un tipo de árbol binario.",
+                "Un tipo de grafo dirigido acíclico.",
+                "Una estructura de datos que puede degenerar y comportarse como una lista enlazada en el peor caso.",
+                "Una estructura que mantiene los datos ordenados en todo momento.",
+                "Una estructura que garantiza un tiempo de búsqueda O(log n)."
+            ]
+        },
+        {
+            "pregunta": "Una 'cadena de bloques' (Blockchain), aplicada por primera vez en Bitcoin, provee de forma descentralizada: (Seleccione 3 respuestas correctas)",
+            "respuesta_correcta": [
+                "Almacenamiento de datos inmutable.",
+                "Confirmación y validación de transacciones.",
+                "Transmisión de datos entre nodos de la red."
+            ],
+            "es_multiple_seleccion": true,
+            "opciones": [
+                "Almacenamiento de datos inmutable.",
+                "Confirmación y validación de transacciones.",
+                "Transmisión de datos entre nodos de la red.",
+                "Procesamiento de datos de alta velocidad."
+            ]
+        },
+        {
+            "pregunta": "Una característica fundamental de los ARN es que cada camino desde un nodo a cualquiera de sus hojas descendientes:",
+            "respuesta_correcta": [
+                "Contiene el mismo número de nodos negros (propiedad de la altura negra)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Contiene el mismo número de nodos negros (propiedad de la altura negra).",
+                "Contiene el mismo número total de nodos.",
+                "Alterna colores de nodos (negro, rojo, negro, ...).",
+                "Tiene una longitud máxima de log₂(n)."
+            ]
+        },
+        {
+            "pregunta": "Una de las propiedades inviolables de los árboles rojinegros es que la raíz:",
+            "respuesta_correcta": [
+                "Debe ser siempre negra."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Debe ser siempre negra.",
+                "Debe ser siempre roja.",
+                "Puede ser roja si el árbol tiene un solo nodo.",
+                "Cambia de color dependiendo de la última operación."
+            ]
+        },
+        {
+            "pregunta": "Una de las propiedades de los árboles rojinegros dice que si un nodo es rojo, sus hijos:",
+            "respuesta_correcta": [
+                "Deben ser negros."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Deben ser negros.",
+                "Pueden ser rojos.",
+                "Deben ser hojas NIL.",
+                "Al menos uno debe ser negro."
+            ]
+        },
+        {
+            "pregunta": "Una de las siguientes afirmaciones corresponde a una propiedad principal de los árboles B. ¿Cuál es?",
+            "respuesta_correcta": [
+                "Todos los nodos hoja aparecen en el mismo nivel."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Todos los nodos hoja aparecen en el mismo nivel.",
+                "Son árboles binarios.",
+                "No requieren rebalanceo.",
+                "Cada nodo interno tiene exactamente 2 hijos."
+            ]
+        },
+        {
+            "pregunta": "Una de las técnicas utilizadas en el proceso de compresión con pérdida (lossy) es:",
+            "respuesta_correcta": [
+                "La cuantificación, que reduce la precisión de los datos (como en los estándares JPEG y MPEG)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La cuantificación, que reduce la precisión de los datos (como en los estándares JPEG y MPEG).",
+                "La codificación Huffman, que es sin pérdida.",
+                "El uso de árboles B+ para indexar datos.",
+                "La codificación RLE, que es sin pérdida."
+            ]
+        },
+        {
+            "pregunta": "Una estructura de árbol que es un índice multinivel, dinámico, donde toda la información se guarda en las hojas y estas se encuentran unidas como una lista enlazada es un:",
+            "respuesta_correcta": [
+                "Árbol B+."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "Árbol B+.",
+                "Árbol B.",
+                "Árbol AVL.",
+                "Árbol de Segmentos (Segment Tree)."
+            ]
+        },
+        {
+            "pregunta": "Uno de los campos de aplicación donde es crucial utilizar un algoritmo de compresión SIN pérdida es:",
+            "respuesta_correcta": [
+                "La compresión de textos, ejecutables o bases de datos."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "La compresión de textos, ejecutables o bases de datos.",
+                "La compresión de video para streaming.",
+                "La compresión de imágenes para la web.",
+                "La compresión de audio en formato MP3."
+            ]
+        },
+        {
+            "pregunta": "En un árbol AVL, una rotación simple (como RSD) sirve para tratar los casos de desequilibrio donde la inserción ocurrió en:",
+            "respuesta_correcta": [
+                "El subárbol 'exterior' del subárbol desequilibrado (p. ej., subárbol izquierdo del hijo izquierdo)."
+            ],
+            "es_multiple_seleccion": false,
+            "opciones": [
+                "El subárbol 'exterior' del subárbol desequilibrado (p. ej., subárbol izquierdo del hijo izquierdo).",
+                "El subárbol 'interior' (p. ej., subárbol derecho del hijo izquierdo).",
+                "Cualquier subárbol, la rotación es la misma.",
+                "Solamente cuando se inserta en el hijo derecho de la raíz."
+            ]
+        }
+    ]
+}
