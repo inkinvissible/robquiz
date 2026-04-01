@@ -1,0 +1,246 @@
+{
+    "title": "Gestión de Manufactura Integrada por Computadora [cite: 3, 6]",
+    "description": "Banco de preguntas sobre robótica industrial, cobots, industria 4.0 y procesos de automatización en la industria electrónica[cite: 7, 12, 76, 82].",
+    "questions": [
+      {
+        "pregunta": "1) El brazo robótico sniffer, ¿en qué aplicación de robots industriales se encuadra? [cite: 8]",
+        "respuesta_correcta": [
+          "Robot de inspección. [cite: 10]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Robot de pintura. [cite: 8]",
+          "Robot de paletizado. [cite: 9]",
+          "Robot de inspección. [cite: 10]",
+          "Robot de soldadura. [cite: 11]"
+        ]
+      },
+      {
+        "pregunta": "2) ¿Con qué objetivo la industria electrónica de Tierra del Fuego incorpora los robots a las fábricas? [cite: 12]",
+        "respuesta_correcta": [
+          "Para complementar y asistir en los procesos de producción [cite: 14]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Para reemplazar el trabajo humano por completo. [cite: 13]",
+          "Para complementar y asistir en los procesos de producción [cite: 14]"
+        ]
+      },
+      {
+        "pregunta": "3) El control de calidad de los productos finalizados solo lo puede realizar un ser humano. [cite: 15]",
+        "respuesta_correcta": [
+          "Falso [cite: 16]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Verdadero [cite: 15]",
+          "Falso [cite: 16]"
+        ]
+      },
+      {
+        "pregunta": "4) ¿Qué aspecto de las fábricas tuvo un cambio drástico luego de la gran aceptación de los robots industriales desde 2018? [cite: 17]",
+        "respuesta_correcta": [
+          "Distribución de tareas [cite: 20]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Horarios de trabajo. [cite: 18]",
+          "Decoración de oficinas. [cite: 19]",
+          "Distribución de tareas [cite: 20]"
+        ]
+      },
+      {
+        "pregunta": "5) ¿Qué efector final tiene el robot sniffer? [cite: 21]",
+        "respuesta_correcta": [
+          "Un pico [cite: 25]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Un gancho. [cite: 22]",
+          "Un taladro. [cite: 23]",
+          "Un sensor de temperatura. [cite: 24]",
+          "Un pico [cite: 25]"
+        ]
+      },
+      {
+        "pregunta": "6) Los robots industriales autómatas pueden tomar tareas simples, pero pesadas para el hombre. [cite: 26]",
+        "respuesta_correcta": [
+          "Verdadero [cite: 27]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Verdadero [cite: 27]",
+          "Falso [cite: 28]"
+        ]
+      },
+      {
+        "pregunta": "7) El objetivo de los \"cobots\" es liberar a los trabajadores de las tareas monótonas y repetitivas para que pasen a realizar otras funciones más complejas. [cite: 29, 30]",
+        "respuesta_correcta": [
+          "Verdadero [cite: 31]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Verdadero [cite: 31]",
+          "Falso [cite: 32]"
+        ]
+      },
+      {
+        "pregunta": "8) ¿Qué parte del robot en la fábrica permite ubicar los compresores de los aires acondicionados de manera precisa? [cite: 33, 34]",
+        "respuesta_correcta": [
+          "Las cámaras incorporadas. [cite: 37]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "El controlador. [cite: 35]",
+          "La fuente de potencia. [cite: 36]",
+          "Las cámaras incorporadas. [cite: 37]",
+          "Las patas del robot. [cite: 38]"
+        ]
+      },
+      {
+        "pregunta": "9) ¿Qué componente permite a los robots móviles autónomos moverse libremente por los almacenes y fábricas? [cite: 40]",
+        "respuesta_correcta": [
+          "Sensores. [cite: 43]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Manipulador [cite: 41]",
+          "Pinzas. [cite: 42]",
+          "Sensores. [cite: 43]",
+          "Cámaras de visión. [cite: 44]"
+        ]
+      },
+      {
+        "pregunta": "10) Cuáles son las empresas que más utilizan robots según la IFR? [cite: 45]",
+        "respuesta_correcta": [
+          "Electrónica [cite: 48]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Metalúrgicas. [cite: 46]",
+          "Gastronomía. [cite: 47]",
+          "Electrónica [cite: 48]"
+        ]
+      },
+      {
+        "pregunta": "11) El robot verticalizador de TV puede levantar hasta 220 kilos... El principio fundamental de la robótica que está presente es el de automatización de tareas. [cite: 49, 50, 51]",
+        "respuesta_correcta": [
+          "Verdadero [cite: 52]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Verdadero [cite: 52]",
+          "Falso [cite: 53]"
+        ]
+      },
+      {
+        "pregunta": "12) ¿Qué usos industriales posee la robótica móvil autónoma? [cite: 54]",
+        "respuesta_correcta": [
+          "Gestión de almacenes. [cite: 54]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Gestión de almacenes. [cite: 54]",
+          "Asistencia a operarios. [cite: 55]",
+          "Manejo de materiales. [cite: 56]",
+          "Soldadura. [cite: 57]"
+        ]
+      },
+      {
+        "pregunta": "13) Según el texto de Infobae, ¿cuál es la primera idea que se viene a la cabeza al hablar de robots? [cite: 58]",
+        "respuesta_correcta": [
+          "aspiradoras inteligentes [cite: 62]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Portones automáticos. [cite: 59]",
+          "Sistema de riego. [cite: 60]",
+          "Automóviles sin conductor. [cite: 61]",
+          "aspiradoras inteligentes [cite: 62]"
+        ]
+      },
+      {
+        "pregunta": "14) ¿Cuál es el factor más importante en la selección de un robot de paletizado? [cite: 63]",
+        "respuesta_correcta": [
+          "La capacidad de carga. [cite: 66]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Los grados de libertad. [cite: 64]",
+          "La velocidad de movimiento. [cite: 65]",
+          "La capacidad de carga. [cite: 66]"
+        ]
+      },
+      {
+        "pregunta": "15) ¿En qué parte del ciclo de producción de las empresas de Tierra del Fuego se utilizan los robots industriales? [cite: 67]",
+        "respuesta_correcta": [
+          "Durante todo el ciclo, desde los primeros cortes hasta la inspección de calidad. [cite: 68]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Durante todo el ciclo, desde los primeros cortes hasta la inspección de calidad. [cite: 68]",
+          "Al finalizar, para el embalado de los productos. [cite: 69]",
+          "Al inicio de la producción, para las actividades más tediosas. [cite: 70]"
+        ]
+      },
+      {
+        "pregunta": "16) ¿Qué principio fundamental de la robótica se observa en el montaje de las placas electrónicas, que requiere colocar de manera rápida y precisa objetos pequeños y frágiles? [cite: 71, 72]",
+        "respuesta_correcta": [
+          "Precisión. [cite: 75]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Seguridad. [cite: 73]",
+          "Precisión. [cite: 75]",
+          "Flexibilidad. [cite: 75]"
+        ]
+      },
+      {
+        "pregunta": "17) ¿A qué se refiere el término \"industria 4.0\"? [cite: 76]",
+        "respuesta_correcta": [
+          "A la incorporación de robótica y otras tecnologías a las formas de producción. [cite: 77]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "A la incorporación de robótica y otras tecnologías a las formas de producción. [cite: 77]",
+          "A una forma de producción que no esté enfocada en la interconectividad, la automatización y los datos en tiempo real. [cite: 78]",
+          "A un modelo de producción tradicional basado en métodos y tecnologías antiguas. [cite: 79]"
+        ]
+      },
+      {
+        "pregunta": "18) Los robots móviles autónomos poseen un sistema de control de lazo abierto. [cite: 80]",
+        "respuesta_correcta": [
+          "Falso [cite: 81]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Verdadero [cite: 80]",
+          "Falso [cite: 81]"
+        ]
+      },
+      {
+        "pregunta": "19) ¿Qué son los cobots? [cite: 82]",
+        "respuesta_correcta": [
+          "Robots industriales diseñados para trabajar a la par de los humanos. [cite: 83]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Robots industriales diseñados para trabajar a la par de los humanos. [cite: 83]",
+          "Robots antiguos. [cite: 83]",
+          "Robots de comercialización. [cite: 84]"
+        ]
+      },
+      {
+        "pregunta": "20) ¿Qué tarea cumple el robot de manejo de materiales en las plantas de BGH, también llamado robot de paletizado? [cite: 85]",
+        "respuesta_correcta": [
+          "Levantar equipos de aires acondicionados de hasta 30 kg y ubicarlos sobre un palet. [cite: 87]"
+        ],
+        "es_multiple_seleccion": false,
+        "opciones": [
+          "Controlar la temperatura interior de la fábrica. [cite: 86]",
+          "Levantar equipos de aires acondicionados de hasta 30 kg y ubicarlos sobre un palet. [cite: 87]",
+          "Preparar los alimentos. [cite: 87]"
+        ]
+      }
+    ]
+  }
